@@ -1,0 +1,3773 @@
+{
+  "schema_version": 1,
+  "source": "https://github.com/ssivakorn/reCAPTCHA-study",
+  "revision": "efb3595c33780abf9d326c729973e72d165366c2",
+  "license": "CC-BY-NC-4.0",
+  "license_url": "https://github.com/ssivakorn/reCAPTCHA-study/blob/efb3595c33780abf9d326c729973e72d165366c2/LICENSE",
+  "attribution": "Suphannee Sivakorn, reCAPTCHA Study (2026)",
+  "seed": "rs-ocr-public-evaluation-v1",
+  "selection": "SHA-256 order of seed:id; one representative per shared source tile/full-image component; 80 3x3 and 40 4x4; first half of each size for development",
+  "upstream_tree_sha256": "7dba62dcbd75464b8641600a441d49936924cf37a2fedab5ea79cb712861a63d",
+  "samples": [
+    {
+      "id": "2026-04-25-19-08-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "d9a413096d52148945767a830f4256b461427ae9",
+        "693cc95b84d2fa5b2f8885513a1cc37e7729846d",
+        "760613d4080bde592498e523d7ed0baebc66e158",
+        "312b4470edc02233cb343f7a4bdb0f94b03487d3",
+        "c76870b2b56453d81d23e4931cd045333a3b0dff",
+        "1029d0218d5579cca819f39c5c12d4ef72537a33",
+        "a5340cc2fddbef4b9f6ac47bf77f8aa18404257b",
+        "7bc32c8a393bad0e6c1eeb59e8e2d95459f6a3ab",
+        "8c5f0e770681a402f8acfe17e25beb9cadc37e30"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-19-08-00/full_images.png",
+          "size": 232447,
+          "git_blob": "3acff8cf880d763296f710824ffcd95d5b9d8176"
+        },
+        {
+          "path": "dataset/2026-04-25-19-08-00/info.json",
+          "size": 167,
+          "git_blob": "19f2179fa0ea2f12cb6a04d064e5d4db78b246f7"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-19-31-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "2b1ec5fa428c7fd42d2b0c7a3db31eb9d1b22b3d",
+        "639625c8d0fd576cff975c816a9ec83f09e78bf5",
+        "25f2b3dc5d0f392f7cdb251404440c993b7da953",
+        "fad2f296ac5363c2a68b48773da1af9b541210ba",
+        "74dc60bd127aa9d55c5741837c974b1f752ff15d",
+        "b533fff20d7fee376efde5014b5f63399c7309f7",
+        "39cd2910e080a3eef20d108e2b1a13c0c8da22b5",
+        "92bb0902e928e7182c4cc5442db0375cb25278ec",
+        "a6fd8587441557e138d6a767451941ed8b869765"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-19-31-00/full_images.png",
+          "size": 226146,
+          "git_blob": "ed3de42adcb4488808b315f31854884de462dd1d"
+        },
+        {
+          "path": "dataset/2026-04-25-19-31-00/info.json",
+          "size": 172,
+          "git_blob": "3e1b46795ba4a1cb23615b3204e9bbfd7339ce19"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-20-36-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "93121aad2579e97b97bd2a9c568aebca46649ba9",
+        "9b4891080594e13c51547e7943655fb85a5bc0d7",
+        "a1f849b9cc2e2e6424f1174bd1ed8c5799f1bd3c",
+        "f98e69cc787f8dedab4a4a92fddb0e446dca5251",
+        "2942a408e84abdd991569a2f05e89a4452e0a3be",
+        "362544563c6852597437f2a2180ca9c25600cb20",
+        "61e57e8034ec6963b3d9d3ecaaf1d8f83f24cd10",
+        "c5fe36116db78b10ff41f890d95cab09331f6b1a",
+        "fd5278172ea471efe77d2ced8d09d20e0f724528"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-20-36-00/full_images.png",
+          "size": 232319,
+          "git_blob": "5ab399290a503f673ff31d7ba5a317eba6ec74d3"
+        },
+        {
+          "path": "dataset/2026-04-25-20-36-00/info.json",
+          "size": 180,
+          "git_blob": "ffbe94b3aae7e7e8015be9b8df8f57d24862f427"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-20-37-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "3d2dd5f7632340d8147058c82e68462b432ad5a4",
+        "bdbaf7e2d09fef1f53bb19940cb13e5c4acf1838",
+        "03eaddd8b42ff87037cb281f541049fce32ebd5c",
+        "e13f1faf52a72c8c77a565bbff845ce4c623c41e",
+        "e0845c237dc9cfb46d30cba7226a18cec78f0c7f",
+        "c93cf4c9df01ad57ed78ba84d487dd8fe9e689b3",
+        "d847b5bbb573149d6ef5318a180ba8d8f12d930d",
+        "1a07e90bd07b869a552b1e6fc68019672a4864c8",
+        "496e4cebf40e77322d21cc3e385d997c4b772aad",
+        "18fe67fecd958a5e5df3b8002943efd22095b6bb",
+        "b5635b2558863e65cbb30acb9bd943f030e522bf",
+        "9011ea690eea966f69de037aedfda181100c8c36",
+        "9781b47e4b3e66373c26923731a55a58890d08e8",
+        "ddd02566272ebf597d8fc6bba32e3f6bca3d6a7a",
+        "d9414bad68ff452f9143d8a06a3043cfbe4329f2",
+        "b484a0cd4a8b741a0bb0f70a49f69b8203c67fed"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-20-37-00/full_images.png",
+          "size": 220476,
+          "git_blob": "b3b6056562d70c79a6bc6494ab2c4a8ef98ca7e7"
+        },
+        {
+          "path": "dataset/2026-04-25-20-37-00/info.json",
+          "size": 200,
+          "git_blob": "0458c3600e18cf5246398aff7612119b4c50800d"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-21-45-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "bd52a28af1fa11e5008786493352d72e5b4f6486",
+        "251d7b5c33219bda94d3321f5077972f0f8f8761",
+        "eb98f8cc0118732652beedea596da1803b30d96e",
+        "143026cad8a142b6a72282b958b47d79d87925e1",
+        "b434eb480c015068f193aa9bd2c32dcd42fa179f",
+        "d0a0c646a698baecceb8a40d5e8fe0830983e0f8",
+        "ff5abf35d740fb779fc8d8bda080344b262dde73",
+        "33eb4a4418649de560936e3b61653e303f4ccfb1",
+        "e92352af772189bd2473d5b15c6fde505cf4c9cd",
+        "2e5ea0677a4840c4a1e7d65a64c39bd4a2d1b34f",
+        "d75a9c30063941361855661abd78cb65554a1e22",
+        "438031ac065c1bbe4f5dee91a48197343464a810",
+        "cd1edaea761e058fb7138c1d690602db29ed5bb1",
+        "f3d466bc0d779035dfb4fac2ee5e26610d00d5c4",
+        "85c075745b3ed6b08e67f43fbbc8e891f021dfc9",
+        "c6c1da516f6d84c1c9916666b6d558d2564098d9"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-21-45-00/full_images.png",
+          "size": 405564,
+          "git_blob": "39edba87ab0f955538490d6a901bb1b4c0d4f73a"
+        },
+        {
+          "path": "dataset/2026-04-25-21-45-00/info.json",
+          "size": 183,
+          "git_blob": "96696134e207f97f21b716b3f7793a40324ab3ae"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-00-22-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "db00420c8ecdd17b5000c4d6e2f5e567c2f10adf",
+        "1bd0af5d13144090ea1816cc48aa7d84189942d5",
+        "4aa4d8391ea0201fb36b152dcc96d1b60780d48d",
+        "1565b830986701b76e4fee72b2caa2c6f1d504d1",
+        "134db7f09104ad6be21c78fd754147b6738e2b23",
+        "f2056b9445466de0d61e2737634f085860f4524f",
+        "63213c6030b3adf74fb8d37e2e435ec2bcbc1eed",
+        "835d97c50eb899604139710b79f5b0207929f314",
+        "38509c33af62a17b656ce4afd62cad8e0c1c8286",
+        "7d3d2a048b377132ddc87ac7a3927e15b05f6d9e",
+        "cc4a4e081c2e71686edfbd082e239455579827b6",
+        "4243f63e2605b75524cf6d66cf83ba099ef4d853",
+        "5a9088dd245b77c858c51cb0481ae89d67f46cc1",
+        "78fb70d47d8322b13400b557a562275e8d8bb141",
+        "83f83e3a77f39d0bbf3ca56b4cb70127702497d2",
+        "fff0c1540df171bb52bee5c415cbda355620722f"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-00-22-00/full_images.png",
+          "size": 297695,
+          "git_blob": "ee23d0e093e7706ac698e5cb1b8502756c73ece9"
+        },
+        {
+          "path": "dataset/2026-04-26-00-22-00/info.json",
+          "size": 196,
+          "git_blob": "31e2365ac0993124cc67482077467ac601f7b754"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-00-44-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "7ef6d05c1d13ca9d1bfc7d16d8eebe3489a961c1",
+        "036baa0995f61dcde4568bdbd474c036e81ed432",
+        "46d931aa017d8a9eefb43153c17a0d54d8c6d36c",
+        "87ed87c7a01becefb389a0734b1eab997b944399",
+        "9dff2cd6274599163545fff27815f4aa9a94bc7d",
+        "00f1d722b136a4cdd311b40d6ac9045cae4cdba4",
+        "7487f4845bc41eb68175d8dbe87fadb31dcbe8d8",
+        "1183d94b432e45eccb73297b7710a56f247122ad",
+        "f05fe69e357ad159ed1eccf72d81b1c9d8c9f506"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-00-44-00/full_images.png",
+          "size": 238669,
+          "git_blob": "3b533a8262a57ca2d7000d2bc075ecf18a7642b0"
+        },
+        {
+          "path": "dataset/2026-04-26-00-44-00/info.json",
+          "size": 180,
+          "git_blob": "48cd469a2fba6f77392d1470714f2efff3750c2a"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-00-53-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "6648ba10d7d1a7945bd70cf9815159e7777ed684",
+        "9b0e13cae7491366b66083ad4652e770b6f76b76",
+        "5a1fdcb4481c4a0ca37e095665bb3775bbe1a9a4",
+        "5293c44bee41d0764ccad86eebbb04278c0381ff",
+        "d3749ad0178947994b3234dd755c62423ab56eb7",
+        "652a2b0cd02d7d1497cfcd71b7f5ad351a8effaf",
+        "6dab5310f1a8d296b1392bfc9e39fc3202ca563e",
+        "a9cd46afec5a51e8ac49d0d623de65c510a0333c",
+        "05b3031bdad6dd6095f2415b3197174f1aad857e",
+        "9f2de86333000153cfa8aefcccbdd2767405d196",
+        "5266d1763127f0cde2e1e228409cf7c9dd334eb5",
+        "55a84c9a6b09c620eca7a0546adee46afd0c623c",
+        "ac944d169c16e891ca2d23771e4cbccf5e51429c",
+        "988ac0193600da7c323c124cf1f4e0eb5b5b2697",
+        "bcf18f913587eb6de48f12f35db7d266bb9d69a6",
+        "b7fdef2443fff6a80e3410b52a9d429b9b6bd8b3"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-00-53-00/full_images.png",
+          "size": 418845,
+          "git_blob": "4cb8bad067bc28584285c9d255a230a95bdb5505"
+        },
+        {
+          "path": "dataset/2026-04-26-00-53-00/info.json",
+          "size": 222,
+          "git_blob": "6ad6b4bb179f322eefdee2c263ce93cf0bb9e6c2"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-02-47-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "43542622184e3af9afbeb740f7b907284f7bce2f",
+        "8fa956d473e60ee9294a5a15133763b7799f66b8",
+        "db5e19e4b3e4d47e9fe13f74879b877b445e7f83",
+        "a69d58d3957df74ce6f005b08b1d63efc9f1e0a1",
+        "0969f0029c98dcb39873f975305f46a43a39f5f8",
+        "2d510dfcf4bef07d41303768c5f0c1e41fa12e68",
+        "8e1f3bdeb7e3f34e873d33b584d09d3e44b65172",
+        "5d019599b3a51303534ae31d3b571c412d642197",
+        "9b4b33a0980fb9cf7efa786e680910449f074449"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-02-47-00/full_images.png",
+          "size": 221195,
+          "git_blob": "7677a4ba9554bad10f6de81057a51b8f06e5703a"
+        },
+        {
+          "path": "dataset/2026-04-26-02-47-00/info.json",
+          "size": 172,
+          "git_blob": "145420a173b8dc9de98bdbc0f0793c6066a0f4e8"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-03-21-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "6a7ade2da4c485d73ab5756c336b050d2e35918d",
+        "7e5668a824cb951a88bfe1bdef000c3f7dfc5fba",
+        "20bc8733ce044c77f6c375eea38593a8cd230bcb",
+        "f7d75c01954cedc33ec0cd765eb0394a0e9d0c3f",
+        "9d653f9a2e9f72d84efc3dadc34a1507951b23a7",
+        "35fcff532a18c4a4656b2024b2f82bc0155e112e",
+        "11d8447f2d32961820a93edc6c524a76ec36d185",
+        "36cce9647b34dc3a6deccfda822a06a18c837bcd",
+        "e884218f47e29e12b5f4b4a3e0395d459f24bb3c",
+        "10ce1107b47a35a208d3a1c71a9cbf44a6d665c9",
+        "8409bed34546fe194c37f58a16b70b38ad015a07",
+        "d4ab55784efc7540bc6cc7052458492c9c1199bd",
+        "4e1105bfd7b5d4fc42ca9fe5ea19adad7d0ee49f",
+        "22a20508ae42b8b0c1b0c09d2cfe29c5865be9aa",
+        "4e22965164ac883c0dc548f47a49d297ad0b7fe6",
+        "3b8b12a2872cf2668e6d75a54472628f4d0e15ce"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-03-21-00/full_images.png",
+          "size": 358878,
+          "git_blob": "1a0cc7ee315e1a06470f28eee1c4a939dab03169"
+        },
+        {
+          "path": "dataset/2026-04-26-03-21-00/info.json",
+          "size": 165,
+          "git_blob": "4337904d44ca45506ed1977756747d3d4ceb129e"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-03-24-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "a32f91bec61fa2b63fadb4b40bf3435b31adbfb6",
+        "d7ebf5f7a3dbf5f641debfefe2b2d21d677afba8",
+        "c16ba793c0702987d31b07ebb548829e6e907aa6",
+        "e7f024dd87b1cd89e13b382b0d8cd889f469c446",
+        "93ce08390075981a4d9a375f59410c1f95867ca6",
+        "2797935fb51eaa5de97ac0b6f31588704c02b166",
+        "2a203a4cd655c13fe434893bfc29bf71c0c6d8b8",
+        "dfe75db247b1e00c640ecb5c897f0bfe20993a75",
+        "83207e6a44c838ac7251928a1c79d63df4c0c3c0"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-03-24-00/full_images.png",
+          "size": 194338,
+          "git_blob": "b822552081c406fe0d2e7438e91b4977d74c8119"
+        },
+        {
+          "path": "dataset/2026-04-26-03-24-00/info.json",
+          "size": 160,
+          "git_blob": "3d98f253f6bdbc90e6aa94393912cca1033161ab"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-03-49-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "4eb74d355b783db4e486a9dfd79b149269200427",
+        "3a0dcfd32423df2eadce674108f59262823dabb9",
+        "2ad76255256eb62810166f268b2046c5598736cc",
+        "2dc2f13273bcc88ad203c84da954abf6a5320fa5",
+        "e265513449efb6d9ac693f9f81edbadbeb572f09",
+        "72fd957bf74583792b903d1f3866771227b22023",
+        "0031a2c56a9baaa582a92be55bc36c4d80c87650",
+        "8a4aaf0d06e2d0ef10b65cff303c4355b4d84f7c",
+        "6c654283444851edeecea0b200a42d946762dd05"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-03-49-00/full_images.png",
+          "size": 250760,
+          "git_blob": "91d15d49bc46b711bf4f055c2b0ee03b45e94294"
+        },
+        {
+          "path": "dataset/2026-04-26-03-49-00/info.json",
+          "size": 160,
+          "git_blob": "2c26bedf78fc86b64a40b724a9876d5b8e7773ea"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-04-00-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "3671ae296d63883865c0178db8aa63b11fedaf94",
+        "a355373aa950e4e8d5e75c0b3f6beba3c12c9c25",
+        "4003c23a5eec6ad142b35ec43e6f1b80286bdb70",
+        "64d7c57fae1ccea7494d35c48ddb5e892ab2f365",
+        "e5f5d9d3b1e6f2af8cb7c92647cfc2857d297971",
+        "433d9402da56706e3af726e84feaf4d7c82964ef",
+        "3a5553bad52811f7b10d8a9efe2820f350511730",
+        "8f77bb840a07a737d4562266c62b283ef1fdebd2",
+        "eda014e49b7718cc2f8bf450e61dafd74717fda2"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-04-00-00/full_images.png",
+          "size": 220413,
+          "git_blob": "e97cfa704e3f83f21f1c6cb79d5aad5918d08c12"
+        },
+        {
+          "path": "dataset/2026-04-26-04-00-00/info.json",
+          "size": 180,
+          "git_blob": "d7c816070c43da6fb186d44ccac7bf6775673290"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-04-10-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "2a710c632970ad07a22ef9b4fdf2c831fa603fd8",
+        "30c14ed0d5dcafbae520eb0928f8bbe1fbafd63d",
+        "2547cfdec62a9f5edbcd7638c353b0b68c5a56d7",
+        "42a7115beb16c217e7ae5c385d436abf000941ae",
+        "e1c7a966d28cf88683f4d4383ac074518800f1d1",
+        "3ce80b4c6d43aa846b0910d22da6b8d7e3cf686f",
+        "693901931ebf27981c8d39041060ddf62764dcd5",
+        "6646c9cf41e8791c8aeae48d9cd9980730f20bae",
+        "0e4d76e6a6fd4d90d08eb748c1dc314554973e22"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-04-10-00/full_images.png",
+          "size": 216402,
+          "git_blob": "eef792534977d7e31070f24dcd75b4ce87694fe1"
+        },
+        {
+          "path": "dataset/2026-04-26-04-10-00/info.json",
+          "size": 180,
+          "git_blob": "2423b5623e1e61514bb4cc297caf1e2e959ec9a8"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-04-16-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "925e116025b60a16beaaf4029e8ce3799e1b19d8",
+        "51bd2d7b423782131f43c24ee0e6487b354db98b",
+        "dbdb7b165f4256e13f658a8ede8f63cda114b487",
+        "ee91cdc08541834497a5d511afdecc5f2e156859",
+        "2aa008673f66f88641d4fd9e8ea4b1d9d1efb166",
+        "ca323a86d3dd44cd86b0a868a72ab5c70cf939c5",
+        "d6a4b78a93966446dadf10dc3d335d6f37ecf1b6",
+        "da733cafdf15f9eb16434b4324d4b7eeaf3a17b3",
+        "24df9e8f8a681d2eed32c8647c2b9d2190ec0846",
+        "bb3241f22fe7119dea8aa83b691dbd925e742c8c",
+        "e5269fdec763fd8f4af37b8f5e243c274daa5acf",
+        "aabbb90704484fa09cea8c2e316db85f9d7b8370",
+        "fd57bc7a74f80066b4f2fb666462397317aef193",
+        "a8c16eb747ed91bfb25f638759e42303e6914a8f",
+        "643055e8f983e154175b1c9679c5cf020c09daca",
+        "cce4feb52bd159e5fc2c24a3325841f7d28ae640"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-04-16-00/full_images.png",
+          "size": 265560,
+          "git_blob": "4db413b16810d43e6ad56de5043f09449e8920f2"
+        },
+        {
+          "path": "dataset/2026-04-26-04-16-00/info.json",
+          "size": 195,
+          "git_blob": "d4d1665d709b2acaf510d541958403a481f99cdb"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-04-50-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "bbf755e8f05a4af529fc4824e63af72ae92532cb",
+        "521919f8a7c2ec6b1c3feef8cff463783fe9ec95",
+        "8ee76324fdd21e0ea1019228e736131800717143",
+        "7256cad2258be03f89fa871b16c0e1fea1b93781",
+        "5e575c544635ff7f8f18d4c0aa4618be6fdbe0fe",
+        "617e4f2916d6d3509da285ce8f747a791348d2d4",
+        "ee96ca5af0d2e3814e29ca20f13234565ec5cc15",
+        "61bdfb168b2aa3462a85c6bb49d0bc23cfbaf4f5",
+        "c67769792e7ccd43d584c324822328521cab1937"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-04-50-00/full_images.png",
+          "size": 202776,
+          "git_blob": "88ef55363f955a4ed48bf5710c82ea109e28ba4b"
+        },
+        {
+          "path": "dataset/2026-04-26-04-50-00/info.json",
+          "size": 180,
+          "git_blob": "4e6a16ef405ee9e0fcc0e6261cb4c39e2718dbc3"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-05-00-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "11e4c15418f6d42640479af73e139d230920b4f3",
+        "e7310edf503d4fb9ee34e82df98df6cfd21e965f",
+        "34b6e4ba3fb755d05192750badb4adb5abff2d07",
+        "fc4337c9cb7d13b89224d542b7e83dc15bf85cb4",
+        "7c02b356469cb581b7694dae5e4c656d09f169f7",
+        "5e7f067d11dda045e6c4dc3bcc56c39bd6ab56ef",
+        "ef0da1a095e2a076e5a729738988ab5c07353e84",
+        "6e24daca8c52c7be8d0fe989cc0c877ccb81fda0",
+        "2e2eb390a0d6a32c7bcfb08637681c2775180121",
+        "d5b51bcd7ded094db6421a384ce1b80ddcbf8e5e",
+        "6ecf4b2c5f18e9db9bf1f01ae674ee17f2dbc992",
+        "4a4d7dfec36c2f1a0667a6c976066fb6b85306aa",
+        "d4126c240cbedb8dc20d8f00776f3579cb74aa04",
+        "5f8a0e8c31dd48a67dc7846d4ecb660b77d601b0",
+        "3f3db59a1a2798f84d8ce7350a19277f34c5e152",
+        "9f2cd69478214fc1237c645c1ab6ef7f7b9ab03a"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-05-00-00/full_images.png",
+          "size": 425766,
+          "git_blob": "bb655a10049368072d8f230a3ea1aaf4a24087c7"
+        },
+        {
+          "path": "dataset/2026-04-26-05-00-00/info.json",
+          "size": 137,
+          "git_blob": "73200d56bb2cc335fa31d01a835f3a1ba6adb323"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-05-06-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "2d6d2110118715d4675d0bcf8cc9e6c6f87b3911",
+        "36e984963258486e217b0ec58282331d5c6dbac7",
+        "ad4630721d53b032b6a045d5f6d93d29e7c257e4",
+        "e1131d7abfefaa9d157c466afcd5b834ee058006",
+        "9f2427d35087769e052883a9ca0f1ebb5eff48c4",
+        "843fdffabfcad830cce2aea2aa6e7c9ca241710d",
+        "3965b7a17740281e04e711df0926a65b7629ea8f",
+        "cb50d63dd11c6622770693c16c5c162eadd274b6",
+        "eaa0f90aaa1cd543a35fb0749a90424ee5a3f554",
+        "c0890137f5a52356b0879fbe40d80be84d238a20",
+        "ec2de1fcc8b11d48aa0af5639ac75e2e88bc8e58",
+        "080586d40c40196e7e46624396e38e41cea82541",
+        "d1b781fb1f5b9f1fe7d5a07d859e4f357cbad883",
+        "334472d07d75cb7c05be5eadeab167f06ddfaea9",
+        "1733c154e9b706f501b2fc8c06d0b5c69615ce90",
+        "e3173f87b9955a12db28fe17939147bb59fcca0c"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-05-06-00/full_images.png",
+          "size": 395863,
+          "git_blob": "3d8e5aaacc6751c4c80a871eb119dcb334b5a809"
+        },
+        {
+          "path": "dataset/2026-04-26-05-06-00/info.json",
+          "size": 162,
+          "git_blob": "e9651568ace726292a5de832796bea0459e6bd37"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-05-18-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "de91d39d4396d02cd2c96401306adda0a6d0cef3",
+        "b76106a7d28f82767b44422b565b0096b9b578e1",
+        "7db686620a77a62fd8f2697ed336f264d761812a",
+        "3a101aadc30fa04373fe1170a8e78eda3ae6a921",
+        "9d353b3006fd793d129e7ddded17e664148a3b2b",
+        "da997961933bcc584e2a84e9b663a687f080f4ac",
+        "845eb487574f89bafc52e0617fe6eb333c4ee261",
+        "d428874d6c3df84d8f1b1b46afd1fe32399e1c97",
+        "7341d2caca7b392aac0fb0d96edfdebb66f34f74"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-05-18-00/full_images.png",
+          "size": 213353,
+          "git_blob": "c6c8a0be0fb58db565ae6c4350b73cdf8fb8af14"
+        },
+        {
+          "path": "dataset/2026-04-26-05-18-00/info.json",
+          "size": 172,
+          "git_blob": "733ed1a6d7d2c500261699be7012fb724635bd14"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-02-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "c5b56e6d654a0f2097ace2ea804acbe129849065",
+        "1925bab63be1444770ba6568dd41e08bfa6fdd67",
+        "df7d1ed28bdf480952beb92b311f9a9f97a86911",
+        "b6f853045991fe6446aa0f9ae3f6501229c1d714",
+        "f96f2a191e25b4edc88c9731ff689ebb3d76a05d",
+        "c390586f377d9232f1cd2643a38931c5158f704a",
+        "377869b9ac0285f26b1f32428d9e97551321b095",
+        "4e57808a5bfbd7fd8aa051339cef387b6b74698e",
+        "7a2b8cefe38df123ef31a66b6056778638b23d37"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-02-00/full_images.png",
+          "size": 210761,
+          "git_blob": "59af910fe6256ae3e319d71bcf684fd5bcf93b78"
+        },
+        {
+          "path": "dataset/2026-04-26-06-02-00/info.json",
+          "size": 172,
+          "git_blob": "85a0fb68c204e6b68c6559824331047061d5f718"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-40-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "b373c878672a84735850601a937544f6439c052a",
+        "3d4c64be52dbe520bdb3a5b25ed02d184b35eaf4",
+        "70fcf6667086d0edbdf697f68c52f3f56fbffcd9",
+        "237aa1ccb6f42aaf0a53086655e1e9848372f38d",
+        "668635dee4b8565470fbc15d6bc74ab61cdc683e",
+        "6d6bb4947abef3c2bd407279831a8aadcf0fc7ed",
+        "483bf251904741674561140c1768b087c6b97cc0",
+        "ac113be06665155c0e9b243a4b7921451f1cc430",
+        "1abd0db56a88f62a3da770961344edbf0328a3b9"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-40-00/full_images.png",
+          "size": 215512,
+          "git_blob": "eee8099193e9071ea91be6c54cf26af5336b2999"
+        },
+        {
+          "path": "dataset/2026-04-26-06-40-00/info.json",
+          "size": 167,
+          "git_blob": "0a810731c7d32088efde464d76c272b9407dc774"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-43-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "463ce7cd043f288197e482f768e67fe598c50896",
+        "0ffa814a7d6e1ba2669646580810a26f1211d5d4",
+        "67a5454861f38e4eea953f6b499dc2fffe553f07",
+        "d8566ce2fa60a1e5f95e35c9798c5f89182fe618",
+        "5a3305c570c2dab08a8a233a1d83da9d69fde220",
+        "c3124b671f1cb53af3e07061c101150b523c669e",
+        "de2c9edbddb9d926601c0aabc5a9f0e3f2f8d0e9",
+        "44d906245feb550f739f3eeaa3e5461fc2c9b23f",
+        "775c1b305f247fed8f28a63f01faa9b45781f7d6"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-43-00/full_images.png",
+          "size": 216498,
+          "git_blob": "ca6417f85245be2e7fb9306bcb7ab4c0bae776f7"
+        },
+        {
+          "path": "dataset/2026-04-26-06-43-00/info.json",
+          "size": 180,
+          "git_blob": "5c7c04307c93cd712a072f466a7f445d9971eb41"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-47-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "6602e0c263a24ea16344a2d411170f71e3af056e",
+        "85a1fc7a145d54153b72f64a2befd8cf7f03e8b5",
+        "7b9cec33d9b7661c4efcc49fa829b75bd5f6c662",
+        "11737f67ac9802b0b1caaf4b617d42dad62e1d72",
+        "9f3e8c6944b8c52e5ae0e4550a87758ccdbbcbcf",
+        "360869f371eed97170e07235a81f287d4b1ddd89",
+        "75e2dd9f2018bc4dd57e293d5f0db4b4c9e7bd0f",
+        "8faffa47a4a74ca46d2a9810a15072f183d5f3c8",
+        "dcbed28e767272a8d42a5a10d23bf03fc7c5ecda"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-47-00/full_images.png",
+          "size": 223199,
+          "git_blob": "69e0f98d6b3333ec6a27178509446c6542cadc63"
+        },
+        {
+          "path": "dataset/2026-04-26-06-47-00/info.json",
+          "size": 180,
+          "git_blob": "19d4d67395d92fbb4c0e0bea1af8b11262ffce01"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-57-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "4659aab34db28b43677e4d549ac412f79ab4ccf1",
+        "57986befd0446a28bc91bb531c23539447ff971c",
+        "39ed8816712d7e16c85bac250a12e6042487b519",
+        "57eb09ea59850ce41881e95ba98b759b06ee5ec9",
+        "52f09b305add9bbe81dae96c3b729502aa6925e3",
+        "5f5b4a83d4f8e1bd867217a50195940527260fe1",
+        "4815482827d46ab9391e860e16cfb7af13d6cc04",
+        "9c5f8ce5e7b7a3c7f53b4e6b388d6a7493857c0b",
+        "1d15e001afe58f38de2e85a11898351b1c42e985",
+        "5ee978144270b269b4f491a66ccfb8c25f4698a1",
+        "08924cd3a4af137cab0f03688de5f556cb1a2292",
+        "f28e14f1872918b0d05d8af1a9e6ac1989dbb65b",
+        "7228565626b7adc80fb721c1d4e49ab355944c08",
+        "146e94c83cb92763ed36e2ae90991525cdcdaa24",
+        "00f946280381e76d0b51ef3b59edeadb256c2b58",
+        "275c2526dcd6efbd2b4194b39fb6ee8564e83ac1"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-57-00/full_images.png",
+          "size": 334683,
+          "git_blob": "25757946dd648e19f0604e3ef497afc538646f11"
+        },
+        {
+          "path": "dataset/2026-04-26-06-57-00/info.json",
+          "size": 173,
+          "git_blob": "0cb4acafbbf15ed816e828fc03cabcdfbdaf85a6"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-01-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "f84fe0c723c064fa8aabb6265f16c4f76259bc2d",
+        "28d8a56b69c38c1f28a3a4f41b56689689cb04f9",
+        "52b752ff7d4b27e2b226eca818765ddbb7d427e5",
+        "0b50dd04045958e7bac4bdec0adcc5646255fdc5",
+        "358cced766b29cfe0f2f5e02ca6acb5aec30b87f",
+        "a70e729e2acd4ade016a060780dc025462b6b250",
+        "be4f4ba2f3f8dfb4e2a0e34c38c0a982f8ff9049",
+        "7cdc7eb31e1df8513a1ca35123bb1bd4406749a5",
+        "6a73f4d19cfb1365b4197a1b51320e9eba0e68c9",
+        "db962db1c6f416ff191f85ccf662d813dfe52493",
+        "c19f79dfcbac85a5114997e2be19e65291aa06f0",
+        "3541dfdb3a6431b4eddc02354357d47a4a9e9f45",
+        "edd41bcf478db038e58a189273dddaf62efbdd7e",
+        "540be1f80e7e16eea1f17de3e706550ac914f70f",
+        "3232f28e285163d8a6334878a677b6a4b18093c1",
+        "5038099cc61db6da0e4f5cc37f4a1e05555a803e"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-01-00/full_images.png",
+          "size": 301350,
+          "git_blob": "9ae4d9d1d8def05c7bfddc0270a2d569d3068a6a"
+        },
+        {
+          "path": "dataset/2026-04-26-08-01-00/info.json",
+          "size": 181,
+          "git_blob": "3e8987f8b0d29d987c1cfb9163cb3c46d56f9c17"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-07-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "de84efce40470cccb17e98b43413b251c7de3950",
+        "70a47560af24874af9ae06d570dad6d8b623165c",
+        "58c08508fca1a3ef2f268377f7ec44d68ad92490",
+        "e8a736ff0e708ed53dbd055ac67e3e904f676e71",
+        "cee572e765aea9131b80ce609b982f72a111d2d0",
+        "d3fa9eb1ba19c192647ea69ef142409b648d9054",
+        "5372facdcb8f814b5c3ccfe8c3c3992294c4fb86",
+        "04ef8c2c2a1d636766d3995bf87debe842d68374",
+        "b4340b816de2b4f0f0659237ed85bf7233af25cf",
+        "fe2c322faa60adc8d27b10b7a72a98071045a08e",
+        "a29df0380b8687ee96115db7256519678be58ddb",
+        "3736a2ff93c17978ad80e79adfdf4faad7d50c6b",
+        "b623526d968eb4f2f24d46d2469b31b3b0ad3a44",
+        "4553e1e002abee198d9490e8aca51bbfbc1fc569",
+        "cf696cabdc1caad1cbf5b42361b0c219cd90a391",
+        "e198c64ade3b1d18e80cacf63d1a70e1fb502c30"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-07-00/full_images.png",
+          "size": 381492,
+          "git_blob": "78a783ecc74f5f1a90069fdc724359e5189c7cad"
+        },
+        {
+          "path": "dataset/2026-04-26-08-07-00/info.json",
+          "size": 214,
+          "git_blob": "8a9579c7ed967cd62a7220015d8bc9486e11f462"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-10-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "08d6b51db22a007d3b5df47547884f2a5947dab5",
+        "a0624ecf8552efefc47dcb251407c6cb9703e31b",
+        "6b70426166a812c1dd20307997cc56d9d3c4870e",
+        "884474afc4ef5a7a7e0f6f6646afe7446124a86f",
+        "c0f5318f4e8ed9b32e78d08942518d85c3754f5d",
+        "827eda88f636d402dc0afddc4a872177f7ee4487",
+        "a660401d145ddddccabb95c39d15e301c12290d8",
+        "05d803641226077c4e653deaa9f760b8dbe84bb4",
+        "f5fcafb43ceff1404c9c6aeab434a8ae0b76b563",
+        "f44b9287e43137a03994dbb6cf5ae31670ec7139",
+        "4b8823abb04c7d310e9339a7dcfd08b581e4ea95",
+        "c43a992a1bf40cecc6d8e137ba49a7ec2ef0d109",
+        "943430767c2ecef06fe1df5a0ffab6a82019b847",
+        "a2d208fc32740811d504baf7148345b34d9ee511",
+        "d962a8d4f805dce0cc9af040e9e3229f1052e474",
+        "75491177d4120c7a3dd5808720198334a05c5ca5"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-10-00/full_images.png",
+          "size": 330943,
+          "git_blob": "8df34de120dd88daac49b8655edb25285de6d6db"
+        },
+        {
+          "path": "dataset/2026-04-26-08-10-00/info.json",
+          "size": 168,
+          "git_blob": "e1ffb8e3e2a8983f884c75e13ee87e3e13838663"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-56-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "37ed4424fd97585d9f6c27dbf78cf5e2a7131781",
+        "27b990ddb5e7153c1660d50e353e0f793f871818",
+        "852194b974a0662a6bfed998be55d977f0f9003b",
+        "116c74afde3421a5cb1de7272885c1faed2d1f73",
+        "2409ac5dce22f2d3a03d25311f0808c35d268fb6",
+        "40d951e7b7c91e62f204caf7ad6bfb81721e733c",
+        "73e2536d4c968feea53cd264a92295ccd33fe223",
+        "f50e40cf2baf9b150af88cce66de972c2ee62e96",
+        "dba9c614b1b562f557bdf7e99c6811eee58f0b2b"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-56-00/full_images.png",
+          "size": 219759,
+          "git_blob": "c27652b208dfc6ef8613c27411c918f7a1f72f80"
+        },
+        {
+          "path": "dataset/2026-04-26-08-56-00/info.json",
+          "size": 167,
+          "git_blob": "88ede0ab4d4b821473e84f69cd401ed5576649ba"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-09-16-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "cff490173c89ad21826029caf33c85340036bb7e",
+        "7ba026fbe2522eff0d552177f06b878e5965d0e0",
+        "407bf4e288360af4989baf16cca24fe0c2730175",
+        "45a5ec841ab43abbac24fdd921111258d9dbcf3f",
+        "a06bcc55281bbbdecb6302ac4c532ec54d01d419",
+        "9ebcbf8e5575f9d79320d0e7b0f40867de37be7a",
+        "77c9625001c37128328749d2dda9b483025631c7",
+        "8a776bbc39b6e879c8d30065d723624efb81858e",
+        "54effc33c6ea88e224bd1833f8d1c99d23c80c8e",
+        "f7ff250021f1ca1f667e9e4e9eff0efc5a04df39",
+        "090752fd9d8193fb8fbd722aab6af55cb69cbc10",
+        "df9d787e14b4c65c6bf11e97014224b6409ae87f",
+        "e305c3fae8affeea1e41b9d1d74dd287f8a0ce37",
+        "fc0c4544f0eaa22603d62a8395b30613e36f6df6",
+        "675bb9f526b14551ed84821749916ac99bbf7534",
+        "441a6633fed0d7f2a7492f5a06ea06f6ba8ab6af"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-09-16-00/full_images.png",
+          "size": 469365,
+          "git_blob": "11905ecb4cf9c581895f20881de804ea2e6e80e7"
+        },
+        {
+          "path": "dataset/2026-04-26-09-16-00/info.json",
+          "size": 143,
+          "git_blob": "222582fa8b2d2f2b95f582e8c1fb6a992c2f6501"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-09-17-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "09a3894376f67d40829630a35f99526c561374c7",
+        "8182425dc7f5ac2aea050a150ecbbb985278eca0",
+        "5743750a42cecab76a3fd2fce2f3cda19e78d6e3",
+        "67252ca1986bf7380df821aa9266417568619163",
+        "c820a4b86e5f456b878b8fafc8a8caa625586716",
+        "b49ed57f920b9b7212b32ae86b6c49379f27c174",
+        "f8a60a58c52b0fa531c346350fd8e01f82e272db",
+        "531349b60fa93b2b1147f675dd8df3772ee62ced",
+        "d405c35bd4e584131905f77f97fee239954ebde9"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-09-17-00/full_images.png",
+          "size": 245000,
+          "git_blob": "e3a569ccb9458c0a6bdae670b70e19eefaee4e1a"
+        },
+        {
+          "path": "dataset/2026-04-26-09-17-00/info.json",
+          "size": 159,
+          "git_blob": "0b3862721dad260ca2297a07a28650634a5d0289"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-09-33-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "03b701115fde86cd43e21ca6a5ab06129b3e4151",
+        "959c33e9fe70c6bea39048048031a1feb6a477fe",
+        "3150deae45d6f1c8a7492da8f5ae4f753af46231",
+        "0b8076dcbeb87c9886a56b3c860a9720920f36ec",
+        "6b756cb0e23679a8dde975bb53103fc4f6185ffb",
+        "d301a38f295622de9524ee018987816924526cdd",
+        "445f8bbddddcbb08deb7ed64876cef6e0aed409f",
+        "118be448d8fe5fb0352907f583a3ffb0c7f22eed",
+        "83ac34e053459c723378039ed8200597911b23dd",
+        "b65f6071d75a8a13e783e366e1cab490cb0f9687",
+        "41aab31a73216bb613039c7ff71f52babe66e187",
+        "f9c2aa97486c4840f816f2a4ffa3e6e657b4d83c",
+        "ec562c5f4ef1e079548086ccff0a5ce5bdd3123d",
+        "1fc8a6f666faab4dcf7a573a30a6ddd4d8a037ba",
+        "493d7927798ca1c4c7d1ec92a441cd45b8831232",
+        "0cc135e284b5cd44d8b1ef6bfd58d90d22b1668d"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-09-33-00/full_images.png",
+          "size": 415107,
+          "git_blob": "38076e76a555717f7ddab3f752a9b0ff6073b202"
+        },
+        {
+          "path": "dataset/2026-04-26-09-33-00/info.json",
+          "size": 175,
+          "git_blob": "66dac32192b914da0b5e4e4f8f1da34b8c4afb46"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-09-41-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "8a8e8c4a7190b62edfa19ce1daa12bbcede4f87d",
+        "9e13b740077ae8c2f3f5dfa04db4fb0d1c8b6eab",
+        "680115b7b61993adba8cab00aa9e505bcc111dc9",
+        "feeef3189892b0e85a0a88011a3d257b5688baf7",
+        "f7a2ff1d5326708876240c4691ffb205547f1038",
+        "c3bb0b64fb16fca8660e1aab4804478af74e9f3a",
+        "d9e94f37f576a2eb9d9e8983eb7119bf566ea8a4",
+        "dcc2f420420234bc058bdef884eb610768ec734f",
+        "673c08c9f88ccdaa9fb587f22a3c9bb2ac132192"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-09-41-00/full_images.png",
+          "size": 258041,
+          "git_blob": "d98c1f9f12b7ca8d43a3eea7671104e332a4acc1"
+        },
+        {
+          "path": "dataset/2026-04-26-09-41-00/info.json",
+          "size": 160,
+          "git_blob": "29afd87f53947e296670c0fc2e5dc38d3332b9bc"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-14-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "a052e7b781100be3ae5e6d824d743e807c525a88",
+        "de70beaf4c8284aea48163a43cf7b68d1a90e56f",
+        "3513b9f721ce5a6a239e865a1b000faaa068a5bd",
+        "52c05d26b53d1ebec80b7c51badc47ef87036ff5",
+        "6b3dbe7f5e1e95c6adf97c9f9602a8375d8fe098",
+        "de20af83aa272843a371929ce35b1327458569c8",
+        "6e564c28d92d038cb1afafa36a8551f8323fbbdd",
+        "f5f4d1991d712fefc0ccbf07eeba31ae1dc101ab",
+        "e14e61ca1d52f4b655d6c5017d6b5fbdf66a1aa3"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-14-00/full_images.png",
+          "size": 246896,
+          "git_blob": "0628c3f346fafeff597298c44137c3812d87fdb0"
+        },
+        {
+          "path": "dataset/2026-04-26-11-14-00/info.json",
+          "size": 159,
+          "git_blob": "9f682789ef2b215a294b2e6d5164ff9755c1b71b"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-32-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "cd27c252bf203884b44dffa3e34602efd10159f3",
+        "576b3116a66486fe012d34a467fcb39255f6b899",
+        "56706a6e35bb83e5316ca035d2f5046f91298baa",
+        "6db3619ec68513b64d68b75f6b466427f53737f5",
+        "8545ed88e13d582a024b5d8962b482e31789cfe4",
+        "690d5dc9038beab36e03e8e0ef6e6b2669165ff6",
+        "ae5471db7624cb6b75d2cd50c935a1f71b500249",
+        "2d35f5e5a7996893ba37c03fde3a8b48e8ebe6b6",
+        "8023a9a7f1def2d6c0b98027d68da2bcb0d84cfa"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-32-00/full_images.png",
+          "size": 221252,
+          "git_blob": "f6f0323654527e98475fa63fba79bfbace828985"
+        },
+        {
+          "path": "dataset/2026-04-26-11-32-00/info.json",
+          "size": 172,
+          "git_blob": "280a5df67bb817eeea332f77007b96e85185e93b"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-38-00",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "22f7e7224360ffc745059cc5cd088a5509b719a0",
+        "37c3f38a31b77cbfe9d35de8b2c4f5e2e57eaf26",
+        "338ae0eee552b285301caf48ca40cd5f5f03d6db",
+        "a6550a92a0e63339a486d4d01f5ef4d84fdb6551",
+        "7ed7d788a8744843cd7ca24d63d336ad4dc9a5b0",
+        "c0aef05180d45ac9fb3d367bd9ff3c07b5d25f92",
+        "3f05d0ffa673ceed49acd3d79929a5a30532020d",
+        "c285cdd1d634b7e571dbd48dbd537fec5c826724",
+        "d0e3780a47d74256e97ac890c62d27e9257ada20",
+        "40253c78f04beea02371c7290c9a87db2625848f",
+        "62f99f9e851e6f5926235370c8ce6571e71343c1",
+        "5b30cc9bab87486e9a4b9293009d6858ae1318d2",
+        "16dffc913764c1d0d4cb9b100af4b049a0835667",
+        "f9c43d98e7d6e906a04df56a78d93457db2881aa",
+        "7d5908d9ff67030d37f4e225afcafb2276f6e2fa",
+        "61e0ba3f531080cb704bc6d82f160a1118c066a2"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-38-00/full_images.png",
+          "size": 424224,
+          "git_blob": "2be1e5ddc0bbebedee8e74e7747c2d786c812282"
+        },
+        {
+          "path": "dataset/2026-04-26-11-38-00/info.json",
+          "size": 137,
+          "git_blob": "73200d56bb2cc335fa31d01a835f3a1ba6adb323"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-39-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "2930d3ee45e525fcad934152372a3e0395367b1b",
+        "7ad4280e18c1172fe4a5e2347db0a86ce7122b8c",
+        "077959d42f6269f2916f6b0bb99bfa69b252b245",
+        "0c1adab79f079b32fbaf51e7398e08c3df2ef975",
+        "f5cce7574aec66d7497be008384ef56540681bad",
+        "fb27ae25880fc327558388c7038b8fcdd933d170",
+        "16832b723d9f1312ae20ab6e08e09e3c1d4e48c4",
+        "82e7b016f917e9c6c977eb91edd8f6998ee4f446",
+        "042d203a4370b136e93496cf1b9483963a2365c9"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-39-00/full_images.png",
+          "size": 217721,
+          "git_blob": "50b2dad77533cd94ce5d1ab59caa4a094f62c3b0"
+        },
+        {
+          "path": "dataset/2026-04-26-11-39-00/info.json",
+          "size": 180,
+          "git_blob": "bd5f138155ef85f780d9d330ac3b9b0328d07b9f"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-18-35-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "5e942bc9ad3a481d305d37f686ead602cfe805f6",
+        "021fac3a6b63daa5195c9420bd2dc15a4ea50edf",
+        "3fd14b89834503c504acc787c75bba3e039f093d",
+        "7a3d8604ddae1ebbfe61a61d984b3abfe84e6740",
+        "05d56a3834f027b98b6ded6d069841c6db478ff7",
+        "f7511b79b82dc2876017db75d042615aced7d640",
+        "91112068ea37275cd2325e9ee2567810a547a967",
+        "e8f019c88d38c4cfaeaeca04368160debff2ca87",
+        "d7975446df97772b60d5c5b4edecf8d6a792c0e7"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-18-35-00/full_images.png",
+          "size": 220701,
+          "git_blob": "eb3ceb5125183391640c0f1251c183b8346715c1"
+        },
+        {
+          "path": "dataset/2026-04-26-18-35-00/info.json",
+          "size": 172,
+          "git_blob": "a408cd6d51463d6954d935690ea9a2adca59ea3a"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-04-16",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "eccb5a478da9fccc41a9cf935f89932e2b52ca32",
+        "d481a9405b6afcbdef9c091883bc7f6540a76f56",
+        "62c0eea94941942af11ff9f744616acbe8e9fb5c",
+        "f0ce8d8de848f95b4425c9c62e2cfb3a5eaeea91",
+        "dc435ff99fe6c804db01c6e722dca6b33d8354b2",
+        "20997e995b23cba3838ae88f9d52ec04f03fb592",
+        "f6469c8b73be7f87b1b7eef5cf5f2aebd9268ef3",
+        "e90c0f5d8fbc181ebdd348ba9c350ade777f82bb",
+        "725b47e96d1162b91bb8902ead4fa6ec6730f2c0"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-04-16/full_images.png",
+          "size": 201583,
+          "git_blob": "d908c64f0af5cf7f309b3d8b937def2e3cb029ad"
+        },
+        {
+          "path": "dataset/2026-05-02-17-04-16/info.json",
+          "size": 160,
+          "git_blob": "6df33dd8408cdcea39536a719c80c0c31d53bcd4"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-04-28",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "a376992306d68a371b60800084db0020a42ccfed",
+        "3eb2b8f88b739361f22bb01520f2f03ae204d811",
+        "ebaaf372c3cd0721224dc7983ba44277aa88741e",
+        "74361e7ffce403c5e0bf9f0532b287a9add86980",
+        "085b6d243da67b31d1b53109600c1ace8b7817f5",
+        "ca52819324bfc07602c37077d6d2ffb245f1efff",
+        "0ce4a9c7d65233e3070710911feffc0954191b94",
+        "0cc7b4c19007efa4692126ba43cc9a8045b0bd34",
+        "47c6917bb1f599b65ffccddc8656457cda9e8d19",
+        "653a8e0966155b105a2994509d8ccd01f5c77ae3",
+        "0a06154627ce6a70db577568b189995aaedbd6b8",
+        "90e74b3e3fe1985aa9926b5b015fce8ab8140153",
+        "329eea3ee35c4daea38e414e55ea336c55340933",
+        "786e9335dfe6b5499b5d8ba56ddeecfbf782d170",
+        "82314c189da1b9460fd7d43e514374b7d7d1b117",
+        "54e0388acf50d4470635cc7f24d594c699ffa0e8"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-04-28/full_images.png",
+          "size": 371951,
+          "git_blob": "89cd2a98dc981c076c4a589b37f7a74ee65f14cf"
+        },
+        {
+          "path": "dataset/2026-05-02-17-04-28/info.json",
+          "size": 227,
+          "git_blob": "8110b48376446d555800509baf5b0d2d2ba4c523"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-11-00",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "f7335b9aa6004a6cf90eb5f40c450a118a140779",
+        "41e0d352dcc4fa1cd859924eaa924ff8d1772a0f",
+        "ddbebb78fbd474aa213b30f1412895509cda9974",
+        "824a5cecc39119ec247856fcfef2b4af7fec83fc",
+        "4eeaeee947d9bd02b68aa6b12c6fc594340110f7",
+        "5d205bdf705bc4fcdf2178c1c70960f4054a56ab",
+        "a21a48038b2c3ecb7bf239c830e5a9642c944944",
+        "7a92f6074a791a7e266324ed3c23f0ec4795961b",
+        "4bb85e4cee8557724880f6c633247dcc566aaba3"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-11-00/full_images.png",
+          "size": 198495,
+          "git_blob": "a45fa62b803e342149942358b6b8684934ec50a8"
+        },
+        {
+          "path": "dataset/2026-05-02-17-11-00/info.json",
+          "size": 160,
+          "git_blob": "bc449aac691591b9f79d0c1f1791997c808e9ac3"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-11-37",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "bd2b0202940bc33b683e993b5442f5165bd72c71",
+        "a0344d5e0be3f3c0c7e22b4ffbb6b72b5c404c1b",
+        "287593960d43579450b70a9d2db66cc2e15d4853",
+        "6a99376276dfe3b512bee9fbf0d083414d4b2222",
+        "38fe532f6eef5fa0382c260225cdfcec110718c6",
+        "643484c2389c6fe8601f46e022ca0ae7a0be9fc9",
+        "c1befa1636879bede3afa8ba466e2de0cf22ce17",
+        "0153b52479b4f33693479b4a699d1a47b0359505",
+        "789cabec0f5a9d223f14d21804744e6a32ebbcdd"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-11-37/full_images.png",
+          "size": 223879,
+          "git_blob": "b4a1765508c4db3ad0a4b987c9d48711ae39f42c"
+        },
+        {
+          "path": "dataset/2026-05-02-17-11-37/info.json",
+          "size": 172,
+          "git_blob": "9f0e0742685a927980808f1f2ac15a2108489451"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-12-27",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "c99d17951138ea9f006ce3b621a6b168678b0b53",
+        "f06f966dd77dd8f3a15dfc0abcda4ee86abec896",
+        "854e80d422ef6289db14c736a08ab57287bb0dc2",
+        "df5498dd40a1539e1787d9cd347a5f2e1c0acf36",
+        "cde69270391fcacb834f12ae3f42b5fb327787ea",
+        "e844f9eb481f02e878158a117d82f9d7e3652820",
+        "bd20daf5e29765f5da452e211afb5a9e63569c27",
+        "a4fccdea4c11119c38a8018e7d3e63704a4c9587",
+        "1dcf1572f5cb2f4c89feac8661ac396d249ac116"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-12-27/full_images.png",
+          "size": 237334,
+          "git_blob": "9deeed3436c2a70cff1801bf230590ea40d6ca7d"
+        },
+        {
+          "path": "dataset/2026-05-02-17-12-27/info.json",
+          "size": 180,
+          "git_blob": "4c1f74c7cdb0ef079e3f3b85590858d40edc17d4"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-15-52",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "04da7689fbe4d1b99e35d7a871f779eb3c8fbeb9",
+        "bad0277dd48185e66ac86235e209d1978ff217c2",
+        "073c3cda82be2e75cd9390c473e2f423d9a20a1a",
+        "0b28d4f05b957563d6625dfe0fd8a7545902a437",
+        "64c20af21372800a97572bef0f5c2ae8c3a0dd98",
+        "5d5192c5fb0740a56caff9cc16ca707b961aeaea",
+        "1d84e113c683680af455f8b4190e3ac95b7fd483",
+        "21eb655961ea334ce7b2ec2fe9f8543f70dd6880",
+        "4679ae39aefb1c80f347af98f4408fbb905a92cc",
+        "01d3ab02d7a0712b2f758f35089bbf6579af9ae1",
+        "ea61a115215728f29a27cc8b8fd7227a0f4afcf9",
+        "5ab8aba94f9e9778ca5161714102a2a7194cae1b",
+        "ad7a2ff5583d80dc0afdd33f7cca5f0602a79429",
+        "f2e5ab6214bab2c44d24b510566fdb6ab20647fe",
+        "1a0f7ec0dd9854d0d5e239410ac1d4ae8265567e",
+        "f0fd7265cc2e10f1ee72a9edd5b003c217bde851"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-15-52/full_images.png",
+          "size": 311038,
+          "git_blob": "c2e3547a3098bd414c712c63ad5934c2f6c85952"
+        },
+        {
+          "path": "dataset/2026-05-02-17-15-52/info.json",
+          "size": 172,
+          "git_blob": "faebdc8dbda092228ab66accfd97939d1f2ad234"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-16-17",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "29981e483ae7e975e08f3e5e14fdd3657c6065c8",
+        "4724e4df1fd0ba70f6c4671710f074b0c30c387f",
+        "c91b43c8c12dd0159a15c16dcf223b3f07c41b36",
+        "2130a727b538a56a4b7488f26a9727db429a7653",
+        "25b39c4f49d89425094ebc08e780d9a1821a4387",
+        "a3143bdc5cb10ddcf53cbcc1b3a3ca1dc4909862",
+        "e8d3af37ff7634858079b10b25426f09a8943387",
+        "3090a12391a52abfa0f7df8ca4d0cc79a78afe0a",
+        "a35f80aae565a0f155018025672bf7ee0a50b427"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-16-17/full_images.png",
+          "size": 224401,
+          "git_blob": "f6e7c0c0f6e10f043a55679861cb3310b5f9a177"
+        },
+        {
+          "path": "dataset/2026-05-02-17-16-17/info.json",
+          "size": 180,
+          "git_blob": "139d75ff65e894c65597645fe542849d5819fa3d"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-20-57",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "7c1e7310bdf5067a7dd77309fb5621f4cf968bba",
+        "31b6a7829bfd94143ac96720e7576c0fd9a1f3c3",
+        "13216477c3f636bb68e52fc29aa8dc2205d2837c",
+        "4abea7db31b70dfeff64b9a28ad113cbc81e6111",
+        "8329e84ffe76f4542764e1fbde442f780a0a99bd",
+        "82d463f8886b6cc67b7eed167967ba04036dfb71",
+        "4e9039183944b209c80719d18312c6fd2d4b56b8",
+        "2359fb732cd0c7f6170e3ab2a387b0a253438edb",
+        "28da2f7829d36d85659d260e9edcd7312d3ce9c2"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-20-57/full_images.png",
+          "size": 219800,
+          "git_blob": "15b1d486a3e879425835159405bc8700d7f26040"
+        },
+        {
+          "path": "dataset/2026-05-02-17-20-57/info.json",
+          "size": 172,
+          "git_blob": "6392771be2d1154fe052754a2f1282c92cccbdce"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-28-09",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "7355e93302122b0676a6acbaab90b430ff234295",
+        "8d95219f2d4325c451565b784b696ea85444d6d9",
+        "0032023878b90f297b2cbf80a8822eef7ae54982",
+        "0e86df9a38db2ddb0ec278e59c706564d71e3158",
+        "0b9c3d719e2f0df4a710d12ae75c0dd5d88a2af9",
+        "6b20feceabf70e0c8a0a97d2a6f8f35301dc8677",
+        "8ba45df8fe6f4ba5afbeaab7e329d468caaa24ef",
+        "7c4d305d6bcce88f593e98df9b5ca79d78403a84",
+        "296ae2ac8c90da2759801856b33dbce9a2419503"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-28-09/full_images.png",
+          "size": 218260,
+          "git_blob": "f3da0c0c33ed8db241486deac667c342673f4a99"
+        },
+        {
+          "path": "dataset/2026-05-02-17-28-09/info.json",
+          "size": 167,
+          "git_blob": "c16dc9db38583f5f62df1ef927cc19d66e6f5057"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-28-30",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "c921332d8089a61b0d93e9a9ddc78bb6975634e6",
+        "046e0d6da22656bc81be42f73c77596f58ce17ce",
+        "f13f24f39fb2122a7699a2f343e68a3103c2e12f",
+        "05fd6124cdeee34da495a33028844d42a5cab83c",
+        "15caf636ec38dc146f1f8620cefadd17e650597d",
+        "25c30c41ba5006683d7a7acba0fbbec9318d3b4f",
+        "b39a4f5f7466de1cb716f36b2f344f62cabbe4c6",
+        "b5176d75d6a78bef682c01e808c18fb58eecce26",
+        "f84b701cb1f085b6fa801c7aa7f3582b523bb4b7"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-28-30/full_images.png",
+          "size": 263294,
+          "git_blob": "f00bbd4a2f51cb8ded31419449fe06f27013ff90"
+        },
+        {
+          "path": "dataset/2026-05-02-17-28-30/info.json",
+          "size": 160,
+          "git_blob": "a4bc88437568b987b481df95dcd60450b5e214b8"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-42-08",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "814899386a43e7ddc7578261a3f5db4c73824aa8",
+        "aa83f6acb1963eb237d9a264495d03a2ff12fd06",
+        "4b2fea814fa22f64fe3b85b736431156ab45c95e",
+        "24c162fb5b1951660bb5d752ed5e41a3ac3b2391",
+        "bbdc1828166e630512b08e5b619fdac2ad6df6ee",
+        "267df0f394ef78637437bebec15b16227dde48a9",
+        "2a8ba699ad2032c9045bfb8ee38fd9120d72fd89",
+        "eceb12cc638454af52b2f53abda4ba8588dd1a47",
+        "efb0b64e3fac5e8271b0050bd6e90bb66482d9a6"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-42-08/full_images.png",
+          "size": 265544,
+          "git_blob": "1833e92ec1407c8a71cd011c5545620755c07ec6"
+        },
+        {
+          "path": "dataset/2026-05-02-18-42-08/info.json",
+          "size": 159,
+          "git_blob": "fad17d50bbe505047947a49cf99e2faca0b8e331"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-42-26",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "9107b67acad5b08d13cf4e7a8121ff6afa59aeef",
+        "ab0093e94660ecf8725e1a142620b198db956173",
+        "71a12a9b3fd181395d89d6f5bcc3457b37437256",
+        "5018a0258c5a035ee1862499f7b43114a0a26025",
+        "0a75a32e23e58f4a772873c2e2818cfb273c7eab",
+        "31d2366d9153065061e104d0aaf0dd649575029d",
+        "090974ac9faf3a3b01b79db2658e2a81326f0e13",
+        "f6f1db12313589856c644aee32fc362884ad1592",
+        "90efd69afe0be01268374e04620cf83faa5182d5"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-42-26/full_images.png",
+          "size": 236420,
+          "git_blob": "21fb98ad9c03d92619f0cfda8770946fbbbbd001"
+        },
+        {
+          "path": "dataset/2026-05-02-18-42-26/info.json",
+          "size": 172,
+          "git_blob": "32ce34b0eb0f085a87af61796c2fc843328a1c86"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-42-51",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "992746487039570ad70704aa04d74df118acf33a",
+        "73b2ed49713686e521438379aa5e61b34f0bc953",
+        "827e5ee32e9bd0e10bca8625e22e14b7068eaade",
+        "431232e1795472aef5114a00e573b437c8adfc6a",
+        "ded0cb79f2aeb4f6f89757532b02e68e530ea121",
+        "958b9bbf40ccfc6693c1f92d601a1f37ed1fdc1b",
+        "1dc502d79fed1d289b371cd639005fea57c5cfea",
+        "f1790466e1d055da31c3af6f58ff4105e2156cef",
+        "f26ba1c7c0ffda9b378f0c66a88896680b78527a",
+        "30bfff230ec7558efb217f75aca0f6d62ead41b3",
+        "93ea58e4886b8651cb672c17058403b6b0250dbe",
+        "28545ae6b74fe1fb586ed9538c7df0b83c3995c8",
+        "301c19712e60af9ea073775cf56d70c6af052d7c",
+        "f297973c73e381b49acb8b3f08fd147f99689601",
+        "52e6289ae299869c66fa72d4c6c86aa0ad87d91b",
+        "519bfea08f8e5db008eb5af0fe7aa999be00ecef"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-42-51/full_images.png",
+          "size": 390401,
+          "git_blob": "482b45514b57b8c6d94548291623c36f03ab5d1e"
+        },
+        {
+          "path": "dataset/2026-05-02-18-42-51/info.json",
+          "size": 193,
+          "git_blob": "c035e3f8d10ba18e1e0c1079a251497dfea71399"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-46-02",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "5a2c291714c50ab2d6d62663da21fb155ed1d688",
+        "ca9024593fc4f0c4aa96b5ba2cd2a6adcbbdbe4e",
+        "9e53cc603d8b5c7e67e3c685e9b291ab0bc2a476",
+        "5a6d66ef86c7f45249e3996833c7ad39e09738df",
+        "87d984ee1b48f19d1c5fb27c9efbe2b1b843717e",
+        "806a35f64fb43d6c230c4a8d5d4e941545471fc9",
+        "652df7b9a2775967da579858cee184a8b0cd43c8",
+        "7f1137b83f2f7eecb5ff13277d9c2657b51b4c1a",
+        "8dcb2c34c21a8cf29aad8092ece52a340d1e1d03"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-46-02/full_images.png",
+          "size": 268651,
+          "git_blob": "1d706bac06fe9db9f5215dc47d5acfdf089b28d2"
+        },
+        {
+          "path": "dataset/2026-05-02-18-46-02/info.json",
+          "size": 159,
+          "git_blob": "999f9e2f105548fb2992538b02f4dfd8b1921d44"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-46-45",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "cd589d8907ebcfc4c59fff8236828c127c97e9ad",
+        "649d705ebdd18c9f68deb37da5be6aa84f47b127",
+        "5d3a2ff11bff3138c0016a18dfa620221d971ff7",
+        "6d2d8f0a3d94fb99d310566297f4347114b7c423",
+        "4851a925db2557927ce33100c8b5c2803c0b6699",
+        "aea3c737113f5c4f16f96dc773259a73ab2dcf38",
+        "b5ec717017fa343553d041fe036be4c9be3cd56e",
+        "7775033b1b4fc5d491e7148b12b582bc90a01edf",
+        "5378fd459b1a08aad07eee46988757eae8c22634",
+        "74cd7dd1f3c6f1e79826ead9109019813213cac8",
+        "83068d55634ceebce313a99ef02fe7f4d5ff0b5b",
+        "8d84ebb1b13e958b5d3d12b161672ce4212b8588",
+        "c2682f32a8b06dc707e6e46698df7e364e74b435",
+        "706090af5d475ac3a34db2e4214b418f08512fd5",
+        "9807786d0dc916b58ac0eb924bc19724fea73243",
+        "25a0b245ef3866fe8e726746754124a1c1595aff"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-46-45/full_images.png",
+          "size": 389640,
+          "git_blob": "bbaeb557cf3fbf980c709a97814c6d68b73dbba8"
+        },
+        {
+          "path": "dataset/2026-05-02-18-46-45/info.json",
+          "size": 207,
+          "git_blob": "c02e930247bb6bf370367fab75b5cd36773426b5"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-07-51",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "da14fbc49e6dd5a166772f291683bf4ec102cd2b",
+        "5aa4fbd87708498859d378296e4bf7dd57b79374",
+        "cb5fdb9956a613a2328c373cd35a7bd7387d3a1e",
+        "970e4317acef6797ef94d14c028efab9008481c8",
+        "d338defc8f5339800e87d5350808c2927ffcc8f5",
+        "0932cafb53d078bad0ac7fa5fdf55fa5cb91e0a8",
+        "3aaa7827206a74c7a2c109e872c68986da09d431",
+        "94fdeaa4481c7cee88f8c8196a1e2af64f823ff1",
+        "b52c1acd31d8746d53022ca8fc974ac7e95733ab"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-07-51/full_images.png",
+          "size": 218558,
+          "git_blob": "7afe801d08c81f854201cc41d63b619d0646c734"
+        },
+        {
+          "path": "dataset/2026-05-02-21-07-51/info.json",
+          "size": 160,
+          "git_blob": "a9777c69dcf88a1b9696ae63e99123b38fed938e"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-11-18",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "b28013937ea099e29bb124b2092697f881d47019",
+        "9e8fcc3b56eb85265af5c68ebf7d545c5b2fa881",
+        "7d4de8aa5b7cce3c6642f6f506e42cd96e8884e0",
+        "8b17c6b3db1a2868d85165d5ced285eae5887cc1",
+        "f1174bde892eb406f7c0c2dc60694e649f0c2753",
+        "164e3b4e5bb326c9ca5f716b1af019bea52d299a",
+        "47018174754945dac782c010423cf2325f306832",
+        "0a587f05572e39b0c8503ca8793d1b78967d13d5",
+        "44c56af2a8006cdd4f35c06696fbe398ee501869"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-11-18/full_images.png",
+          "size": 263569,
+          "git_blob": "26d94a28c6c2ab43f18411967567ebca1321b4f3"
+        },
+        {
+          "path": "dataset/2026-05-02-21-11-18/info.json",
+          "size": 160,
+          "git_blob": "4d167905ea641ad98d233c8fc1a71b4a815147b1"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-11-24",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "d5725b8121d8317a1f46c32ae886bd9f0bdf4408",
+        "cccfaad3bc821f5fea74d22d79d009c7109132cf",
+        "55222f2176391d056bc19f7cdc72b0fa5885eb0d",
+        "9a16f6de8ed6a3f9e19bbfa815d8eead2ddc43bd",
+        "e13953a4091dbf937a0032347f8d9fd0aa28ac81",
+        "264eebf1a7ec088b6f37564a647e94dec7206012",
+        "9d3a91f5054d68c811307236246f262011e6a99a",
+        "613917b32129af8032a60c403c11c81e588e7f8e",
+        "93b0ad19b09a44824349b5d32d92b8663c56938d"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-11-24/full_images.png",
+          "size": 269661,
+          "git_blob": "f639d79679f9b5821d5cb813cd348c538567489b"
+        },
+        {
+          "path": "dataset/2026-05-02-21-11-24/info.json",
+          "size": 160,
+          "git_blob": "641925604dd0ddb16eb84eab8786bc6ccab6c959"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-20-36",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "dc75312aa086be72545c2d8d5d418e53808fc8ce",
+        "bf6b0e391965b571674d5eb1bf97cf7a8cce970c",
+        "453cb80cbe75aca1f55b8d8ab5ed595078573b50",
+        "36e613da863c484515bcba901ea4b20400cbdb97",
+        "29dc74294afe60c4505e97303cb6db7c9802bea5",
+        "30b31b02738342d3e27200d7b1d30d52ad66cf2b",
+        "868626da04e43c64d80eada3c73d480830d2cfc7",
+        "3b6fd54a21592fa2038d8f1b85ef83da8542918c",
+        "8c812510be14ec90e3b6f9a733e3d48db33787c1"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-20-36/full_images.png",
+          "size": 226235,
+          "git_blob": "67b30ffcdbab0f110b592394afb06e2c6d67fc01"
+        },
+        {
+          "path": "dataset/2026-05-02-21-20-36/info.json",
+          "size": 180,
+          "git_blob": "3477b6d61c58cee12cca924aa65a581f73d715e3"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-23-02",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "8019fb2505fd33e75d74a6e14273754023ab6f4f",
+        "267ef909d7f7b6ea8d21b8a2f68709ae7a26d7e6",
+        "9d83af671b49e7f1845b20e65d95ada1dc841bc0",
+        "aec22a88a9602845874a1ea5ace81ad69dd417aa",
+        "f87c53a72de57c11f36ec4f11eff79881b2abda1",
+        "02fdd4e07bf771c894c44fb4de3a76c1f892dcf9",
+        "dea504da71c92a01be4359a0fbf1eab66c16cea5",
+        "256448fd8c6c408475f33f63e388a03fd9ec1488",
+        "497af82e8eed5c15d08ad61d16e4b78a71c77a67"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-23-02/full_images.png",
+          "size": 224935,
+          "git_blob": "d3ed0cec8f973d77411173956f6bea3e1ef78ded"
+        },
+        {
+          "path": "dataset/2026-05-02-21-23-02/info.json",
+          "size": 172,
+          "git_blob": "f230ad77401dc41b146f5909110c88c22cdc9c8b"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-24-45",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "efa85c6f672cb99ed07cd8e78f5dc670e74de518",
+        "b20408c718d5fcb6c4ffea32eee156ea8f56da16",
+        "fbd10feff2d329681103e693c40d6d63a5d6b0ae",
+        "352d5bb69daaee997a3296152bcf89f7420f674e",
+        "e7f191d95f7093f79c67025ae8e5ea9bc35151e1",
+        "5b55ae820ae1825a1235768ccbb6258080b7ffd6",
+        "a9729891ea2ba88a1f68c601b38d2e93ee316b42",
+        "0eae1cdcbd2f95a1ef41d8a8bd1a0cc0d3ff4412",
+        "076832e1c8a6a94c9fb1b375f505e5c258b95d55"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-24-45/full_images.png",
+          "size": 222912,
+          "git_blob": "035c394ed71d545713fb61442e90844c108f36f5"
+        },
+        {
+          "path": "dataset/2026-05-02-21-24-45/info.json",
+          "size": 167,
+          "git_blob": "458aab3d2d35b0c7a55d17c50cadbd8710c9b5e1"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-22-03-25",
+      "split": "development",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "f8a15176249f4033b2577bd917f7a49f1dac5ae6",
+        "e541dfc9a615861f8ddb22e8608f3f4baf595f59",
+        "5932e5cc764fa6ab3552510b0619c21d2a96b7be",
+        "aede0662513fd5cae33ab5ea7425c739ed3454ff",
+        "b6ca9f61ed993a711b2c8afba895b3b62b752b86",
+        "615c1cbf2ecefab092cb09ba2506bcc507939350",
+        "428763c3393b15977dfa90c9a2603e91d83d831c",
+        "bcad96f9890fb85db6d2fda5262f4fff065cc36d",
+        "d2d7b60c5ab91d42adc43aa6de60ae628eef4dca",
+        "8f2be0684ab4b50541231194f6ca76c71a5ac1b4",
+        "8878e98607947bb88d2c1b3771d9f7617d14bebe",
+        "8f00f0c9a56f4a1a44a32461b9f1dabbf137411d",
+        "0aa91338229aeda2d780b199496a1eed0d6171a6",
+        "15daed93c9840d623b0652f1153b8d375dd12181",
+        "fdf71b885ecbd2c43b1476c52cc9f4623922b1e8",
+        "37384b73a798b1e1030ef603073a80338a7da04b"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-22-03-25/full_images.png",
+          "size": 197632,
+          "git_blob": "282d18c883369e8a4f8a4c580c4ea7f1a1771f57"
+        },
+        {
+          "path": "dataset/2026-05-02-22-03-25/info.json",
+          "size": 196,
+          "git_blob": "a3da3e211c7df9e70add75f68418652e709801f3"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-22-03-58",
+      "split": "development",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "0456ef3b9129d8400883066bad601cd9efba1eb1",
+        "72e11b8341258b252eb5f425f3423d89fd914cd5",
+        "c4eb9841cfbc1d8f0326486bed8001ec97d1daae",
+        "7ead58cfb66fe5da658ab198b91f096ccf9535a2",
+        "25ad8faabe6877304b95c9807d43dd2dd4435b6f",
+        "9bc6431d023cae4ec865e3a76e06f68a677b82ee",
+        "b3310d4dbfe0013c4d4f2d9f017f28068389f883",
+        "cf2488850a3ad3ec0db70fb0816f5d5d4e802896",
+        "dde1d92a8416d1e3260a01509bf52e282f23977d"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-22-03-58/full_images.png",
+          "size": 226190,
+          "git_blob": "54db0e0f367397e0cd4443b4125f98c32b2b0c19"
+        },
+        {
+          "path": "dataset/2026-05-02-22-03-58/info.json",
+          "size": 180,
+          "git_blob": "6d71a05e046d2fa8c9fa655a0dfaf1a77c34184d"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-19-34-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "fafef71554423a6364df1f1c4368ef00d2b7435a",
+        "f1fff0d15a0d3197b08ae3803636a42b59dbadf5",
+        "d7c4774240df81ee0a8cd15e526954dc41cd56b4",
+        "e9f192225f82eaa01fdd5b49af486ea0c88c5a6d",
+        "cd05e78ac922126fd36cfbe890b99a5343146f5c",
+        "1977f6aa944beebb65e32919864cd3ba94a5edb5",
+        "9877118b5562edb92ea9ded0b37d072617aa6974",
+        "e403281de51a35c784cf9d7ba0f8bf01c91dc3e1",
+        "dc0046d6a1019c07977580b05663cf14cb56f70b",
+        "0d0af537c7ce632c63f613d37ddf00fce6f1e1e8",
+        "8e47d8b12e74d034427847c108d07532b28bb271",
+        "0f9b3c598abe8d1bf2247f586e422d79f8d65a84",
+        "5ef9f611ffd40b0b70abf21855a23da58915f418",
+        "6841d3e5cfd293af847a73fc917a19223cb34254",
+        "fd1269f2d046f9ee6c48860d936a5d5bf571e2c1",
+        "1eb418c6eda40e65ec96b1fadc017dd6f6d10f63"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-19-34-00/full_images.png",
+          "size": 311649,
+          "git_blob": "62bd62ce8ed6196f3fab669da32386b99c882161"
+        },
+        {
+          "path": "dataset/2026-04-25-19-34-00/info.json",
+          "size": 185,
+          "git_blob": "4f962d4767d6aa4ebd7a50f04cbd403f18e376f6"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-19-45-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "73451de13cd56201057eab4d3dbd920a5792367c",
+        "1d4eaa6a51c119adcad1c8b50a17e24392aa81d2",
+        "30c988275d31d790857efc025e88915277e62d4b",
+        "3644e04ac1afdeff96ce928f21f8dc9d4bc33dc5",
+        "dd4f6503f5f34a51c4df491e3ff26d4b00933587",
+        "1d25401a1f3a03e97442c0073f8b3362432de03a",
+        "e58380b9ed100902cadc3c0c2ee25f55cf068d5f",
+        "1b857886daf1977cdcd0d49767c4654a38888986",
+        "821b9b3306bcbf732d4b0f37e2cb9227fd22f3fe"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-19-45-00/full_images.png",
+          "size": 221191,
+          "git_blob": "48e219a215001244c5a16c8f2769625cb188fd9c"
+        },
+        {
+          "path": "dataset/2026-04-25-19-45-00/info.json",
+          "size": 172,
+          "git_blob": "733ed1a6d7d2c500261699be7012fb724635bd14"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-19-51-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "ab387304b32bc2d058192731a181edf7df5c964c",
+        "988c15891e4f2164a6e0525e3a5301db0c252d39",
+        "2ac58b7a43076b3e0e117e1cfa762df054e379eb",
+        "cf6fab9d67bf7fbe1a92ebde0a3fda9c7849d95c",
+        "3b74b5d8b2f932a63ccdcfda49f8ecb83b0d561d",
+        "d6a0214c05ad39a7094896c19efe2a8d899a6c99",
+        "bb7ecf22f38c9aa44022e57b9e82e55063f725d0",
+        "dc040eb67e14b93ebff0e21f0e72dcea9678f04b",
+        "f8641fca18b8e7b14581ed5909ec9d3acd8311dc"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-25-19-51-00/full_images.png",
+          "size": 227262,
+          "git_blob": "2518543fa319ddffd2ae434eb93ced7f569f8837"
+        },
+        {
+          "path": "dataset/2026-04-25-19-51-00/info.json",
+          "size": 167,
+          "git_blob": "0e8f4992d1c4ad3f70865489b54097da25872655"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-00-41-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "88329042a0ebeb8342050df3c134fc59e404bf4b",
+        "c7f7f0aa6d76f89c10eb9bd278b9f10802ee6986",
+        "6c4ff1a356989383e2092651d6d2176e91fe3b4c",
+        "24b4cb1a1cc7578d8f923058488e00c97506a37f",
+        "4c414c35e38b439c58e92d808e60961180a397d3",
+        "49678d6a933ed03d83da908359971eac16142235",
+        "68e86ad2c59ace5211f71cedaf6493ec3194ed68",
+        "79978d17181d2f5081c1fc990f59fbebd047096e",
+        "edb199d8b3c9c17b049d46db9b90365068e1ab58",
+        "250c1c0a1ca874e7b1dfd3903db628db531cdc54",
+        "4e7e98084a15543db496f9d02615f6c6777fc6dd",
+        "dfaf86a4d8911603fad41875ec1730fbeb6b29e3",
+        "690fda84134992513bb78fc13877a53193ef2271",
+        "a0b79488ec68b933bc21983f1f8c6b90a6dc0aeb",
+        "cac4ceae76e49391b12ab098d3437d1554aa40e9",
+        "c8ada9ec1389d128088b549facbd1e575c890457"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-00-41-00/full_images.png",
+          "size": 257005,
+          "git_blob": "136f16dc993b06db4cb1c71afa1b5e587a1b7e7c"
+        },
+        {
+          "path": "dataset/2026-04-26-00-41-00/info.json",
+          "size": 197,
+          "git_blob": "3c2a1f1c63a09a4f3398635fabb46e63f81b7c18"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-00-45-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "8477f8e39d81bd1c4a1dfc8ae34423d9e4183270",
+        "7a6fb5c576fa1fcbbcc797a6f915eeb653b207bb",
+        "02ca5b31d7a13a8abc706caa4350be00be865b08",
+        "9b0a73c4fdedb35460a8df7d852870896da3cb04",
+        "1a604e2acea7b3424660bd5941837cb4d7de9413",
+        "e808b15d4d9c0c9f51dab6b0f5b94d52d8ff7955",
+        "0e2c2372b9753a925b3272225ebeca92894aaae3",
+        "b0dd71e08dd073ef99108747f3bf18ddc4cde27a",
+        "770329944b3b948b1741b2b764c429e81397f011",
+        "d4ac77693780b37cec12521e8c50ef0a45fdd358",
+        "1c4e6e5d886e85024e11088f339dde88e7fa8a5d",
+        "f033ec467f0e6664e476b71549299743f9170b3c",
+        "af7a5316e1f0c17bbbb6452b8977456b026cc080",
+        "6403d339851a5a897d2cff2f178d1b6274175ec8",
+        "8720dd7cfa152de9756c8acd602295a77ba1d44a",
+        "29059f3c7dcf6b2818163a334e11bbcd612d3268"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-00-45-00/full_images.png",
+          "size": 294670,
+          "git_blob": "abdcceca387b31b2dead679b4bd9890fae4a57af"
+        },
+        {
+          "path": "dataset/2026-04-26-00-45-00/info.json",
+          "size": 211,
+          "git_blob": "fab439df621374a52b1bd482ce6c227a46087dda"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-02-50-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "41cc431751f29d97164c5abc01fd24d305e4b0a0",
+        "209e19edc9aeee61777916fb66bc00dbfc6f4232",
+        "4830d4c8b703cf09f2e904c58eba1eea1ba6eadb",
+        "10bcbd7b5ba0d9d751377a3ac031e3c978427716",
+        "2c65d5994dd65c57d3fedcb955a87a52061cb0a5",
+        "5e8d0fdd41b7b44386aaca8b3ed83548b20ff7a0",
+        "07ef9956d708edcd0fdb947822fbf47ebf4a8596",
+        "78ee86c4c08c6dab230f9e874e4dc57908289cf2",
+        "099c9dd206747b2939af89d4a025fbf390ca24ec"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-02-50-00/full_images.png",
+          "size": 270061,
+          "git_blob": "662bec510873743183f42a15168e481e63441a1a"
+        },
+        {
+          "path": "dataset/2026-04-26-02-50-00/info.json",
+          "size": 160,
+          "git_blob": "9cb58e3cfb0701c09b5f77b3680d07eebc406be9"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-02-58-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "fb3ca2ffd782f9460873a2ac23d8ff448b1ecdc9",
+        "fee4391964e0d978b275b5760acf0b1add24e6be",
+        "2aeeb3f3294d8ad2cb070baa2202c2607c04a786",
+        "0aaa65adb790679515646af1b009e012e22d418a",
+        "f99d215ec3d2c785dc43c909e5fe654fcebb842b",
+        "2ba2a2760833ef72f9614e0595002b64830a7847",
+        "0550e1e0e14c7a37842f8c5bedc9e651fe17b07f",
+        "5e5208f4dd5fe923af1480b7e909e9998db4da49",
+        "4c492ba0836c16a9988305e1bfe5585a2132cf35"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-02-58-00/full_images.png",
+          "size": 239846,
+          "git_blob": "df6324c12634683025ac86237d59ea972500a142"
+        },
+        {
+          "path": "dataset/2026-04-26-02-58-00/info.json",
+          "size": 172,
+          "git_blob": "012457a157dede141fa8dd9b2aff24f174a76f9b"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-02-59-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "0d614e59f37263cea1f8f51f1ba998553c1ca3d5",
+        "4b416374069c9928b325506aaa4dea2ce11709be",
+        "5c32f61fa05ccec243fa9a969933420d7cd46495",
+        "e7264b9cf4ea5371ed1c6619f8536a03c585e5ee",
+        "f6edee406bdd805088e2f49aa87ecd0dd4625c9c",
+        "a1c6e7554df430bd05db008ccb59d4da5d7b3a60",
+        "890514f34629ac2861826965344c2cc73eb44406",
+        "d4dbf61617c7c96adc5086bb5d7ca7bb7987450d",
+        "c17d3a8daec28dcbcc14fc5fe4901b6a7f4b50a7",
+        "a71ffcf8046f7b69f622feac665f5cf995ce73e8",
+        "6349b2415f1d8dd21cd17acc818859420d7fdfd1",
+        "9096483e3eb481ddf0ce7fa3106aa60431c05d61",
+        "e760cbd41f6fd44c15a2d08dc2db896a6ffef694",
+        "1631ef39b1a9a51ccf5bd0ceb5c9e20b637f4b1d",
+        "6a33b2e90e3cc14d9e7e6e7e2bcd59276f7a030a",
+        "05b2d9bc43a9159fd858bd1d39cd68c56b764b66"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-02-59-00/full_images.png",
+          "size": 403045,
+          "git_blob": "ef580f78aba874faeb154cbedeef485e0f873710"
+        },
+        {
+          "path": "dataset/2026-04-26-02-59-00/info.json",
+          "size": 178,
+          "git_blob": "fcdc007d07cf74d5725f0c84f38da8e3b0809f0e"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-03-13-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "6c34d1a14d0da4c01706b58290bfaa7978161eb1",
+        "0d62f38fe062eaa21a589d71f7026a8d254aeb02",
+        "226bc1c346638e970d5ecae8fcf17ed9ddf383f1",
+        "875581ceffe619078925f315d2b55cd5c3fe0465",
+        "38f83be06887c0edb72b2997a0733254d95d5e27",
+        "875bab4d51ea80e0d733865012d592d5619c92fb",
+        "586f6138559ba7b24efbb0e19dabccddddce52f3",
+        "60ef06d898242331a88307976bb760fc967f91a4",
+        "1cd290d31c732fb6fdbed70574cf98577f54be9d"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-03-13-00/full_images.png",
+          "size": 256719,
+          "git_blob": "c436399aa6d41bbd8d5e99865f70d6c0b83b4af9"
+        },
+        {
+          "path": "dataset/2026-04-26-03-13-00/info.json",
+          "size": 159,
+          "git_blob": "08ea49fc66644195beb840f5435441db30be515c"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-03-57-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "0ef71925c94ce6c98c540b7818ef2edd4f96b4af",
+        "e50816bb27557255d8a28f947f8a002d7b14fcd4",
+        "94dbe4b14723962446bd33f0faf474f116f62d06",
+        "170ec8722fedd0adfac43a85287a833addee1408",
+        "5b8174caefd5b6fc77a0d889c6ea9060f9224865",
+        "669f79ffb89887a81ade637e74f8430581824319",
+        "b65ba8246b9b03ae8c3db0e275a0952249311153",
+        "698e3e03303882112e49daf8711950319b62c8af",
+        "74db3b880b2c5abe6bc43213983cd6ae63a3eded",
+        "8ad4c34e38ed1de75da61772445acc7117209d0a",
+        "13ded5dddaab0007e23f9b148ec3a6896f0cf13e",
+        "48dcfddb3199cfc44390eeed05cc0c7cb9a2097e",
+        "c2c375e6c97835fbb8c816fe7ac46dd6aaa6caec",
+        "b1ec6703d8dc2c1f0c74334dbb65086c74e69537",
+        "fb165c21a052db41cb32e1a53a88d2e2acbc578a",
+        "a23a57f3c5a18ddf164909a688d29dcdf97240ed"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-03-57-00/full_images.png",
+          "size": 385179,
+          "git_blob": "3a0806f35c388eaa83060b0dd0692f02bf1a0e57"
+        },
+        {
+          "path": "dataset/2026-04-26-03-57-00/info.json",
+          "size": 154,
+          "git_blob": "4c99ddbc08979ff12946e8ebd8f4e94694938110"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-04-28-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "2f3e2cce8553156fb6c3fc472eff41618ea13e10",
+        "e5830e46e22ab0b525205ea5591cb24aeaa2946b",
+        "bdaf8898a94421c9bf79cb8b849cb12733c54d34",
+        "c45e287a2a56481d59f9e0a4861e5a000ef7b260",
+        "b1c679f791eefac5330cac365fbb1a5dc0397192",
+        "ec0786df4d8dae50a162854ec0f10ea59517b6b1",
+        "8d6be5e777926179caf53debdb16633030f4b3e5",
+        "5b6768b9a040f1077736b8c2ffcea4cda6eaaac2",
+        "2a6a899b8bf88635859e60a2202d67cf0b5e2d0e"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-04-28-00/full_images.png",
+          "size": 214853,
+          "git_blob": "3d36f7634884b2972d7b9e6d701a8a21fddc6d90"
+        },
+        {
+          "path": "dataset/2026-04-26-04-28-00/info.json",
+          "size": 180,
+          "git_blob": "4e6a16ef405ee9e0fcc0e6261cb4c39e2718dbc3"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-05-20-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "2c19c1c0a5affbc044665fd9d275742a0b9bc057",
+        "50e074db74f320f3e31d469d624b1d06bf9bfef3",
+        "bb4d7f9236d30a61fd91e5f3fc50604ae3fef143",
+        "2018696482cb9c4c88a5976320e98d7b7e890ce8",
+        "e1893f40dcd5ee1cff5ee86ff0896c3dacf544c2",
+        "22074812b63429378ea4d982bd57c1c7c483ebf0",
+        "e79e4d5ae8eb89e27de4ce49e201fdb0b69c6d06",
+        "b92978dd55b8bd23500ab4a025390c7c451b3764",
+        "b40e339779487ab1e7878106a8951a01f937320c"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-05-20-00/full_images.png",
+          "size": 265342,
+          "git_blob": "d74c79ecf6d2db891b3189a80cb0d3a3f299edc8"
+        },
+        {
+          "path": "dataset/2026-04-26-05-20-00/info.json",
+          "size": 159,
+          "git_blob": "17af60852548fbda0f8c8106206de68428084088"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-04-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "43dc4ed724c9e2a003dbd727f21dc02732e78f5f",
+        "0993bb4cb7e77b4e5e368b54bc0f10c50d4e92bf",
+        "844d1e3c53979079fd670df7e48fe232a9d918a3",
+        "0b7259f9950e4aca80d7d91e1e60e51a2a700020",
+        "55a7c4e74d17d580715fe9346faf8844ce98031b",
+        "2d616f1d8441f92671c70252f0d9702507ea01c2",
+        "a027ac2d06b7a00e4adefeb00eab1c69c7d83718",
+        "525b202434277f422edebea45fa8fbf40268ce58",
+        "96082c840d35ba6627127a12bc9a67378f946d50"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-04-00/full_images.png",
+          "size": 203979,
+          "git_blob": "bf28483f26003b46981d00955ba4d8cb0cdd1604"
+        },
+        {
+          "path": "dataset/2026-04-26-06-04-00/info.json",
+          "size": 160,
+          "git_blob": "845aba0cc496a21c9d1739b004a1370beea93d65"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-14-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "279c44de0f69a4aeaf9c7599cc6cfa9957addc34",
+        "2fc9d70faf6ff78d4a9ad26a833f5ce6cc0535be",
+        "6605f8923f8d4fc9f11f3fcbf48a342e2671d5e5",
+        "1be9e0987700fe48754972ccf801b8640b0ddaf1",
+        "52ac81c3c28a359ce818bd441d498d825524d00d",
+        "a55b123d32a38ce0446599db0ed605dd5204f66b",
+        "254bec861a400f819efbaec1d5244deea335bdce",
+        "8f18a99714b9453c195432864aff6ddc68c01278",
+        "29c41adf4556025060e0df54361f175b1b8a420b",
+        "8950df3dcc7a057b9ddce5232ad62bd7d6683f17",
+        "3da8a26e0aaa469e498c985f70f5ec51eb9958d1",
+        "183cd12a38a0b9fe187b965d1a723026e98c339d",
+        "6f234fea146b1fd4ebca24883c3328b5bdb108e7",
+        "44c75d876799255f077b2871175db35dba478a69",
+        "5e3d12ef1a95cc8b3db857326135b95d4778bffa",
+        "a391846d4c872c6f2d4fcd9d74ca60448729c8ac"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-14-00/full_images.png",
+          "size": 504661,
+          "git_blob": "226b89c4729f4123bae938a2c610af0f71f68205"
+        },
+        {
+          "path": "dataset/2026-04-26-06-14-00/info.json",
+          "size": 201,
+          "git_blob": "2fc622eb75667e139f3290e51ff345fa2c773423"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-06-51-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "be1bb9897bdbcad1c86e0bfc3fd48a95bbdcbb4f",
+        "1a5e414177f65ad17f3d55b14aa1d1e38a7fb0ee",
+        "47b62a957e2ec7960ccf072cc079da1ab93c471b",
+        "adc922fd201c7e812ebc2f29e0b12f27922f3f60",
+        "da74514a7577b1043344c0dbe4433a7491508f66",
+        "ae8436e3bc095436b309c018f0ae329e9babede6",
+        "978a63c326264d213b677533e082b5960df68f54",
+        "6b25a31f1b2e037b433bb1cec18eafc80bcbf287",
+        "44c70413c600f3c9653cd3fba80b3ad92c10ed14",
+        "47599cd10db1dec4d262d37636d61ec3a03a5f38",
+        "80c984084b07814b22807d62ff5051ab75bb0ff4",
+        "84b9297700af49d6f009b9fb34c4fdc918fd5cdb",
+        "d60f6c53d15756fd2e3042064837f201da84cd8c",
+        "2d75dfa9d10a96a9a4d1530025f3829f94e26372",
+        "8fd3c508a921d3b5fc87c2811138d800d2555516",
+        "0de401dbf372aa1f45ad1ebf9d78f01bc92f4ce6"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-06-51-00/full_images.png",
+          "size": 400219,
+          "git_blob": "f37f739acc2d3b5350c55fa90d50257cf9bc2ad4"
+        },
+        {
+          "path": "dataset/2026-04-26-06-51-00/info.json",
+          "size": 178,
+          "git_blob": "fcdc007d07cf74d5725f0c84f38da8e3b0809f0e"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-07-01-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "5c4e027298c1573330c48769254180d037952871",
+        "d8356e206791f0ced53b5d1095c00c048981d3fc",
+        "930a68b6a1434684dc003484ffcfe582059e9a16",
+        "031d91c525b789c24282011c1443493fa43081a1",
+        "202478129bfcb4e3150325d2bfb4f1119126c39f",
+        "08050dbfd5b1917d5444a1d3e80681984cf712cc",
+        "661ad80aa70924b905c8206eeacc6cfe4a302d5b",
+        "eeaa5a401688be799c74bf6ae06d6118109b65ed",
+        "0e32904725292df201ba1830b3d3017e621524ec",
+        "b7f52199fa8dd4cf54600cf5ec76889fb4e51512",
+        "97268ddb18a9844e6af21b57a012ffef3720a400",
+        "ef082490190228d28c877a1bb74b98830f3bce2f",
+        "c0d0e96e2ac54ffad82c0990380116f1ababb437",
+        "f2b010b904346f96c7cd46381a1bfe5003741c0e",
+        "7290a8c4fa6389260b826921dbb3c11e666cdc5c",
+        "4ff4a3410fc2c3dfc6006b46b5725bf0a9019bfd"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-07-01-00/full_images.png",
+          "size": 402764,
+          "git_blob": "80e7da48205adf2ceecbf160f463b2925b2effa9"
+        },
+        {
+          "path": "dataset/2026-04-26-07-01-00/info.json",
+          "size": 228,
+          "git_blob": "50b22d48ecbe05f41822fe86e22aab2063b8d75b"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-07-02-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "a9b4cd5b72523ac88b3db8fc7a0c9d5e370138e1",
+        "cd4a59a107b04b814a04cc598f6aa14740ccd49f",
+        "f8b05aeed8f654330b3b171e4c5adbc6db086e07",
+        "512323192285eee8701da4e0c52dbf2d3d19eb6e",
+        "3c212fd578939e87ccb3a956d7cf910f9991a3b1",
+        "c62af3aea9f7a098dba39757bbe1c9b2293b8e21",
+        "97a740db9327687e072ff2bc82a3c307e041a57f",
+        "6c27c87d793ed116b064cd40d470df4c26f87c87",
+        "2d58223a60b464b286dd52f92608ef4c3ac30f45",
+        "93ebbdc2f44548fa3fabe0b031f805b9e033b5d8",
+        "804beb24d601e2a52662b484c3f2e8f4ec961f1b",
+        "f7e6393d4c2b3f1fac79cd6f6e0db60e49f5433a",
+        "017dcc67084161bf013531bce4a8863fa62e538d",
+        "cddb5d9921d54584c1514550989dee82f448130e",
+        "53b6164c606c7db0e49b13dfc90ca81db1fa8fca",
+        "a0de9dc1421a8061eef6ec862fa293f4d633f90c"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-07-02-00/full_images.png",
+          "size": 440991,
+          "git_blob": "8da9f277bd8ce79536ed23c72e06b9fc5eaf51c4"
+        },
+        {
+          "path": "dataset/2026-04-26-07-02-00/info.json",
+          "size": 182,
+          "git_blob": "f35ee0be634570c74c2401501ab74ef0e5463096"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-07-51-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "aeac438fb5326b2230b4e0a02d964644498478a3",
+        "4488e05629e9c82c61fe3383835685e919b728d8",
+        "af7c493a855d195398676b5387f4415d3e448f6c",
+        "e911bfd8ade26184486665013732764381e4264e",
+        "87eacfd8b47af1e5eef24133bf46c23b50b8d5cd",
+        "ca0e4c442431c743cd3605af7393044f0c33f66c",
+        "3a56e0ebc89576752847dfd5192b9ac4d19239fb",
+        "859499ec1d6d8da05e96a4584f3388ffdc7bb03c",
+        "20fc91f88c68a51112b6c98dd62b4c12f0b9ab40"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-07-51-00/full_images.png",
+          "size": 262426,
+          "git_blob": "ba1b0ecda67e0ee7c8bdf9c4810e4b6439b18aae"
+        },
+        {
+          "path": "dataset/2026-04-26-07-51-00/info.json",
+          "size": 159,
+          "git_blob": "5d9a25136e3c0f4a989d311da231e7d802adf1be"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-17-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "5a726902420241247afd920c8ed81d8450be1895",
+        "0c77eec3961e7644767da5534379b7279c972025",
+        "13f656727fc51b99f9191ae04f871fa3d988d926",
+        "4e2b2e295cc370a3038001f020c25c55b513183e",
+        "30da101cc0132ee75985ef3d70592e4caedb5b56",
+        "df47cc261de182312b8ddc345811a16f86f8d017",
+        "bcfd86321dbb55584a1cbfd3e161e9ac392712a3",
+        "799c24d5e8cba0603c8d5b7c2176b12c3e9a020a",
+        "d4b2fec04d2bae13dabead62f302db88a0a9078a"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-17-00/full_images.png",
+          "size": 237285,
+          "git_blob": "d42536b5ee3ff9c6c599ebf13ba1857185996f6c"
+        },
+        {
+          "path": "dataset/2026-04-26-08-17-00/info.json",
+          "size": 172,
+          "git_blob": "a408cd6d51463d6954d935690ea9a2adca59ea3a"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-34-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "b2a139639813ef2a903146d53a2066c8405b474b",
+        "2e7067999ce32cde3b5c6440147d7c2dd3d1d6e3",
+        "015ce83ecc8d41983f645c6dba8c4d97801c53b7",
+        "c2e9ed283cd826ee44c67bab47a77f5a92f186ac",
+        "22b76d7a6dc055cc81cd46dfd4b57bf78b18d18e",
+        "21210d4506201e4a8d0300e1ab932ca49f127d84",
+        "e512f3b4f8fe17cff6c92927f50e42c28fa8bb01",
+        "64312a164750868b76bf719dadaca89420eeee68",
+        "450c4248dfbdb03cc83919778eab2a7bb6343468",
+        "afd5ecd75fa36e18de202903bb08a608a7b88f3a",
+        "acd629169bda9ee1d459a72cc14d8bcada014bfd",
+        "60eb0c5a019b093c56bdd212d4e3777f36b88796",
+        "29351ba256dd24363be90f644e9b3b36b27f2061",
+        "d69c1d50bc7a2701f706dd03a1d923c16dd2a815",
+        "09885b8556f9c09866f870b82a42a6b60d9259b0",
+        "e1fe0942faae2b819487474674ef684fb6053238"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-34-00/full_images.png",
+          "size": 336402,
+          "git_blob": "1354ff45ef02c9cafc91d3c0fe5bbb03508516fb"
+        },
+        {
+          "path": "dataset/2026-04-26-08-34-00/info.json",
+          "size": 210,
+          "git_blob": "f42719030bdec701bb819c4b3f2431028703f194"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-40-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "a74c92fc1e61f58d1e67e76a1597c3ed73bf4739",
+        "70ef23c9ba41963d69b34f21cd13efd4cbe356be",
+        "e1d47bc9bd7a8f747530b47b812750e9bbaf7db4",
+        "1e443222541dd33647b2dbbbf677c5a7fa83ee5d",
+        "0b071c70cc1dc0d5f9b0bcdfa8c45692d68798e1",
+        "82bcfc087321b95037248de0e4c6c63712ee31ce",
+        "dc34e3c19a334b852f8eb1eb9b720e2e2cb52e16",
+        "ee0eaf12916661d67c8234ed47aa01ee6bef8bf8",
+        "c61c25aa305d74afa549985aae1dc396384f1bc1"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-40-00/full_images.png",
+          "size": 270831,
+          "git_blob": "08ac5d21edec34a38518d7c03a3719f8614477bb"
+        },
+        {
+          "path": "dataset/2026-04-26-08-40-00/info.json",
+          "size": 160,
+          "git_blob": "f544c331ac4016c4120d3f7542b2dafff2c4838a"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-08-50-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "629becabf6ff26f2396812a78c863fd5f62b6e5c",
+        "35e975fa715417dd15123b75eb1c2c45c87a2cb3",
+        "af6183c4c5b777b7269359fd490f825ef6a7d17f",
+        "819a52da0ca99d3f4830df82e105110f78c2bbb2",
+        "2639178277b934d54a5c500629b3560b127204a0",
+        "159e2490d41aac75557cf1b00f74d75be16112c6",
+        "8ade8b89ea56e6ba326baf8ff5ad5b31f90e3348",
+        "adfd7fe9f06327e4b47a386809045ae86f144cb4",
+        "fed5c59b6d6af8e5f1c3076dc4cdd3287612d4a5"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-08-50-00/full_images.png",
+          "size": 217412,
+          "git_blob": "f2eeeccd58c1255a9e8739d9d475bc9bbcc67b6d"
+        },
+        {
+          "path": "dataset/2026-04-26-08-50-00/info.json",
+          "size": 167,
+          "git_blob": "ab4f48be1fb9b23037fe8d51e15f2332b268a359"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-09-24-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "066f890a3fde0194866d5e3176a2c06d1ade1e0a",
+        "959bace750d122d1cc2c390f698100c6a3c7cf26",
+        "b9a87faed077229d7e19ebfc5f5bef3b00d4fe83",
+        "ce192eb3be893effaa267776918e7d9501ee933f",
+        "63c45ae057de0026e1ddf69265c3d0a24c1dbe8f",
+        "dab90e0d8190e0a39083bdc7ff908cb99531b335",
+        "2382c41ce1e208429460da831b861a8f39d03404",
+        "49a9d30f04f88c6fbe1c1812b426b1adfd497b24",
+        "00f0eeb8c3c1a077e59576b240e11273391b5fd6"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-09-24-00/full_images.png",
+          "size": 211866,
+          "git_blob": "bebc3b4da840f120f714f534848537198fe5ec0d"
+        },
+        {
+          "path": "dataset/2026-04-26-09-24-00/info.json",
+          "size": 160,
+          "git_blob": "1d61fb6565ad0e0195209e556c66cba5dc4f5559"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-09-45-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "1ce8c141dd2e2bbca5defb6497d754ce7ff5794d",
+        "69375d2832168dc92d4944505820d5f6c7445dcf",
+        "9f0b31fd50a2e5c719cd6dc18b56552ddb740313",
+        "9e42efae0d3ebdd007069853921c6ae518f727e6",
+        "fd8734cc4476029960f004a1a54016ac548cadf3",
+        "09a40b8f58ddae63c4d2af708bed727927cb7566",
+        "ee27d3c8a914d0f7b8094f9769c46181c2ca5450",
+        "0b9b0c50779a9515380237917d959c95b62661b2",
+        "e531d29693cb961f0fa0a374344976ef2f207ed5"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-09-45-00/full_images.png",
+          "size": 249551,
+          "git_blob": "ace7db5c3002b05c8cf2297fd7ecfc82ef30b854"
+        },
+        {
+          "path": "dataset/2026-04-26-09-45-00/info.json",
+          "size": 159,
+          "git_blob": "999f9e2f105548fb2992538b02f4dfd8b1921d44"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-10-12-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "160dcfc20ce39de9a20b07dbab69c828a8d9b2e8",
+        "cdfa3651850e4aa623bd8b51e915fc6e45b58aaa",
+        "807676907329ff54eeae26fde43248289c36e31a",
+        "5537f9844dd8743a252499df8c1abe7c83e390ef",
+        "3919e5704f5034339228e4328b1eb4b5792152de",
+        "3e3b85618d36e7dae5f424c71a82e4c5910b8cc0",
+        "d9aeddc2aa726138b1dae60b5f31cbbc0826ecba",
+        "f70f37a6c8247ceeae4625f238f163da7203cd90",
+        "0aa559e847bdd2642260d14f69436c72f5c19e2e"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-10-12-00/full_images.png",
+          "size": 216511,
+          "git_blob": "251019f295853f7f774f275774fa947b7c9a2b8b"
+        },
+        {
+          "path": "dataset/2026-04-26-10-12-00/info.json",
+          "size": 172,
+          "git_blob": "dcf55ab865fff9c0fb9a844d3ce6282c16e7adf3"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-10-57-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "a1f6b348eedb103a95df1478405935f395c5647e",
+        "0efb5cc9d0bf37858ceafefca72bb38432484bf1",
+        "47301937784699a0613449a3f9b7e574247beb04",
+        "743e892d15dbb7373241757e27d085e89293b0ab",
+        "7d0ac8bf9e366c8a79a33fd3ac296dc66a677f03",
+        "aac9460a0d3cf85fdd01ce959a12dd3e67b22c53",
+        "99066815b118132ce0673be31ad7c293c462ff03",
+        "2bf8a786943dc1332b769f5f1fb87e5b803c6c1c",
+        "80f295eb87611e0c29e414cd9b1ffa79c699d33d",
+        "2f576683556be8f2ed2ca3e95a69e6ecd06af2cb",
+        "5311ac72c719691f0ef519a5d3042454b398e076",
+        "cb9bd0f0934f7851e2c79de4c9c7a323c10e90d7",
+        "cef068a10803c8cdec3bf6ca5b490fb34c20c115",
+        "71b95b6bf2fab8030fcdac63e4ac39ca2866092b",
+        "ffc6ad13fa41c5dac455f414179fffaca46a1bc3",
+        "8e3fdf1f5759cc2fabea633072b55e82ffcc0f8c"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-10-57-00/full_images.png",
+          "size": 267134,
+          "git_blob": "c977a108c01d87883aecc12e4d08fae74472bc40"
+        },
+        {
+          "path": "dataset/2026-04-26-10-57-00/info.json",
+          "size": 183,
+          "git_blob": "1fc863e3fa46db55c389c5ac5ca2f4d74461bf3d"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-05-00",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "8878d466fd8500df9ba1070770dd7f41bf96dc59",
+        "3b25630517f96986385f031bd659210b9b713750",
+        "1743c7276636e75b485c3537e3d97c7e56b648f4",
+        "f1bc3fde0516340ad813976c73c1ee3a75fbca40",
+        "28875e7a6dbb74a2d119d9bfe57f851f94055d3f",
+        "842685b40260ce4b40392465f3cd4f2225124d59",
+        "1a7ecfe55e86dcb3daa7876e03f6e2c0c15f5f6a",
+        "4e2b3e401d280edeb53244b67330e3e612121d41",
+        "f849b5286098fbdfcf63eb0882af41032b6b1cdc",
+        "acdba6955a99b0c8fe859eae07fa2101880ca6d3",
+        "a32927f45a59ee1eb858e8f5f5443789ab7d6373",
+        "07a06f6fd805f6b5c8f4ab46f23745e3404ca148",
+        "67e8ec02bbd43f26d3cfccad80f55800ab7e4d69",
+        "c5775475759aca34cfe28dc3ebc34e619c4f9aca",
+        "4ecaf25e1f68e03f79cad76e2329971f67c5723f",
+        "c2463749c44d853ae9e74ec8db5d18906bd58e83"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-05-00/full_images.png",
+          "size": 342064,
+          "git_blob": "e72bb0181802d5345ed1c1bc2b053ee7ffc0ee42"
+        },
+        {
+          "path": "dataset/2026-04-26-11-05-00/info.json",
+          "size": 197,
+          "git_blob": "ed82cfb2713885225e6430d635e725142943fa53"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-30-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "aaa5a4da4f6e60cc7efe8320682d513feb7292e9",
+        "ff71af36ff5575d6db86b2731222bf7294721903",
+        "527d85837a5270f7e263f9345a9b0ea3e54ce356",
+        "14cf30cc56b8ecb3f70904013058ebadc929c3ca",
+        "13ca6dcfebaa2577aaf51a878e04ab2b44c3f616",
+        "999a0d24114052f628d3937ac1ff281d6ba17a2b",
+        "881537d9bf52cc3cf569b9d0afa9288f3a1fd42b",
+        "243fe72504814db8152c06620dec22c0fedd3e0d",
+        "a4474ce48a48443a02d001cc95b2bcee103583b6"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-30-00/full_images.png",
+          "size": 225905,
+          "git_blob": "927e3b31f0aa561900ec004edfc438517abaa2e5"
+        },
+        {
+          "path": "dataset/2026-04-26-11-30-00/info.json",
+          "size": 180,
+          "git_blob": "319f16acbe114e413d3baeae99589ab445790bee"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-47-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "8352c812f4829893a16c5debfd01891e2c784eba",
+        "163dbd55d110482a6e9e213c7eaedbd573201d3f",
+        "0e9aa8497ce606de0b9238f416fdb71193623174",
+        "4269d68806ae9eead00ae3d32641139640534b43",
+        "4e057e194615f781cebdbb3c4d6c1b845acd6a86",
+        "b43326cc287d09ca0404abb3573bbcc17eb7099f",
+        "638a966797b303d2c9024167bf6441c75824fc8e",
+        "d0b95e3091c4c7274f308c543e962713c79d74d4",
+        "82c40950a4cf33360c918a9c6d2d9cfaf1da34d0"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-47-00/full_images.png",
+          "size": 214916,
+          "git_blob": "e45c0303aa616825005ececd5401dfd7df34adad"
+        },
+        {
+          "path": "dataset/2026-04-26-11-47-00/info.json",
+          "size": 167,
+          "git_blob": "930fe141a2f1cb484594ba23f5171ce1749beb9b"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-26-11-59-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "fb88107e2711b973a9b7c4f34bd9f4d478dd6b32",
+        "6b756a9989155413bccb91847a0109b14f9748e1",
+        "68947de4f5d6631581726a3a06121988e598bbf7",
+        "e7c2179701ed43d57b238b2825e6cc5a56fcd517",
+        "0f400dfb15e0ed28efd0757cbdedaa666fb77885",
+        "513b5e5780e1cd8839d16afd7a2b772fcabbfc7e",
+        "ac9db84cf3da3929fe820a2cdcdd7de5b4f1ad1b",
+        "a1d896de44595c6b26ed2ddd07b508c413dac681",
+        "a9a132dfe4656f17f3fd69fb52e9077eb82ca4f3"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-26-11-59-00/full_images.png",
+          "size": 232634,
+          "git_blob": "968600554b418c02b38dba3be77d67da47b85674"
+        },
+        {
+          "path": "dataset/2026-04-26-11-59-00/info.json",
+          "size": 180,
+          "git_blob": "3477b6d61c58cee12cca924aa65a581f73d715e3"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-30-21-31-18",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "61e1dce97c4e922d2bb7210cfacd07abe6af57cd",
+        "40423cee4d7903b231fa6d8f9a147fc60daaa04c",
+        "334fc8f7cc6e29d9c3fd0cb0955f954893981220",
+        "7de3ed2837fccc3e30e8000bf3bb9aeceecf1f57",
+        "50d8b0626064d8a6333295b3cc0f92bba55e3e5d",
+        "ba258bcce81b97dedbfc00abe4c0bc8dd8909221",
+        "6d0698d430607c78470cfdc343531a3832c3021c",
+        "3f45a744f8129a72ab014a827dd2a918b9befe04",
+        "b8a1b2d6288ece23bff2e23f5e40dedd7a463eac",
+        "ad32bf2ee64fcb594014837cf26df8fca3474fd8",
+        "30213b1b35d235888e81e7630e10b9ebf279544a",
+        "ffacd7594c66ce08f55cea1e362a86f41cabda89",
+        "85a5a6a8d543a7c0f6299bef135815a5f531eeaf",
+        "d49823850a8cdd3809761c943ca690d2e049aef9",
+        "de7292673c3a6ab3694b16350f40feab0c5b2721",
+        "08cb390d6a60458d19a0339be1b361c7dfa23634"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-30-21-31-18/full_images.png",
+          "size": 444157,
+          "git_blob": "db07a7d1e1ec0754064858168a4fb87f4fe4ac2a"
+        },
+        {
+          "path": "dataset/2026-04-30-21-31-18/info.json",
+          "size": 190,
+          "git_blob": "2e42da519d93888b70be41fdc4abfdc05815911a"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-30-22-20-45",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "8c62eceef38ac42bad25b7b112c7dae9a5127a96",
+        "9ae681ab379c2e788c7526249619145008364d4d",
+        "e5fc890defc1eae27e62819365b54cebc211c3f9",
+        "fd69fab6896a44a24424c272c0bbfa090977f173",
+        "7f4d5d27796cfc3f5af9924b24ac778f4994c0ea",
+        "7b11b6b4f58f8dc91e3060b344ef76ccfeb6cb90",
+        "090ebd153eab56ccedc5fc1d26b3fe38ff50be34",
+        "87b97a7dd8958ca356affba6c815031394f8061b",
+        "1518ef46eb060149f51c30b2abb148425f435e6f",
+        "ae7e44381e5612cf491bdbc0f0f1b54dcb38e12d",
+        "fa591f3ab34854f01942aba488209b58fdcf9f12",
+        "76283295e5bc614164a87fba6e62716ebb88f027",
+        "c0be9ff49b55ba650117aefb6d8089b209609a8a",
+        "20e22086a04e81c02a89ad24fb42ac2529b68563",
+        "d73160674f559c5794a5de852e6c04d4ce13dba0",
+        "1ed74d400b05e8b87fdbf0f5d41e2d3df9f7e31b"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-30-22-20-45/full_images.png",
+          "size": 437463,
+          "git_blob": "2f189d244f8f50607e849ef9a14366c426c50ace"
+        },
+        {
+          "path": "dataset/2026-04-30-22-20-45/info.json",
+          "size": 141,
+          "git_blob": "86327ea1b3e5b7a4ccd6f629af0942cadc052b83"
+        }
+      ]
+    },
+    {
+      "id": "2026-04-30-22-21-41",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "4219928e45f1e61c44fd32ab1606d96504041412",
+        "b909c50f661f02599beef26072cfb5f5dd92e2ea",
+        "77994945e24682047534ab5477feb51bf24bc147",
+        "9e93f782390b17d9039b4253db86a758a432a068",
+        "dbc7b3b5aafe2446fb800e0b8e7c3c42c53ed433",
+        "f1dbd8ccf69dff9613fa54774a09eb04de0cfdf3",
+        "e562c2294d6c587006a94182d32fc7587511e04c",
+        "97bc9e2cf9fb979f44c2e6e7061caa90d8f7c42a",
+        "5aba53b174f2e85667edb111ffba19b1323227c1"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-04-30-22-21-41/full_images.png",
+          "size": 242155,
+          "git_blob": "abba0e78a03181c7a1eb580792fcc70756beca44"
+        },
+        {
+          "path": "dataset/2026-04-30-22-21-41/info.json",
+          "size": 159,
+          "git_blob": "48c75b8f184f8a7c43c2984c41f57f9225871fb3"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-04-24",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "734994da96c22f56fbc20e59b0af0672a4e72067",
+        "9a6abfa73ee4f1cf2f3ee94ac4d1f7c7823a6816",
+        "09de8cb35212feea0e1b13492843a0af9dc1ce56",
+        "feca6f158fd079acdafcc6dc8eb13f6f6c67c207",
+        "3a4fcbc2cc8eb7c7a04877aeb0360bc9be6180b6",
+        "9d15b5354f291990905c6a0d38eb7bceb1e28622",
+        "25791f769459ceb1de6551a501e53d40ea12d547",
+        "78b990498a47908d65f24596bbc506842edb492e",
+        "7f77894d73517e906076f010121087bd4a27cc1b"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-04-24/full_images.png",
+          "size": 219199,
+          "git_blob": "c4699d1c20266df7fa4f9d266ddefea938cbfec5"
+        },
+        {
+          "path": "dataset/2026-05-02-17-04-24/info.json",
+          "size": 172,
+          "git_blob": "e259bae97f951c78d93b2154b5e05d9a773a2806"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-10-56",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "7b50e65f439a7491cffb7ab626a5f5c549dab951",
+        "7847c56c8f0769444381f724941ffe5266033a52",
+        "d256d30abaab44abadfc938e1261bdd25920526c",
+        "a07abdf98f083d4efa480ea07f6e828ea41375fc",
+        "0f22b0984d6bf86fa2d97b1cd0637ed0bd1ea860",
+        "f36257a4b15a7af8c2af71064bb74ace5fe4fa81",
+        "95c240e2dd6cd59d3f2ba36a91effe88d0842beb",
+        "1bb8fd4a9194f78c4ee5f4f6379194cf383408d0",
+        "09ba6d15770d1ae2dddb45e049b3c8d744af5c2d"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-10-56/full_images.png",
+          "size": 216860,
+          "git_blob": "32ae3482e7677a00b9ed8ee2a1696d29fee9dfab"
+        },
+        {
+          "path": "dataset/2026-05-02-17-10-56/info.json",
+          "size": 172,
+          "git_blob": "2a10b904d4a5604dd529d968f1d5e11d0ce35014"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-11-12",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "bf1d7da7453af66355fc66fb0ea06a4ccc942de0",
+        "29fad7b3ca6a97519708f1404a79f7a4833c4706",
+        "8f71a04def19623636e425b57533c87bc5aea21f",
+        "2e4a2ef75ccb712482f6d3295e0ae5b301c496a6",
+        "f730b5f1cf4e0a4205f3fb63edf0a9b1003acc79",
+        "6d4b074c50b43d1dfcc74081f65110af71afbfec",
+        "37fa64285f63558d4223f9b7f3507100ea687109",
+        "2bd2969b814639caf55d40c4ee0cc928a9e8569d",
+        "a522a6864d1ab0fb76b159f83c5cdda43f436838",
+        "59e7dfa383fdafe31060ecb3408631cc35f80a3f",
+        "79f4f4bb22286db90c5fc1db695f8eaa5b5a7ed2",
+        "9b9740ba9e5a11940dd1d3a7054e344031fbf31e",
+        "bc5fa6a29f98cfdfca4d26b3734462af8dcd4d8a",
+        "c303dc63643bffd50c5f82436c51bd057fec3834",
+        "251dce3ba853c193dec7bf3f8dcb3480ec5ecd1e",
+        "640068138865ca2e42c42c87f86414c63ee79a0c"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-11-12/full_images.png",
+          "size": 372165,
+          "git_blob": "ff40e408ac7087242f146b5b621ea2d3acaf6654"
+        },
+        {
+          "path": "dataset/2026-05-02-17-11-12/info.json",
+          "size": 203,
+          "git_blob": "44ea401ec8445db504c549b05f1c4681fa0a44b8"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-12-00",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "df872f96bfe288229955d14f80aac369449900fa",
+        "4d426f57a6e5ff161defada13e162e103c1d9d37",
+        "7deabfd34e60d4722af1ad5a70c69790b42a488d",
+        "7fad98c8900259d4ab536b4240aaec416faa1778",
+        "67146fcd24d00db4e98703d994974fb41ee7d14d",
+        "207e336a7eca087430ce531d6a56a7fa108a821a",
+        "82a4732852be794be506672b0812fadf51e8d545",
+        "912b52122cb4e0d6e8f04fd2fa5bc5d696ecea26",
+        "75eaaeef9444ce436153bd22f21d123df2e47ce8"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-12-00/full_images.png",
+          "size": 260944,
+          "git_blob": "ed7ac46c462819f70b20d6c2c5c018bebb714d23"
+        },
+        {
+          "path": "dataset/2026-05-02-17-12-00/info.json",
+          "size": 160,
+          "git_blob": "52c9b0cc6889d9a61432c5549e7863afe08dba35"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-14-54",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "d17348d9d13498b6a444537f87240156d999f8fc",
+        "2a8d065198e066803d0600b6800ee22eec15ecca",
+        "a1091c8f896acf1a0de516f6a58449af9f472373",
+        "33bbc850914a5d38568e36fc851c63f208c692c4",
+        "8e0b2f8c38a44bd3b71476adcaf99b51c721ecfa",
+        "29d719d0bf85d84e4286ad6839bcd647f9f63b25",
+        "e0bd668f380cae54d45ec977dcb13cd691606ffa",
+        "93c014335326bf67f15f6ea5791de346d2cbd0fc",
+        "ca55ebc5f476d2071bb1483eb3a07fc83037bb06"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-14-54/full_images.png",
+          "size": 230913,
+          "git_blob": "adede2de0f51475dd272133900dcf3a16257ec2e"
+        },
+        {
+          "path": "dataset/2026-05-02-17-14-54/info.json",
+          "size": 167,
+          "git_blob": "081f62e208ac3ef38f333ce9c5837d71193b49cf"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-17-15-45",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "a6a25120d1726fd9aedb31b98530985332a49a46",
+        "b34f0a7a240083c1176c7308b0a16270fdc86ab9",
+        "c2142788312a1a112326880aaee4066d1e3247e2",
+        "ee3ae4af8af6b3e816d223c0bad1bd2818fee44e",
+        "a25512045c3907136c3982485c50a76843df29de",
+        "9bc4ea26e8a5f115842d9609f6b30a7bc224fb83",
+        "bb7638c553a0104b621e4d934d00e49007d29717",
+        "ea1c7eab1490b32649137203daba364521d9cd47",
+        "6c446c37358d9035c022ec177426f8b11f036a62",
+        "faaf568d1e02cd288d9b46506356fd21a3182227",
+        "865ca25b2c22f410a3c10254f1dcb6cca9d3f12f",
+        "93fb250af6cc8a0d2a84e3f8ba1aea4f9599ea51",
+        "c962ffde846ed0054fc550fc0a561235920d5d84",
+        "6c70f3d39cd0bc97ade63f95d38739b7842cb0dc",
+        "5b361429f6ece26546faad29dc0991f87eeca686",
+        "ceba5844144c0acdc9acb0d7dd2fddd6b2cf870d"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-17-15-45/full_images.png",
+          "size": 411379,
+          "git_blob": "fe288995b690c316c4d1b3f7ac5ceb829d6e21c6"
+        },
+        {
+          "path": "dataset/2026-05-02-17-15-45/info.json",
+          "size": 180,
+          "git_blob": "8f561c0900c925164fe67afa42aaa9332b3ecaab"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-42-30",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "ae6f716fb6f1acd3e213db43283937fac0baf4e0",
+        "6cfd921f905241d3b729f27219ccc72726187e96",
+        "63540139b4b41f65f1c7a113e45a7299115f9175",
+        "d1b397d644e92915af35a4ffbbfd6e7dffbb8a80",
+        "150b1bb0a3dd1e817f0e21d03a0f4d16c57f2e5f",
+        "4307e5898f7fa996fa92b9c75a278a7e8b188585",
+        "c25cca3a99f7237306ba1e03fcbfc4f07a1487b3",
+        "1e34213f0d5be1bdcf71dafe4a18a587fbe83a0a",
+        "ece61314aae8c129a9280d56d686a9384835877c"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-42-30/full_images.png",
+          "size": 271798,
+          "git_blob": "4d95b4d4efe30158ff098035d52c604fe105d989"
+        },
+        {
+          "path": "dataset/2026-05-02-18-42-30/info.json",
+          "size": 159,
+          "git_blob": "64d5deb8ccde3bba46bac1d365a309c8f6418fc1"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-45-21",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "c2f673fea97971c38124ea6835ef0888c385e6c8",
+        "50c60bd012b06c010e02f117b6649f24c18ece30",
+        "a51620ebd6ee12360adad20fb38fca05b963fb9d",
+        "f6a4c5d7d0a9ea1c78492d5e2bd51bdfc8b4f525",
+        "4e021c9bf0354372eeda9c5d7c5deb8e4c0996f6",
+        "5fbc78e545cca5167dbb647b31a69b55f89ed938",
+        "a6939eeda9832bea576836fb301d1b9f67e7b71e",
+        "fe7b3d3f92ce22a95243e943e6c821db5b7ca2b2",
+        "7679f19b79ff1ab61e85dec3f38fe0d68c38dd68"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-45-21/full_images.png",
+          "size": 239796,
+          "git_blob": "f0364c84b6a6bbff655f0218505a803f9771006c"
+        },
+        {
+          "path": "dataset/2026-05-02-18-45-21/info.json",
+          "size": 159,
+          "git_blob": "d78d697bc46265dd1fd38fd3b5987e5c5e674b19"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-18-46-09",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "764961886491519e8e6eb579e0cc30f5e37d994c",
+        "07fe30162e85d6f46848f60b432a445b9036316c",
+        "0607b0f7492cc43d624475a741cfe923e5c69755",
+        "05c77c5108caecbfe9e21b7b4c0727f174ccb871",
+        "22f2240abedf7a8ee4a38d9e13fadd221804fc63",
+        "e5ee7900b9589e112a687972c30aaaf143ff25d7",
+        "55d963cc193fc7f9d2b93b353ea087a8eeb25419",
+        "520aa6e65441b4f128e67b9245b3dd60964fa0e8",
+        "3b0a9e986fd0d82b45ce7d4c15f0916e3a2ec140"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-18-46-09/full_images.png",
+          "size": 227880,
+          "git_blob": "d198545fa1c6035e1b04cc95c008f46911017e1c"
+        },
+        {
+          "path": "dataset/2026-05-02-18-46-09/info.json",
+          "size": 180,
+          "git_blob": "6a0deec6088abdbf761a9197fde2f4d6eb688a6a"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-08-37",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "5a1d5b76399ad418650b0d01f2f7101a83ceb9be",
+        "ecfb2a38e9b7a55d7864346fe155bdc9a562e838",
+        "5db9918fcb46eb1e6a0a31a2085659c4d837dcd5",
+        "a5108418bcea468eb2a104957651a7159e079647",
+        "ad145bef892cd0b19e062c389d72721e0c839cb5",
+        "baa25397da2c7915a95a97b17115a1f674b1a91a",
+        "2cca068ad486b91b920e8c45fe5e5a22fbe0b7a8",
+        "6b3ac8bb7ff93bb7269ba4c9ff2dd7201db8de2a",
+        "c9a40eede430567da3edb4a3630ae5166be55196"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-08-37/full_images.png",
+          "size": 226613,
+          "git_blob": "d4dcfb31adb8d1eaf68c576113175d74d8be941b"
+        },
+        {
+          "path": "dataset/2026-05-02-21-08-37/info.json",
+          "size": 172,
+          "git_blob": "8d734feb4585c9b0e8e9603c883348a5cb7a1914"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-08-54",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "8b469c40af3ac8d4f2485375ac08f81e4d75435d",
+        "c71b511ce5d8ee522cbed24956e1525721e22e40",
+        "a5466aed66ac5836bd7ee24da4b1630eec231527",
+        "fdb0689e59fb47a6d38473fc91e66eec7857a19b",
+        "b989b50996d180ed0310d876d807bef82d8d1d4c",
+        "a61602cb6d4f10ac31ff5fd10e12c23e0dc67e48",
+        "ed94385dbc2b03d15062ce43bbf6bbca244e5787",
+        "a4227da4fd57918858a28590343529c8add8ee7e",
+        "3972f2b4e11089bc84dc7cdb0b0d0000fcedd754"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-08-54/full_images.png",
+          "size": 225130,
+          "git_blob": "6972d5c7be7a2f708cb8de7e9272e6785cdc148c"
+        },
+        {
+          "path": "dataset/2026-05-02-21-08-54/info.json",
+          "size": 172,
+          "git_blob": "ca4328e5b7ee16a0d408c8935da761a725253311"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-09-44",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "a5baa39d40339e1354ef72b9f1b9ca4d1035f3d4",
+        "215e9de706986d4a72d956479ea56a198366deca",
+        "bcbc42950f3c9b857b53a76fbf68f961d61b47f4",
+        "9e8c40670b2a3f7c6947a6aca583cdf7403bc4e8",
+        "e34e6597ff3757689f7b9f5f4d4d54e882886505",
+        "921da54f5baafa47542184f184c5fd0278155dd6",
+        "024cce7da16c754a1afcc484117433932220e8d3",
+        "b4dfe3e9917b37000ac44338baf7c9e55d5b7234",
+        "5ef20ee0290638bb33005b61342a869418f69da1"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-09-44/full_images.png",
+          "size": 265730,
+          "git_blob": "1419b6ef2d5cf7214ec3e335bb9b76bb0b497915"
+        },
+        {
+          "path": "dataset/2026-05-02-21-09-44/info.json",
+          "size": 159,
+          "git_blob": "ea4ebc34986fc45e86d1e380e8eba68bdba87ef7"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-10-17",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "0b64d2c9dd19e7bec590a98dfdcab4069beb0884",
+        "84d21cb37f1381732d9d040dd03004a727562517",
+        "968cb78522a2dcd348329f546e67fa30bff35f71",
+        "0da7345017f3c5bf43179ca2eaba986eeef497f0",
+        "1e49e045ac8ee1a87628062c5c65e0779785df05",
+        "7ad9c47ab51bb632ddc8ddae21028d4237ccc9be",
+        "7885eec6d7afde35bbc2cc3fa37883af653bfc91",
+        "6fdd4854446beb43623fd740c2e6e4703d33cd5d",
+        "279b6276948c185b0b215344202b1d46b26ca497"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-10-17/full_images.png",
+          "size": 224752,
+          "git_blob": "a854b32ee94d0d46192f03834c7c41f552ddc218"
+        },
+        {
+          "path": "dataset/2026-05-02-21-10-17/info.json",
+          "size": 167,
+          "git_blob": "c677820e2d6f44697aa3decef98cbf546547b3cb"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-10-45",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "03ba531f02eb3b90b9a4cef1cf33763b10d77988",
+        "87fae7113b8ee9a2fb708e429efba57cb1371117",
+        "2f5f885361ef0f11efb20bb8d8f61012d9b053fd",
+        "4dac19461f404d2223f476060e4f6548b3c0aba5",
+        "0c4b49314f487b704a6bcfa82e0db72cc5550014",
+        "2d0390765f76d9babafc0ec04edd41da36fa5d48",
+        "a045a10529c728220d0d97d1137a10dda24b1c25",
+        "2214a5448142eadd31fab1eaa21fff04886b4187",
+        "ee18611664c0732f51db0cf2ab63a83a89302be7"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-10-45/full_images.png",
+          "size": 215531,
+          "git_blob": "72b19441a663f47971dd8804bdb3ab0497b7991b"
+        },
+        {
+          "path": "dataset/2026-05-02-21-10-45/info.json",
+          "size": 167,
+          "git_blob": "6c88a3578247085ad7399b2bd73067db28638503"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-12-09",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "617a2d4ca306a73d44dc39d3a014ee6dbadcebe9",
+        "d585cd1e8f8937402c060eb60e38e0f1014b1169",
+        "6877c7c0e42cfc19f2e82b2374176519b9236b04",
+        "68c089bc8ca6e59f73822cf01a828909267188b8",
+        "0000469513001fe93f2fe740584bded645dda4fd",
+        "edf28b710a2adea761c499efb6dbc570b6078a58",
+        "953eb1a7db8f7ca62771615d7b3f29c2230c9b8f",
+        "7d3e84683aa6ab633a3945d53442fc6bc52c4c42",
+        "09e857b551fd26861ac564edf4dd914043ad8159",
+        "2533ba2d4aca5d12d36b626e5e878bfc6ef26f5f",
+        "eab49c074b8896a6e4febd3c06c52a9d27dc8031",
+        "d3bfa4b6e900c287efa73cc3e87004316d27cfaa",
+        "02600134461aecddb1b56e3654a9396a78367990",
+        "dc52e86c0ea28ad5563d910ab94da342eeb41cbc",
+        "c0be6fd300f8abd131bd578a8b32b97cdea115d5",
+        "79fbfc07ee8e120d0baa893f53e74bcda3680f09"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-12-09/full_images.png",
+          "size": 324465,
+          "git_blob": "00afda5565e90ab4ed63a2d34e43f2c0ec6f2573"
+        },
+        {
+          "path": "dataset/2026-05-02-21-12-09/info.json",
+          "size": 208,
+          "git_blob": "6f6e9cd311a384ed215ab66c2010d063801b07bc"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-15-30",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "f639aaf11e0a21d9f5bf41a0d20bdf84abf15d70",
+        "1ca6b69e955a79e3b89291c2d7426741cdeabdf9",
+        "aa5a14f377f2c2c85faadedd3ce2d47e5eb252eb",
+        "6a9195bb5b7d1a9cabb2162480a7ea7f5409613a",
+        "d56cca6491f34e5e45c1607baee9f4b794521f1e",
+        "67fd4d58e81d9aa7565e9b81a7fa8d8af773d7b6",
+        "8c329c5cd1e71f06dce151fbac7b7183d4d71665",
+        "78b09ddaee2886a81bd2d774e5e4b92061b7d16a",
+        "6235a868ebeaaf204cda68f3b8e1e3795b047355"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-15-30/full_images.png",
+          "size": 215341,
+          "git_blob": "37dd8f105f88feda508c947cdb6c07110723b3d2"
+        },
+        {
+          "path": "dataset/2026-05-02-21-15-30/info.json",
+          "size": 167,
+          "git_blob": "accd0ecf20fd21c18351525f079d3bc7e267669e"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-21-02",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "1f96d8922606d0caf7ab6c941aed30ec3e526932",
+        "cfc2c7259633b3a48e82ecdaaebb65490cfa2f5e",
+        "214f7cb8dc2ea792c24c3ea98655a8e07ad1f2c9",
+        "fa05092ec0fd78fa1595877b06eaa32ddefb4a7a",
+        "436d8f3e66673aed3089884faf93582182281ac0",
+        "8910943fb9b2fa8f4b26a4166c1e67d795a36434",
+        "e593e5c77d0d0912b2ffe28d95b3d86eeed45616",
+        "d2fe80829e22cf3c0a470a1d10cbe2d38ee5035a",
+        "6d53fc170b3f813180f6d2ae0e51f79a4be49eae"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-21-02/full_images.png",
+          "size": 270547,
+          "git_blob": "868459bef92ba78c91fbd67f40c36b346e1634c6"
+        },
+        {
+          "path": "dataset/2026-05-02-21-21-02/info.json",
+          "size": 159,
+          "git_blob": "afdb1f4bb74050c7f1ccad7b887797313627f14f"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-22-28",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "7d9a5badae22d42d71e7ae2fdf34db855ce8981f",
+        "78c133fa41d417b879e99ff1fed84c150e8a9f20",
+        "48f52e4234c3197b3a46c191353caab2083a59df",
+        "a9579ecde4c524757900db8c4cf62f80439787d4",
+        "2cccf562d0550fb1c491f1bed63eb24b26aedd8f",
+        "d3a9d917fa6c673c60869ebca6c3872d7ebfd29b",
+        "63d0c5a81db6663c7b9dafbdafb05f0c39d3832a",
+        "5ff3ae7ac455a7ef0f4e98539e104135d6205059",
+        "e791546cb5b91ed571257dec802d4a4f57e6352a"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-22-28/full_images.png",
+          "size": 219944,
+          "git_blob": "f27c0727a1603a1bd95f9ec3d0ac4b7e7241a70c"
+        },
+        {
+          "path": "dataset/2026-05-02-21-22-28/info.json",
+          "size": 172,
+          "git_blob": "d4752b8b4404b968382f33d837c0cf565d5eedcd"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-22-36",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "3dd569a055b8ec79249bf3ff1dcde5b392e4df57",
+        "92f1ce3b1c3eb5dd7f4cdbaf63e94fc3ce5ccd54",
+        "37a418a0c8711d0805cfa372ae48bc4299e95aa0",
+        "851382943aceeb90bb449d7b710d4530fbcfec7d",
+        "a003f31383f05b3742a8104c541f0e91d504878b",
+        "b80c63acef19ade41e032a7c1865de4515ff0415",
+        "1d3186a999de79750c2d61c696581d79d143127c",
+        "86cf8fc16087fa65d9e1b8ebaae2683f0ebcb0ee",
+        "dcd621c0aeb2cbdea844a40b6036fbbfe3fa5917",
+        "04e447fda35f8aa3bf1d53b8fe58d340040835c9",
+        "9f4a0161921ce67ea249ee8e296088566315f92d",
+        "651582e2de0944dc14f0108646ce1820c775c48b",
+        "f8a5c050ce109d26d538f83dbcd867dd27c19dca",
+        "d439e1fa9edbba9596ff1745b92d75eac5f25a89",
+        "adc5f7405c6a89f1c35087b66057307c077b0fbe",
+        "00a7108b96c8f1a4cd6c68706769589d0b8c0597"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-22-36/full_images.png",
+          "size": 393289,
+          "git_blob": "9c2d4a5cdfe4656917669c43c3cf3df6af0936bd"
+        },
+        {
+          "path": "dataset/2026-05-02-21-22-36/info.json",
+          "size": 147,
+          "git_blob": "8477c852821f60a6a62dc112f5ed622251c766e3"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-23-53",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "1e8c31e44034fc6c2556c0c8c9b87eaf5a20e3ab",
+        "5d60fda2659b00cc602b2ccf54e73d88ada23eba",
+        "be3658964297f6ec80c3f0cbef8e2a130c363a10",
+        "02a7851d344f24723fa1fe60b097b569ce6331da",
+        "2ac68f600865251898c12ab90d0d5e5d1c8b627c",
+        "6ec63451167a3d1aecfd1f131d2ba1c1a1c23639",
+        "b5c58fd0f0af39d0f333b6b43cc3d299b9d25e3d",
+        "2d8ab8084090791fc0cade968c2dfe49aa190fb0",
+        "bca1acdf731fdaeb1ef350684bdb2ec1a009e02b"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-23-53/full_images.png",
+          "size": 270026,
+          "git_blob": "79f159f13f0e8790b688ede3cc839db366081579"
+        },
+        {
+          "path": "dataset/2026-05-02-21-23-53/info.json",
+          "size": 160,
+          "git_blob": "03139c3421845139f3b4320c502a3f7596780433"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-55-26",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "773f9feed39f9fb7f06acc96f1675862c55bfe15",
+        "143b1a9af40c695adf6e3edb8c07a7afc6ca48db",
+        "3e4575079adaa0b17b00f5a86e1895d2ac890d11",
+        "0a40b478ef62e1ba1afb82f9384efe9fcdc5ca44",
+        "e2949478e576e67f2621b9f88ead812dd382612e",
+        "f2c130955e4dd2a5cd483b6246d2277d2c95022b",
+        "9502eb66af235d8962a0d758663dc3be958729a7",
+        "0a1af07fadfe8a2fc90a494d16a8f36a8e3fb6a9",
+        "2cae53baeced5ccfa237243334e1c610a638b472",
+        "58c5d32f8833a8b72b6e5535759d6be9d2c5eebc",
+        "65580e3f647552eb438b29678854145ed4620785",
+        "7ceeff9fa6a2cd5a06da24005da78e1b5073c5c9",
+        "b5a728684450f0ab4b7fc0004772e8be440203fe",
+        "ea6664be41cf5eb5e653ce36466db8c48237f438",
+        "4b5ec4c4c294f46f3c65f0476663686520970b9e",
+        "b1a842b133b4b3d9d012b5eadaea5a64b05b78b4"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-55-26/full_images.png",
+          "size": 291943,
+          "git_blob": "b807f5955ef25f5be9ccc7a8179be287371e6b93"
+        },
+        {
+          "path": "dataset/2026-05-02-21-55-26/info.json",
+          "size": 160,
+          "git_blob": "611f9c47436e9c7254f3d1984b74d0cd302dd9dc"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-56-09",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "1a24cfadf0516abd05332a561e6f9560a1217895",
+        "215ecdad3bfed8a22d56b8825c6472f91905d9ba",
+        "48f68fe28e7e12b96f0fdeeed6a34a3dd99beb61",
+        "357541a1c05d12f7b54a5dea026b656eac906ca7",
+        "d0b3b4d104e71c01dc34deaf933fd17da8068de4",
+        "d5996d922154d20075be8d11c20f9b9eb3172b77",
+        "356dc9fb66d064255947c02abdd14f681bf2be22",
+        "c8591e051d32448dc23c2c9c5aef9c7b0495aca7",
+        "bbd7aedd3e461a894fb151912fadeb2ef5d0338b"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-56-09/full_images.png",
+          "size": 236862,
+          "git_blob": "f074e8ddf32dd89fa929991782d5a7638a785c74"
+        },
+        {
+          "path": "dataset/2026-05-02-21-56-09/info.json",
+          "size": 167,
+          "git_blob": "e7a5b008455d02ded3df6aefd03047be7535e773"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-57-27",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "13352171dbd8764428c159185b90a38f43b946c8",
+        "3882adc9ba56f806971ff504bc045c43eb2517f3",
+        "f91c6e10c6edcb3e0d53aa9ea84fe7d0d48ce138",
+        "7975e084e1fde77d2b34f8ee662c29aaf3add070",
+        "af47b72cb07b1cb10182abf700131499ba66be5a",
+        "f824865df9081a323bea69696712fbccca54dbda",
+        "2ffd134d982e60f25251f8528419e7ece817ad7f",
+        "1ea3dcc120dd8463e6a989a4e2c6225485d953b9",
+        "f847fbf57f143b62ece350269d7a5c52ff95f5ad"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-57-27/full_images.png",
+          "size": 240729,
+          "git_blob": "801c278b541e2c4ab9b9d6338a0122d26febc3f9"
+        },
+        {
+          "path": "dataset/2026-05-02-21-57-27/info.json",
+          "size": 180,
+          "git_blob": "2fffd940435341fd50f404b3e9ae813a61d04124"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-21-58-27",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "ef3eda841fca95e9ba991e1d7ec3c110721bdd70",
+        "d184800e012e46be92d2ecd3f2946d8ccb6264a9",
+        "cc6593d3012e74085af748531f8abb6fb2c9fa09",
+        "a44dd7c633337d879966445cda2694dbd4ce53cc",
+        "59c486cbae3dd25ffc566d993ef59d9a2239e145",
+        "0d861ab8492b44117e03f25af9f324072bffd9d5",
+        "9889efbc5b081c6706311acc242685431fd50833",
+        "7007c5604daf5932dcc51871823b5530c40d3606",
+        "102b88f69777a1a23f5c73ea4846c28b5e7921fe"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-21-58-27/full_images.png",
+          "size": 251758,
+          "git_blob": "80c58268d4ff10489310959157e2e6d4ee5ffe1b"
+        },
+        {
+          "path": "dataset/2026-05-02-21-58-27/info.json",
+          "size": 159,
+          "git_blob": "001b5c5cf550d870e076f0be10f7b10527f49d6a"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-22-03-22",
+      "split": "test",
+      "rows": 4,
+      "columns": 4,
+      "tile_blobs": [
+        "a5cdd27d4b5f024e1502010680c46def29ab8106",
+        "093feb98f04fa9767c48d0d420d991073bbc53f6",
+        "2deaa78c9e5c1df12ded2613248187c221b3f584",
+        "690437dc1baa6fa21c34d94449079bb1406c4f40",
+        "81830807f3bd58f7493ad72dd6f3aa903db41d66",
+        "cde332b257a516d4e18bf5c405ccf3d97078eb51",
+        "0fe6c538fcbd92ea410dde7192733c3bebd23846",
+        "c5f7d1804487d29ac1d14152687ad8f80c77b6ab",
+        "3cbe1e0a4903f2279d4143e30a203407828aee31",
+        "14327d51104c3380d0900765170d724b19875865",
+        "36bd80df7f527b85acfd4d7157ac7b4e314e4fd0",
+        "55de50e15078348a62a96bd490be206625c1a34c",
+        "0915f52b59a9de4044c945a08af3e41219a5b219",
+        "feaf641cea95fe7cc45ac3261bb76c63cb0f3be5",
+        "ceae545ab182a3a666a2cadaf3629e1750483d06",
+        "714a656ec8479833f8c4cfafaa02a397e3ff68e1"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-22-03-22/full_images.png",
+          "size": 426176,
+          "git_blob": "06227b21076be1c0a807fa234d6c7d15c83ebd19"
+        },
+        {
+          "path": "dataset/2026-05-02-22-03-22/info.json",
+          "size": 180,
+          "git_blob": "dd4a2c354c1410ed3b14d920a6f574687875ffcd"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-22-04-19",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "dbba81379cbdeb3a768f86b0672dd81d38e2e6fd",
+        "ecacd006725c298a457085c9e6a921bd4fdbd0b1",
+        "ff3118e1b069ba849d7c19a3c70e9ca8bce05365",
+        "ca407393e519febb0b3df6874c8c0399cc100eec",
+        "48c9963707ed2e126a350502317fde3986f2591c",
+        "5b64c3a585fbea339a6ec5fe6121d5a07c207809",
+        "02b2d6d3ecc13e46ad7671061704d04c9b367cd3",
+        "7e87f636c9fcbe961736c05bf7c6bca6016d7d86",
+        "52ab62542733954f2c95447b1d06e2729eb2bf4b"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-22-04-19/full_images.png",
+          "size": 220034,
+          "git_blob": "d7c4f8024fd6a788995350f0baf0f57b361b9cc8"
+        },
+        {
+          "path": "dataset/2026-05-02-22-04-19/info.json",
+          "size": 180,
+          "git_blob": "f099e6d492ffac229afba3b8f733f6e41b2cc993"
+        }
+      ]
+    },
+    {
+      "id": "2026-05-02-22-04-30",
+      "split": "test",
+      "rows": 3,
+      "columns": 3,
+      "tile_blobs": [
+        "6289ee05915336dc4990009d0c99d50899a68ada",
+        "07f1b4c169a03bdff7470b5f35a6db31bedbefbb",
+        "3c4fa8bca106ad88bace03ed5574ffe29f074fb3",
+        "d4b4c182253376703d4996cd43330a14a65dba70",
+        "675ee0b69c2155c5a5b362069a3620de84cea22d",
+        "410e4c63f4185b15e40454942fcfcdcb85092ea8",
+        "4898a618f7122b1dd82e276f2e4ad40c2bcada6e",
+        "f4aaa991f17c882500e8d6abd960657f1c4c94c6",
+        "29b0eec7e734b9e0df373254c2609574a2087930"
+      ],
+      "files": [
+        {
+          "path": "dataset/2026-05-02-22-04-30/full_images.png",
+          "size": 244457,
+          "git_blob": "a8c21a4b46ccaaf3287b145ef6179801119f89f5"
+        },
+        {
+          "path": "dataset/2026-05-02-22-04-30/info.json",
+          "size": 159,
+          "git_blob": "374d64deabd9db2864d282e485e9492de67a395e"
+        }
+      ]
+    }
+  ]
+}

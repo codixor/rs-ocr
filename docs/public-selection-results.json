@@ -1,0 +1,1644 @@
+{
+  "schema_version": 1,
+  "source": "https://github.com/ssivakorn/reCAPTCHA-study",
+  "dataset_revision": "efb3595c33780abf9d326c729973e72d165366c2",
+  "dataset_license": "CC-BY-NC-4.0",
+  "attribution": "Suphannee Sivakorn, reCAPTCHA Study (2026)",
+  "sample_manifest_sha256": "55544d49ea627db77b11b3d3af9aa2cd19f984ea961472d34272612c064bc266",
+  "profile_sha256": "de9d3b589d398431ce399acd0bd26da50ba274c56e8ca236fcf8e88d6ededdf8",
+  "model_sha256": "8ac34fc990f890b4bec8d197de81f956fb135a65067e77fadbf8f053656ed711",
+  "test_predictions_sha256": "07c1949a53ba4a54a0a7c90ec044487abc89140bd84159522674249b699851c5",
+  "protocol": "120 deterministically selected grids; 60 development/60 test; no identical source tile/full-image blobs cross splits; F1 calibration uses development only; test assessed after profile freeze; no failed samples excluded",
+  "labels": [
+    "bicycles",
+    "buses",
+    "cars",
+    "crosswalks",
+    "fire hydrants",
+    "motorcycles",
+    "stairs",
+    "traffic lights",
+    "bridges",
+    "chimneys",
+    "palm trees",
+    "tractors",
+    "buildings",
+    "trees",
+    "an empty road",
+    "a sidewalk"
+  ],
+  "baseline": {
+    "min_score": 0.5,
+    "min_margin": 0.1
+  },
+  "calibrated": {
+    "min_score": 0.3,
+    "min_margin": 0.1
+  },
+  "held_out": {
+    "all": {
+      "baseline": {
+        "grids": 60,
+        "tiles": 680,
+        "positives": 239,
+        "tp": 133,
+        "fp": 6,
+        "fn": 106,
+        "tn": 435,
+        "precision": 0.9568345323741008,
+        "recall": 0.5564853556485355,
+        "f1": 0.7037037037037037,
+        "tile_accuracy": 0.8352941176470589,
+        "exact_grids": 20,
+        "exact_grid_rate": 0.3333333333333333,
+        "exact_grid_wilson_95": [
+          0.2272926152352268,
+          0.4594313354788031
+        ]
+      },
+      "calibrated": {
+        "grids": 60,
+        "tiles": 680,
+        "positives": 239,
+        "tp": 147,
+        "fp": 12,
+        "fn": 92,
+        "tn": 429,
+        "precision": 0.9245283018867925,
+        "recall": 0.6150627615062761,
+        "f1": 0.7386934673366834,
+        "tile_accuracy": 0.8470588235294118,
+        "exact_grids": 20,
+        "exact_grid_rate": 0.3333333333333333,
+        "exact_grid_wilson_95": [
+          0.2272926152352268,
+          0.4594313354788031
+        ]
+      }
+    },
+    "3x3": {
+      "baseline": {
+        "grids": 40,
+        "tiles": 360,
+        "positives": 120,
+        "tp": 80,
+        "fp": 3,
+        "fn": 40,
+        "tn": 237,
+        "precision": 0.963855421686747,
+        "recall": 0.6666666666666666,
+        "f1": 0.7881773399014779,
+        "tile_accuracy": 0.8805555555555555,
+        "exact_grids": 19,
+        "exact_grid_rate": 0.475,
+        "exact_grid_wilson_95": [
+          0.329354701126789,
+          0.6250263789330753
+        ]
+      },
+      "calibrated": {
+        "grids": 40,
+        "tiles": 360,
+        "positives": 120,
+        "tp": 90,
+        "fp": 7,
+        "fn": 30,
+        "tn": 233,
+        "precision": 0.9278350515463918,
+        "recall": 0.75,
+        "f1": 0.8294930875576036,
+        "tile_accuracy": 0.8972222222222223,
+        "exact_grids": 19,
+        "exact_grid_rate": 0.475,
+        "exact_grid_wilson_95": [
+          0.329354701126789,
+          0.6250263789330753
+        ]
+      }
+    },
+    "4x4": {
+      "baseline": {
+        "grids": 20,
+        "tiles": 320,
+        "positives": 119,
+        "tp": 53,
+        "fp": 3,
+        "fn": 66,
+        "tn": 198,
+        "precision": 0.9464285714285714,
+        "recall": 0.44537815126050423,
+        "f1": 0.6057142857142858,
+        "tile_accuracy": 0.784375,
+        "exact_grids": 1,
+        "exact_grid_rate": 0.05,
+        "exact_grid_wilson_95": [
+          0.008881448800795402,
+          0.23613119344674205
+        ]
+      },
+      "calibrated": {
+        "grids": 20,
+        "tiles": 320,
+        "positives": 119,
+        "tp": 57,
+        "fp": 5,
+        "fn": 62,
+        "tn": 196,
+        "precision": 0.9193548387096774,
+        "recall": 0.4789915966386555,
+        "f1": 0.6298342541436464,
+        "tile_accuracy": 0.790625,
+        "exact_grids": 1,
+        "exact_grid_rate": 0.05,
+        "exact_grid_wilson_95": [
+          0.008881448800795402,
+          0.23613119344674205
+        ]
+      }
+    },
+    "bicycles": {
+      "baseline": {
+        "grids": 14,
+        "tiles": 168,
+        "positives": 54,
+        "tp": 34,
+        "fp": 0,
+        "fn": 20,
+        "tn": 114,
+        "precision": 1.0,
+        "recall": 0.6296296296296297,
+        "f1": 0.7727272727272727,
+        "tile_accuracy": 0.8809523809523809,
+        "exact_grids": 5,
+        "exact_grid_rate": 0.35714285714285715,
+        "exact_grid_wilson_95": [
+          0.1634473175355414,
+          0.612355768960926
+        ]
+      },
+      "calibrated": {
+        "grids": 14,
+        "tiles": 168,
+        "positives": 54,
+        "tp": 35,
+        "fp": 0,
+        "fn": 19,
+        "tn": 114,
+        "precision": 1.0,
+        "recall": 0.6481481481481481,
+        "f1": 0.7865168539325843,
+        "tile_accuracy": 0.8869047619047619,
+        "exact_grids": 5,
+        "exact_grid_rate": 0.35714285714285715,
+        "exact_grid_wilson_95": [
+          0.1634473175355414,
+          0.612355768960926
+        ]
+      }
+    },
+    "buses": {
+      "baseline": {
+        "grids": 8,
+        "tiles": 86,
+        "positives": 29,
+        "tp": 21,
+        "fp": 1,
+        "fn": 8,
+        "tn": 56,
+        "precision": 0.9545454545454546,
+        "recall": 0.7241379310344828,
+        "f1": 0.8235294117647058,
+        "tile_accuracy": 0.8953488372093024,
+        "exact_grids": 3,
+        "exact_grid_rate": 0.375,
+        "exact_grid_wilson_95": [
+          0.13684428582359742,
+          0.6942576053973727
+        ]
+      },
+      "calibrated": {
+        "grids": 8,
+        "tiles": 86,
+        "positives": 29,
+        "tp": 22,
+        "fp": 1,
+        "fn": 7,
+        "tn": 56,
+        "precision": 0.9565217391304348,
+        "recall": 0.7586206896551724,
+        "f1": 0.8461538461538461,
+        "tile_accuracy": 0.9069767441860465,
+        "exact_grids": 3,
+        "exact_grid_rate": 0.375,
+        "exact_grid_wilson_95": [
+          0.13684428582359742,
+          0.6942576053973727
+        ]
+      }
+    },
+    "cars": {
+      "baseline": {
+        "grids": 11,
+        "tiles": 99,
+        "positives": 33,
+        "tp": 5,
+        "fp": 1,
+        "fn": 28,
+        "tn": 65,
+        "precision": 0.8333333333333334,
+        "recall": 0.15151515151515152,
+        "f1": 0.2564102564102564,
+        "tile_accuracy": 0.7070707070707071,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.2588329669680317
+        ]
+      },
+      "calibrated": {
+        "grids": 11,
+        "tiles": 99,
+        "positives": 33,
+        "tp": 14,
+        "fp": 4,
+        "fn": 19,
+        "tn": 62,
+        "precision": 0.7777777777777778,
+        "recall": 0.42424242424242425,
+        "f1": 0.5490196078431373,
+        "tile_accuracy": 0.7676767676767676,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.2588329669680317
+        ]
+      }
+    },
+    "crosswalks": {
+      "baseline": {
+        "grids": 10,
+        "tiles": 97,
+        "positives": 32,
+        "tp": 29,
+        "fp": 2,
+        "fn": 3,
+        "tn": 63,
+        "precision": 0.9354838709677419,
+        "recall": 0.90625,
+        "f1": 0.9206349206349206,
+        "tile_accuracy": 0.9484536082474226,
+        "exact_grids": 7,
+        "exact_grid_rate": 0.7,
+        "exact_grid_wilson_95": [
+          0.39677814746114537,
+          0.8922087325936989
+        ]
+      },
+      "calibrated": {
+        "grids": 10,
+        "tiles": 97,
+        "positives": 32,
+        "tp": 30,
+        "fp": 3,
+        "fn": 2,
+        "tn": 62,
+        "precision": 0.9090909090909091,
+        "recall": 0.9375,
+        "f1": 0.9230769230769231,
+        "tile_accuracy": 0.9484536082474226,
+        "exact_grids": 7,
+        "exact_grid_rate": 0.7,
+        "exact_grid_wilson_95": [
+          0.39677814746114537,
+          0.8922087325936989
+        ]
+      }
+    },
+    "fire hydrants": {
+      "baseline": {
+        "grids": 7,
+        "tiles": 70,
+        "positives": 25,
+        "tp": 21,
+        "fp": 1,
+        "fn": 4,
+        "tn": 44,
+        "precision": 0.9545454545454546,
+        "recall": 0.84,
+        "f1": 0.8936170212765957,
+        "tile_accuracy": 0.9285714285714286,
+        "exact_grids": 5,
+        "exact_grid_rate": 0.7142857142857143,
+        "exact_grid_wilson_95": [
+          0.35893445183261935,
+          0.9177810759959433
+        ]
+      },
+      "calibrated": {
+        "grids": 7,
+        "tiles": 70,
+        "positives": 25,
+        "tp": 21,
+        "fp": 1,
+        "fn": 4,
+        "tn": 44,
+        "precision": 0.9545454545454546,
+        "recall": 0.84,
+        "f1": 0.8936170212765957,
+        "tile_accuracy": 0.9285714285714286,
+        "exact_grids": 5,
+        "exact_grid_rate": 0.7142857142857143,
+        "exact_grid_wilson_95": [
+          0.35893445183261935,
+          0.9177810759959433
+        ]
+      }
+    },
+    "motorcycles": {
+      "baseline": {
+        "grids": 6,
+        "tiles": 96,
+        "positives": 41,
+        "tp": 9,
+        "fp": 0,
+        "fn": 32,
+        "tn": 55,
+        "precision": 1.0,
+        "recall": 0.21951219512195122,
+        "f1": 0.36,
+        "tile_accuracy": 0.6666666666666666,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          2.7755575615628914e-17,
+          0.3903342879021653
+        ]
+      },
+      "calibrated": {
+        "grids": 6,
+        "tiles": 96,
+        "positives": 41,
+        "tp": 10,
+        "fp": 0,
+        "fn": 31,
+        "tn": 55,
+        "precision": 1.0,
+        "recall": 0.24390243902439024,
+        "f1": 0.39215686274509803,
+        "tile_accuracy": 0.6770833333333334,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          2.7755575615628914e-17,
+          0.3903342879021653
+        ]
+      }
+    },
+    "traffic lights": {
+      "baseline": {
+        "grids": 4,
+        "tiles": 64,
+        "positives": 25,
+        "tp": 14,
+        "fp": 1,
+        "fn": 11,
+        "tn": 38,
+        "precision": 0.9333333333333333,
+        "recall": 0.56,
+        "f1": 0.7,
+        "tile_accuracy": 0.8125,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.4898908364545973
+        ]
+      },
+      "calibrated": {
+        "grids": 4,
+        "tiles": 64,
+        "positives": 25,
+        "tp": 15,
+        "fp": 3,
+        "fn": 10,
+        "tn": 36,
+        "precision": 0.8333333333333334,
+        "recall": 0.6,
+        "f1": 0.6976744186046512,
+        "tile_accuracy": 0.796875,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.4898908364545973
+        ]
+      }
+    }
+  },
+  "test_grids": [
+    {
+      "id": "2026-04-25-19-34-00",
+      "target": "bicycles",
+      "rows": 4,
+      "expected": [
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "baseline": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "calibrated": [
+        9,
+        10,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "2026-04-25-19-45-00",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        0,
+        5,
+        6
+      ],
+      "baseline": [
+        0,
+        5,
+        6
+      ],
+      "calibrated": [
+        0,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "2026-04-25-19-51-00",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        2,
+        3,
+        8
+      ],
+      "baseline": [
+        2,
+        3,
+        8
+      ],
+      "calibrated": [
+        2,
+        3,
+        8
+      ]
+    },
+    {
+      "id": "2026-04-26-00-41-00",
+      "target": "traffic lights",
+      "rows": 4,
+      "expected": [
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "baseline": [
+        2,
+        9,
+        10,
+        12,
+        14
+      ],
+      "calibrated": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-26-00-45-00",
+      "target": "traffic lights",
+      "rows": 4,
+      "expected": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "baseline": [
+        10,
+        11,
+        14,
+        15
+      ],
+      "calibrated": [
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-26-02-50-00",
+      "target": "buses",
+      "rows": 3,
+      "expected": [
+        1,
+        2,
+        3
+      ],
+      "baseline": [
+        1,
+        2
+      ],
+      "calibrated": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "2026-04-26-02-58-00",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        3,
+        4,
+        6
+      ],
+      "baseline": [
+        3,
+        6
+      ],
+      "calibrated": [
+        3,
+        6
+      ]
+    },
+    {
+      "id": "2026-04-26-02-59-00",
+      "target": "bicycles",
+      "rows": 4,
+      "expected": [
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "baseline": [
+        11,
+        15
+      ],
+      "calibrated": [
+        11,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-26-03-13-00",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        0,
+        2,
+        5
+      ],
+      "baseline": [
+        5,
+        7
+      ],
+      "calibrated": [
+        5,
+        7
+      ]
+    },
+    {
+      "id": "2026-04-26-03-57-00",
+      "target": "bicycles",
+      "rows": 4,
+      "expected": [
+        6,
+        10
+      ],
+      "baseline": [],
+      "calibrated": []
+    },
+    {
+      "id": "2026-04-26-04-28-00",
+      "target": "fire hydrants",
+      "rows": 3,
+      "expected": [
+        0,
+        4,
+        8
+      ],
+      "baseline": [
+        0,
+        4,
+        8
+      ],
+      "calibrated": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "id": "2026-04-26-05-20-00",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        3,
+        6,
+        7
+      ],
+      "baseline": [
+        6
+      ],
+      "calibrated": [
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "2026-04-26-06-04-00",
+      "target": "buses",
+      "rows": 3,
+      "expected": [
+        2,
+        7,
+        8
+      ],
+      "baseline": [
+        2,
+        7,
+        8
+      ],
+      "calibrated": [
+        2,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "2026-04-26-06-14-00",
+      "target": "fire hydrants",
+      "rows": 4,
+      "expected": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        15
+      ],
+      "baseline": [
+        2,
+        6,
+        7
+      ],
+      "calibrated": [
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "2026-04-26-06-51-00",
+      "target": "bicycles",
+      "rows": 4,
+      "expected": [
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "baseline": [
+        10,
+        11,
+        14
+      ],
+      "calibrated": [
+        10,
+        11,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-26-07-01-00",
+      "target": "motorcycles",
+      "rows": 4,
+      "expected": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "baseline": [
+        3,
+        6,
+        10
+      ],
+      "calibrated": [
+        3,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "2026-04-26-07-02-00",
+      "target": "bicycles",
+      "rows": 4,
+      "expected": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ],
+      "baseline": [
+        5,
+        6,
+        9,
+        10
+      ],
+      "calibrated": [
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "2026-04-26-07-51-00",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        2,
+        6,
+        8
+      ],
+      "baseline": [],
+      "calibrated": [
+        2,
+        8
+      ]
+    },
+    {
+      "id": "2026-04-26-08-17-00",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        1,
+        6,
+        8
+      ],
+      "baseline": [
+        1,
+        6,
+        8
+      ],
+      "calibrated": [
+        1,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "2026-04-26-08-34-00",
+      "target": "motorcycles",
+      "rows": 4,
+      "expected": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        9,
+        10,
+        13
+      ],
+      "baseline": [],
+      "calibrated": [
+        5
+      ]
+    },
+    {
+      "id": "2026-04-26-08-40-00",
+      "target": "buses",
+      "rows": 3,
+      "expected": [
+        2,
+        4,
+        7
+      ],
+      "baseline": [
+        4
+      ],
+      "calibrated": [
+        4
+      ]
+    },
+    {
+      "id": "2026-04-26-08-50-00",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        1,
+        6,
+        8
+      ],
+      "baseline": [
+        6
+      ],
+      "calibrated": [
+        6
+      ]
+    },
+    {
+      "id": "2026-04-26-09-24-00",
+      "target": "buses",
+      "rows": 3,
+      "expected": [
+        2,
+        5,
+        8
+      ],
+      "baseline": [
+        2,
+        5,
+        8
+      ],
+      "calibrated": [
+        2,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "2026-04-26-09-45-00",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        2,
+        3,
+        7
+      ],
+      "baseline": [
+        2
+      ],
+      "calibrated": [
+        2,
+        7
+      ]
+    },
+    {
+      "id": "2026-04-26-10-12-00",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        3,
+        4,
+        5
+      ],
+      "baseline": [
+        2,
+        4,
+        5
+      ],
+      "calibrated": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "2026-04-26-10-57-00",
+      "target": "bicycles",
+      "rows": 4,
+      "expected": [
+        4,
+        5,
+        8,
+        9,
+        10,
+        13
+      ],
+      "baseline": [
+        8,
+        9
+      ],
+      "calibrated": [
+        4,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "2026-04-26-11-05-00",
+      "target": "buses",
+      "rows": 4,
+      "expected": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "baseline": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "calibrated": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "2026-04-26-11-30-00",
+      "target": "fire hydrants",
+      "rows": 3,
+      "expected": [
+        0,
+        2,
+        6
+      ],
+      "baseline": [
+        0,
+        2,
+        6
+      ],
+      "calibrated": [
+        0,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "2026-04-26-11-47-00",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        3,
+        4,
+        6
+      ],
+      "baseline": [
+        3,
+        6
+      ],
+      "calibrated": [
+        3,
+        6
+      ]
+    },
+    {
+      "id": "2026-04-26-11-59-00",
+      "target": "fire hydrants",
+      "rows": 3,
+      "expected": [
+        4,
+        5,
+        7
+      ],
+      "baseline": [
+        4,
+        5,
+        7
+      ],
+      "calibrated": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "2026-04-30-21-31-18",
+      "target": "motorcycles",
+      "rows": 4,
+      "expected": [
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "baseline": [
+        9,
+        13
+      ],
+      "calibrated": [
+        9,
+        13
+      ]
+    },
+    {
+      "id": "2026-04-30-22-20-45",
+      "target": "traffic lights",
+      "rows": 4,
+      "expected": [
+        3,
+        5,
+        7
+      ],
+      "baseline": [
+        3,
+        7
+      ],
+      "calibrated": [
+        3,
+        7
+      ]
+    },
+    {
+      "id": "2026-04-30-22-21-41",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        0,
+        3,
+        5
+      ],
+      "baseline": [
+        5
+      ],
+      "calibrated": [
+        3,
+        5
+      ]
+    },
+    {
+      "id": "2026-05-02-17-04-24",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        2,
+        3,
+        6
+      ],
+      "baseline": [
+        2,
+        3,
+        6
+      ],
+      "calibrated": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "2026-05-02-17-10-56",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        3,
+        7,
+        8
+      ],
+      "baseline": [
+        3,
+        7,
+        8
+      ],
+      "calibrated": [
+        3,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "2026-05-02-17-11-12",
+      "target": "motorcycles",
+      "rows": 4,
+      "expected": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13
+      ],
+      "baseline": [
+        1,
+        5
+      ],
+      "calibrated": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "2026-05-02-17-12-00",
+      "target": "buses",
+      "rows": 3,
+      "expected": [
+        2,
+        4,
+        5
+      ],
+      "baseline": [
+        2,
+        4
+      ],
+      "calibrated": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "2026-05-02-17-14-54",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        0,
+        2,
+        5
+      ],
+      "baseline": [
+        0
+      ],
+      "calibrated": [
+        0
+      ]
+    },
+    {
+      "id": "2026-05-02-17-15-45",
+      "target": "motorcycles",
+      "rows": 4,
+      "expected": [
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "baseline": [
+        4,
+        5
+      ],
+      "calibrated": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "2026-05-02-18-42-30",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        2,
+        3,
+        4
+      ],
+      "baseline": [],
+      "calibrated": []
+    },
+    {
+      "id": "2026-05-02-18-45-21",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        2,
+        3,
+        5
+      ],
+      "baseline": [],
+      "calibrated": []
+    },
+    {
+      "id": "2026-05-02-18-46-09",
+      "target": "fire hydrants",
+      "rows": 3,
+      "expected": [
+        3,
+        5,
+        8
+      ],
+      "baseline": [
+        3,
+        5,
+        8
+      ],
+      "calibrated": [
+        3,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "2026-05-02-21-08-37",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        0,
+        1,
+        8
+      ],
+      "baseline": [
+        0,
+        1,
+        8
+      ],
+      "calibrated": [
+        0,
+        1,
+        8
+      ]
+    },
+    {
+      "id": "2026-05-02-21-08-54",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        1,
+        2,
+        6
+      ],
+      "baseline": [
+        1,
+        2,
+        6
+      ],
+      "calibrated": [
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "2026-05-02-21-09-44",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        0,
+        2,
+        6
+      ],
+      "baseline": [],
+      "calibrated": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "2026-05-02-21-10-17",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        0,
+        5,
+        6
+      ],
+      "baseline": [
+        0,
+        5,
+        6
+      ],
+      "calibrated": [
+        0,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "2026-05-02-21-10-45",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        1,
+        7,
+        8
+      ],
+      "baseline": [
+        1,
+        7,
+        8
+      ],
+      "calibrated": [
+        1,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "2026-05-02-21-12-09",
+      "target": "traffic lights",
+      "rows": 4,
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        11
+      ],
+      "baseline": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "calibrated": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "2026-05-02-21-15-30",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        1,
+        2,
+        7
+      ],
+      "baseline": [
+        1,
+        2,
+        7
+      ],
+      "calibrated": [
+        1,
+        2,
+        7
+      ]
+    },
+    {
+      "id": "2026-05-02-21-21-02",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        1,
+        2,
+        7
+      ],
+      "baseline": [
+        2
+      ],
+      "calibrated": [
+        2,
+        7
+      ]
+    },
+    {
+      "id": "2026-05-02-21-22-28",
+      "target": "crosswalks",
+      "rows": 3,
+      "expected": [
+        3,
+        6,
+        7
+      ],
+      "baseline": [
+        3,
+        6,
+        7
+      ],
+      "calibrated": [
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "2026-05-02-21-22-36",
+      "target": "buses",
+      "rows": 4,
+      "expected": [
+        5,
+        6
+      ],
+      "baseline": [
+        5,
+        6
+      ],
+      "calibrated": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "2026-05-02-21-23-53",
+      "target": "buses",
+      "rows": 3,
+      "expected": [
+        1,
+        3,
+        6
+      ],
+      "baseline": [
+        1,
+        3
+      ],
+      "calibrated": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "2026-05-02-21-55-26",
+      "target": "motorcycles",
+      "rows": 4,
+      "expected": [
+        6,
+        10
+      ],
+      "baseline": [],
+      "calibrated": []
+    },
+    {
+      "id": "2026-05-02-21-56-09",
+      "target": "bicycles",
+      "rows": 3,
+      "expected": [
+        0,
+        4,
+        7
+      ],
+      "baseline": [
+        0,
+        4,
+        7
+      ],
+      "calibrated": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "id": "2026-05-02-21-57-27",
+      "target": "fire hydrants",
+      "rows": 3,
+      "expected": [
+        3,
+        6,
+        7
+      ],
+      "baseline": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "calibrated": [
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "2026-05-02-21-58-27",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        3,
+        4,
+        5
+      ],
+      "baseline": [],
+      "calibrated": [
+        1
+      ]
+    },
+    {
+      "id": "2026-05-02-22-03-22",
+      "target": "crosswalks",
+      "rows": 4,
+      "expected": [
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "baseline": [
+        6,
+        7,
+        10,
+        11,
+        14
+      ],
+      "calibrated": [
+        6,
+        7,
+        10,
+        11,
+        14
+      ]
+    },
+    {
+      "id": "2026-05-02-22-04-19",
+      "target": "fire hydrants",
+      "rows": 3,
+      "expected": [
+        0,
+        2,
+        4
+      ],
+      "baseline": [
+        0,
+        2,
+        4
+      ],
+      "calibrated": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "2026-05-02-22-04-30",
+      "target": "cars",
+      "rows": 3,
+      "expected": [
+        3,
+        6,
+        8
+      ],
+      "baseline": [],
+      "calibrated": [
+        8
+      ]
+    }
+  ],
+  "paired_uncertainty": {
+    "method": "paired grid bootstrap, percentile interval",
+    "seed": "rs-ocr-f1-bootstrap-v1",
+    "repetitions": 2000,
+    "valid_repetitions": 2000,
+    "f1_delta_95": [
+      0.01283000680657275,
+      0.06416542383981189
+    ]
+  },
+  "limitations": [
+    "One public dataset, one annotator, small sample; no claim of general challenge success",
+    "Repeated or near-duplicate scenes can remain despite exact source-byte grouping",
+    "Correlated tiles; exact-grid Wilson interval assumes independent grids and may be optimistic",
+    "Whole-tile CLIP can miss small/partial/secondary objects in 4x4 grids",
+    "Relative scores depend on this exact competing label set; thresholds are not universal",
+    "No training, dynamic-refresh loop, live-service interaction or token verification"
+  ]
+}

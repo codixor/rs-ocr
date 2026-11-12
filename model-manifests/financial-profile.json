@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "rs-ocr/src/documents/extraction.rs": "6d4d998f16957fa06f84be303456294265f7d12d7aa47b4fb9965adec35e08e1",
+    "rs-ocr/src/documents/money.rs": "982272ef011f37fb413bbe91a5a043c3adb94ea137b545b79512bea8ca420c6e",
+    "rs-ocr/src/documents/mod.rs": "d5662a549c1da516ff38a6f880623f463b85e86fd96eaa3a2e587abfcc045861",
+    "rs-ocr/src/bills.rs": "2b82a6ecba910a9354981f1347c7c980431890364673bc52a460a0be34a7d66f",
+    "rs-ocr/src/cheques.rs": "2dc2b966c260517e27c3dda0299de31fdeedee590f51e8c28ef4deaf19fd7832",
+    "rs-ocr/examples/financial_batch.rs": "e9e895442313d8a49555b512a25eabc208a1146412e82082967539c98a8bc2b8",
+    "rs-ocr/Cargo.toml": "471465021c19d62f4e4bcf7aaef23384c6cd4ef3dd2e01120794556551fec980"
+  },
+  "manifest_sha256": "12d8d725ed832e817aff2ac45d230850a3ebbcb2ffd78a12987a422c83535b1d",
+  "models": {
+    "rs-ocr/models/ppocrv6-tiny/rec.rten": "6c94c6b42c43a39d11cf3dd1267199ba04a11afe9de43632daa6f3983b365a9b",
+    "rs-ocr/models/ppocrv6-tiny/det.rten": "ca1f0196d2a2da2b485e2cda6aaf5ba02258ac71127d577c8a77a75e89b67605",
+    "rs-ocr/models/ppocrv6-tiny/dict.txt": "c5cbe34ef40c29c4df07ed012bf96569cb69a2d2a01a07027e9f13cb832bd9cd"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "name": "PP-DocLayout-S",
+  "license": "Apache-2.0",
+  "upstream_revision": "8ac289e66575bb9bba6e15c53719d8b15cc9b3b2",
+  "export_revision": "7e851b9e5ad66613d7318a3213ab3336ebe0a514",
+  "artifacts": [
+    {
+      "name": "source.onnx",
+      "url": "https://huggingface.co/stefanj0/PP-DocLayout-S-ONNX/resolve/7e851b9e5ad66613d7318a3213ab3336ebe0a514/pp_doclayout_s.onnx",
+      "size": 4917852,
+      "sha256": "33688dbee1c23e34b81777e97cb428eb40f24b242c02b5f623484959e830aec8"
+    },
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/stefanj0/PP-DocLayout-S-ONNX/resolve/7e851b9e5ad66613d7318a3213ab3336ebe0a514/README.md",
+      "size": 3621,
+      "sha256": "2065e499b7955e75f15fbc4f1d7253af44159fc895d4bffaef64467e0b5248dc"
+    },
+    {
+      "name": "upstream-inference.yml",
+      "url": "https://huggingface.co/PaddlePaddle/PP-DocLayout-S/resolve/8ac289e66575bb9bba6e15c53719d8b15cc9b3b2/inference.yml",
+      "size": 1579,
+      "sha256": "6f690098c438214c67822239a568f0bc2bbe97a8f02fba93e492d4f2c47523c3"
+    }
+  ],
+  "prepared_sha256": "dfdc835c4826725b0a64edbc8c232999f2b25d4f9fb1a4f981639124dea015b6",
+  "prepared_size": 4917812,
+  "preparation": "Preserve source export; replace only NMS IoU .6 with .5 and score .025 with .3 to match official inference.yml. ONNX initializer weights unchanged.",
+  "inputs": {
+    "image": [
+      1,
+      3,
+      480,
+      480
+    ],
+    "scale_factor": [
+      1,
+      2
+    ]
+  },
+  "classes": [
+    "paragraph_title",
+    "image",
+    "text",
+    "number",
+    "abstract",
+    "content",
+    "figure_title",
+    "formula",
+    "table",
+    "table_title",
+    "reference",
+    "doc_title",
+    "footnote",
+    "header",
+    "algorithm",
+    "footer",
+    "seal",
+    "chart_title",
+    "chart",
+    "formula_number",
+    "header_image",
+    "footer_image",
+    "aside_text"
+  ],
+  "preprocess": {
+    "resize": "OpenCV INTER_CUBIC (a=-.75), 480x480 without keep_ratio",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "scale_factor_order": [
+      "480/original_height",
+      "480/original_width"
+    ]
+  },
+  "parity_samples": [
+    "sroie-087",
+    "invoice-20210509_001704",
+    "invoice-20210508_235729",
+    "cheque-00"
+  ],
+  "parity_tolerances": {
+    "max_score_error": 0.002,
+    "max_coordinate_error_pixels": 0.5
+  },
+  "limits": "Community ONNX export, not independently checked against Paddle native inference; reference checks establish RTen parity with the prepared ONNX graph on four specified images only."
+}

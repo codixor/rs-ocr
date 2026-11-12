@@ -1,0 +1,1662 @@
+{
+  "version": 1,
+  "runtime": "RustO 0.3.2 Tiny + optional PP-DocLayout-S; RTen 0.27.0 CPU FP32",
+  "protocol": {
+    "development": "All 58 documents of the earlier layout study, explicitly retired to development; cached original Tiny spans reused.",
+    "test": "Eight new source/image-hash-disjoint public images: four deterministic-order receipts, two unused-issuer invoices and two archival handwritten cheques.",
+    "selection": "Freeze model, source, thresholds and labels after development, before inspecting fresh test inference.",
+    "assistance": "No crop OCR retries. Original full-page OCR preserved; only missing candidates may be backfilled from explicit labels inside predicted regions. All backfills require review.",
+    "limits": "Small purposive split; manual cheque annotation by implementer; generic layout classes are not financial field labels."
+  },
+  "profile": {
+    "sources": {
+      "rs-ocr/src/documents/extraction.rs": "e518e2c73540cb2b80d2efad83a4d2505feb2847e03c5645395b1f65f43fe603",
+      "rs-ocr/src/documents/money.rs": "982272ef011f37fb413bbe91a5a043c3adb94ea137b545b79512bea8ca420c6e",
+      "rs-ocr/src/documents/mod.rs": "054df235de96dad19ea688702e669640827bc9b084b1f702aa13a618cfddb276",
+      "rs-ocr/src/bills.rs": "72f6e18142f8debc4f252b524986d5b3a27f353e79430d2ddfc9535e9fc5f508",
+      "rs-ocr/src/cheques.rs": "8b20d3263a58d1f0880ab14ae6eb8c534eb79dbb489a4ac4959d17ce3917dc56",
+      "rs-ocr/examples/financial_batch.rs": "e9e895442313d8a49555b512a25eabc208a1146412e82082967539c98a8bc2b8",
+      "rs-ocr/Cargo.toml": "fa7338c03c7ec3d6a13374a1badb7224a9dca9e1854ec13596e7025f41c7d9a3",
+      "rs-ocr/src/lib.rs": "06a195645797dd005a2ca08e667e93e511f664e3a9c401090f0e15ef97c4ceb7",
+      "rs-ocr/src/documents/regions.rs": "32b8a33cc73f6c08d319e1501669029fd41f5f9b4c33c0d6484c923ecfba68c5",
+      "rs-ocr/examples/doc_layout_batch.rs": "0253bd5f07f3eb7cc1d8c887550ec64f07286883d77e5f30519a1c4c40bbb159",
+      "rs-ocr/src/document_layout/companion.rs": "c72ac250c2abc530a454c54d841d9211eb51f11173146bc513dc8b2d51dc0be5",
+      "rs-ocr/src/document_layout/mod.rs": "bd65c176a533a5bf27a787883bcf6ce09829384e4f95550a2fca69dda545df3a",
+      "rs-ocr/src/document_layout/model.rs": "825fae24ae81efcab9d6da620b51d5fca58fde8744acf33a3896e3abe1bcefef",
+      "rs-ocr/src/document_layout/preprocess.rs": "8f57002fc81438e52387bd60e6923a8be648f3b2104ef1acac80db386236c621"
+    },
+    "manifest_sha256": "24b0a40e3979db688102ae791eb805ce8e93dabe5ea807896d380c990fe87205",
+    "spec_sha256": "3e81365c31d9d27c2372b2a060c069bb6ba74e5a63015c3ecb3a9f4ff77637e6",
+    "development_sha256": "1f7626d62acf5ec932963d5f12ff881651a81fbe34dfdb51663ecf9cd8be1bfd",
+    "history_sha256": "b5db5b56554fbbfec33ef8ed598ce2f90f14f435d354103c8803f278d4f51eb6",
+    "parity_sha256": "e00eb9fde969df93ecad931a27b01faea3e3070f5bdd5cec99f4eeb04d431e2d",
+    "tiny_models": {
+      "rs-ocr/models/ppocrv6-tiny/rec.rten": "6c94c6b42c43a39d11cf3dd1267199ba04a11afe9de43632daa6f3983b365a9b",
+      "rs-ocr/models/ppocrv6-tiny/det.rten": "ca1f0196d2a2da2b485e2cda6aaf5ba02258ac71127d577c8a77a75e89b67605",
+      "rs-ocr/models/ppocrv6-tiny/dict.txt": "c5cbe34ef40c29c4df07ed012bf96569cb69a2d2a01a07027e9f13cb832bd9cd"
+    }
+  },
+  "metrics": {
+    "dev": {
+      "receipt": {
+        "baseline": {
+          "documents": 36,
+          "exact_documents": 17,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 36,
+              "correct": 34,
+              "present": 34,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 1,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.9444444444444444,
+              "coverage": 0.9444444444444444
+            },
+            "merchant": {
+              "total": 36,
+              "correct": 22,
+              "present": 36,
+              "wrong": 14,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 31,
+              "target_in_ocr_denominator": 36,
+              "accuracy": 0.6111111111111112,
+              "coverage": 1.0
+            },
+            "total": {
+              "total": 35,
+              "correct": 26,
+              "present": 27,
+              "wrong": 1,
+              "missing": 8,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 35,
+              "target_in_ocr_denominator": 35,
+              "accuracy": 0.7428571428571429,
+              "coverage": 0.7714285714285715
+            }
+          },
+          "aggregate": {
+            "total": 107,
+            "correct": 82,
+            "present": 97,
+            "wrong": 15,
+            "missing": 10,
+            "ambiguous": 1,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 66,
+            "target_in_ocr_denominator": 71,
+            "accuracy": 0.7663551401869159,
+            "coverage": 0.9065420560747663
+          }
+        },
+        "assisted": {
+          "documents": 36,
+          "exact_documents": 17,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 36,
+              "correct": 34,
+              "present": 34,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 1,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.9444444444444444,
+              "coverage": 0.9444444444444444
+            },
+            "merchant": {
+              "total": 36,
+              "correct": 22,
+              "present": 36,
+              "wrong": 14,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 31,
+              "target_in_ocr_denominator": 36,
+              "accuracy": 0.6111111111111112,
+              "coverage": 1.0
+            },
+            "total": {
+              "total": 35,
+              "correct": 26,
+              "present": 27,
+              "wrong": 1,
+              "missing": 8,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 35,
+              "target_in_ocr_denominator": 35,
+              "accuracy": 0.7428571428571429,
+              "coverage": 0.7714285714285715
+            }
+          },
+          "aggregate": {
+            "total": 107,
+            "correct": 82,
+            "present": 97,
+            "wrong": 15,
+            "missing": 10,
+            "ambiguous": 1,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 66,
+            "target_in_ocr_denominator": 71,
+            "accuracy": 0.7663551401869159,
+            "coverage": 0.9065420560747663
+          }
+        }
+      },
+      "invoice": {
+        "baseline": {
+          "documents": 12,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 11,
+              "correct": 10,
+              "present": 10,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 1,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.9090909090909091,
+              "coverage": 0.9090909090909091
+            },
+            "merchant": {
+              "total": 12,
+              "correct": 5,
+              "present": 12,
+              "wrong": 7,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 8,
+              "target_in_ocr_denominator": 12,
+              "accuracy": 0.4166666666666667,
+              "coverage": 1.0
+            },
+            "reference_number": {
+              "total": 11,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 11,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 8,
+              "target_in_ocr_denominator": 11,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "tax": {
+              "total": 12,
+              "correct": 1,
+              "present": 1,
+              "wrong": 0,
+              "missing": 11,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 10,
+              "target_in_ocr_denominator": 12,
+              "accuracy": 0.08333333333333333,
+              "coverage": 0.08333333333333333
+            },
+            "total": {
+              "total": 12,
+              "correct": 5,
+              "present": 6,
+              "wrong": 1,
+              "missing": 6,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 11,
+              "target_in_ocr_denominator": 12,
+              "accuracy": 0.4166666666666667,
+              "coverage": 0.5
+            }
+          },
+          "aggregate": {
+            "total": 58,
+            "correct": 21,
+            "present": 29,
+            "wrong": 8,
+            "missing": 29,
+            "ambiguous": 1,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 37,
+            "target_in_ocr_denominator": 47,
+            "accuracy": 0.3620689655172414,
+            "coverage": 0.5
+          }
+        },
+        "assisted": {
+          "documents": 12,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 11,
+              "correct": 10,
+              "present": 10,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 1,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.9090909090909091,
+              "coverage": 0.9090909090909091
+            },
+            "merchant": {
+              "total": 12,
+              "correct": 5,
+              "present": 12,
+              "wrong": 7,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 8,
+              "target_in_ocr_denominator": 12,
+              "accuracy": 0.4166666666666667,
+              "coverage": 1.0
+            },
+            "reference_number": {
+              "total": 11,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 11,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 8,
+              "target_in_ocr_denominator": 11,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "tax": {
+              "total": 12,
+              "correct": 1,
+              "present": 1,
+              "wrong": 0,
+              "missing": 11,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 10,
+              "target_in_ocr_denominator": 12,
+              "accuracy": 0.08333333333333333,
+              "coverage": 0.08333333333333333
+            },
+            "total": {
+              "total": 12,
+              "correct": 5,
+              "present": 6,
+              "wrong": 1,
+              "missing": 6,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 11,
+              "target_in_ocr_denominator": 12,
+              "accuracy": 0.4166666666666667,
+              "coverage": 0.5
+            }
+          },
+          "aggregate": {
+            "total": 58,
+            "correct": 21,
+            "present": 29,
+            "wrong": 8,
+            "missing": 29,
+            "ambiguous": 1,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 37,
+            "target_in_ocr_denominator": 47,
+            "accuracy": 0.3620689655172414,
+            "coverage": 0.5
+          }
+        }
+      },
+      "cheque": {
+        "baseline": {
+          "documents": 10,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "amount": {
+              "total": 10,
+              "correct": 2,
+              "present": 1,
+              "wrong": 0,
+              "missing": 8,
+              "ambiguous": 0,
+              "negative_controls": 1,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 9,
+              "accuracy": 0.2,
+              "coverage": 0.1
+            },
+            "bank": {
+              "total": 8,
+              "correct": 0,
+              "present": 5,
+              "wrong": 5,
+              "missing": 3,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 8,
+              "accuracy": 0.0,
+              "coverage": 0.625
+            },
+            "cheque_number": {
+              "total": 6,
+              "correct": 3,
+              "present": 3,
+              "wrong": 1,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 2,
+              "false_positive": 1,
+              "target_in_ocr": 3,
+              "target_in_ocr_denominator": 4,
+              "accuracy": 0.5,
+              "coverage": 0.5
+            },
+            "date": {
+              "total": 7,
+              "correct": 2,
+              "present": 1,
+              "wrong": 0,
+              "missing": 5,
+              "ambiguous": 0,
+              "negative_controls": 1,
+              "false_positive": 0,
+              "accuracy": 0.2857142857142857,
+              "coverage": 0.14285714285714285
+            },
+            "payee": {
+              "total": 4,
+              "correct": 2,
+              "present": 1,
+              "wrong": 1,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 2,
+              "false_positive": 0,
+              "target_in_ocr": 0,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.5,
+              "coverage": 0.25
+            }
+          },
+          "aggregate": {
+            "total": 35,
+            "correct": 9,
+            "present": 11,
+            "wrong": 7,
+            "missing": 19,
+            "ambiguous": 0,
+            "negative_controls": 6,
+            "false_positive": 1,
+            "target_in_ocr": 6,
+            "target_in_ocr_denominator": 23,
+            "accuracy": 0.2571428571428571,
+            "coverage": 0.3142857142857143
+          }
+        },
+        "assisted": {
+          "documents": 10,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "amount": {
+              "total": 10,
+              "correct": 2,
+              "present": 1,
+              "wrong": 0,
+              "missing": 8,
+              "ambiguous": 0,
+              "negative_controls": 1,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 9,
+              "accuracy": 0.2,
+              "coverage": 0.1
+            },
+            "bank": {
+              "total": 8,
+              "correct": 0,
+              "present": 5,
+              "wrong": 5,
+              "missing": 3,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 8,
+              "accuracy": 0.0,
+              "coverage": 0.625
+            },
+            "cheque_number": {
+              "total": 6,
+              "correct": 3,
+              "present": 3,
+              "wrong": 1,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 2,
+              "false_positive": 1,
+              "target_in_ocr": 3,
+              "target_in_ocr_denominator": 4,
+              "accuracy": 0.5,
+              "coverage": 0.5
+            },
+            "date": {
+              "total": 7,
+              "correct": 2,
+              "present": 1,
+              "wrong": 0,
+              "missing": 5,
+              "ambiguous": 0,
+              "negative_controls": 1,
+              "false_positive": 0,
+              "accuracy": 0.2857142857142857,
+              "coverage": 0.14285714285714285
+            },
+            "payee": {
+              "total": 4,
+              "correct": 2,
+              "present": 1,
+              "wrong": 1,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 2,
+              "false_positive": 0,
+              "target_in_ocr": 0,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.5,
+              "coverage": 0.25
+            }
+          },
+          "aggregate": {
+            "total": 35,
+            "correct": 9,
+            "present": 11,
+            "wrong": 7,
+            "missing": 19,
+            "ambiguous": 0,
+            "negative_controls": 6,
+            "false_positive": 1,
+            "target_in_ocr": 6,
+            "target_in_ocr_denominator": 23,
+            "accuracy": 0.2571428571428571,
+            "coverage": 0.3142857142857143
+          }
+        }
+      }
+    },
+    "test": {
+      "receipt": {
+        "baseline": {
+          "documents": 4,
+          "exact_documents": 1,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 4,
+              "correct": 3,
+              "present": 3,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.75,
+              "coverage": 0.75
+            },
+            "merchant": {
+              "total": 4,
+              "correct": 2,
+              "present": 4,
+              "wrong": 2,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 4,
+              "accuracy": 0.5,
+              "coverage": 1.0
+            },
+            "total": {
+              "total": 4,
+              "correct": 1,
+              "present": 1,
+              "wrong": 0,
+              "missing": 3,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 3,
+              "target_in_ocr_denominator": 4,
+              "accuracy": 0.25,
+              "coverage": 0.25
+            }
+          },
+          "aggregate": {
+            "total": 12,
+            "correct": 6,
+            "present": 8,
+            "wrong": 2,
+            "missing": 4,
+            "ambiguous": 0,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 5,
+            "target_in_ocr_denominator": 8,
+            "accuracy": 0.5,
+            "coverage": 0.6666666666666666
+          }
+        },
+        "assisted": {
+          "documents": 4,
+          "exact_documents": 1,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 4,
+              "correct": 3,
+              "present": 3,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.75,
+              "coverage": 0.75
+            },
+            "merchant": {
+              "total": 4,
+              "correct": 2,
+              "present": 4,
+              "wrong": 2,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 4,
+              "accuracy": 0.5,
+              "coverage": 1.0
+            },
+            "total": {
+              "total": 4,
+              "correct": 1,
+              "present": 1,
+              "wrong": 0,
+              "missing": 3,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 3,
+              "target_in_ocr_denominator": 4,
+              "accuracy": 0.25,
+              "coverage": 0.25
+            }
+          },
+          "aggregate": {
+            "total": 12,
+            "correct": 6,
+            "present": 8,
+            "wrong": 2,
+            "missing": 4,
+            "ambiguous": 0,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 5,
+            "target_in_ocr_denominator": 8,
+            "accuracy": 0.5,
+            "coverage": 0.6666666666666666
+          }
+        }
+      },
+      "invoice": {
+        "baseline": {
+          "documents": 2,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 2,
+              "correct": 2,
+              "present": 2,
+              "wrong": 0,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 1.0,
+              "coverage": 1.0
+            },
+            "merchant": {
+              "total": 2,
+              "correct": 2,
+              "present": 2,
+              "wrong": 0,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 1.0,
+              "coverage": 1.0
+            },
+            "reference_number": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "tax": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "total": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            }
+          },
+          "aggregate": {
+            "total": 10,
+            "correct": 4,
+            "present": 4,
+            "wrong": 0,
+            "missing": 6,
+            "ambiguous": 0,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 6,
+            "target_in_ocr_denominator": 8,
+            "accuracy": 0.4,
+            "coverage": 0.4
+          }
+        },
+        "assisted": {
+          "documents": 2,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "date": {
+              "total": 2,
+              "correct": 2,
+              "present": 2,
+              "wrong": 0,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 1.0,
+              "coverage": 1.0
+            },
+            "merchant": {
+              "total": 2,
+              "correct": 2,
+              "present": 2,
+              "wrong": 0,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 1.0,
+              "coverage": 1.0
+            },
+            "reference_number": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 2,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "tax": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "total": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            }
+          },
+          "aggregate": {
+            "total": 10,
+            "correct": 4,
+            "present": 4,
+            "wrong": 0,
+            "missing": 6,
+            "ambiguous": 0,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 6,
+            "target_in_ocr_denominator": 8,
+            "accuracy": 0.4,
+            "coverage": 0.4
+          }
+        }
+      },
+      "cheque": {
+        "baseline": {
+          "documents": 2,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "amount": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 0,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "bank": {
+              "total": 2,
+              "correct": 0,
+              "present": 2,
+              "wrong": 2,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 1.0
+            },
+            "cheque_number": {
+              "total": 1,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 0,
+              "target_in_ocr_denominator": 1,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "date": {
+              "total": 1,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            }
+          },
+          "aggregate": {
+            "total": 6,
+            "correct": 0,
+            "present": 2,
+            "wrong": 2,
+            "missing": 4,
+            "ambiguous": 0,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 1,
+            "target_in_ocr_denominator": 5,
+            "accuracy": 0.0,
+            "coverage": 0.3333333333333333
+          }
+        },
+        "assisted": {
+          "documents": 2,
+          "exact_documents": 0,
+          "errors": 0,
+          "fields": {
+            "amount": {
+              "total": 2,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 2,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 0,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "bank": {
+              "total": 2,
+              "correct": 0,
+              "present": 2,
+              "wrong": 2,
+              "missing": 0,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 1,
+              "target_in_ocr_denominator": 2,
+              "accuracy": 0.0,
+              "coverage": 1.0
+            },
+            "cheque_number": {
+              "total": 1,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "target_in_ocr": 0,
+              "target_in_ocr_denominator": 1,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            },
+            "date": {
+              "total": 1,
+              "correct": 0,
+              "present": 0,
+              "wrong": 0,
+              "missing": 1,
+              "ambiguous": 0,
+              "negative_controls": 0,
+              "false_positive": 0,
+              "accuracy": 0.0,
+              "coverage": 0.0
+            }
+          },
+          "aggregate": {
+            "total": 6,
+            "correct": 0,
+            "present": 2,
+            "wrong": 2,
+            "missing": 4,
+            "ambiguous": 0,
+            "negative_controls": 0,
+            "false_positive": 0,
+            "target_in_ocr": 1,
+            "target_in_ocr_denominator": 5,
+            "accuracy": 0.0,
+            "coverage": 0.3333333333333333
+          }
+        }
+      }
+    }
+  },
+  "layout_counts": {
+    "dev": {
+      "images": 58,
+      "images_with_regions": 29,
+      "regions": 39,
+      "backfilled_fields": 0
+    },
+    "test": {
+      "images": 8,
+      "images_with_regions": 3,
+      "regions": 3,
+      "backfilled_fields": 0
+    }
+  },
+  "observed_timing": {
+    "dev": {
+      "layout_median_ms": 115.526857,
+      "layout_min_ms": 101.572961,
+      "layout_max_ms": 215.36512299999998,
+      "ocr_source": "cached original Tiny spans"
+    },
+    "test": {
+      "layout_median_ms": 150.2725465,
+      "layout_min_ms": 113.289421,
+      "layout_max_ms": 232.776605,
+      "ocr_source": "actual native Tiny OCR"
+    }
+  },
+  "failures": [
+    {
+      "id": "sroie-506",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-022",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-300",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-437",
+      "split": "dev",
+      "field": "total",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-155",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-410",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-233",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210509_001704",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_001704",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210508_235729",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210508_235729",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210508_235729",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172440",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210215_172440",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172440",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172440",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210213_140836",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210213_140836",
+      "split": "dev",
+      "field": "date",
+      "status": "ambiguous"
+    },
+    {
+      "id": "invoice-20210213_140836",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_000517",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210509_000517",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172656",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210215_172656",
+      "split": "dev",
+      "field": "total",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210215_172656",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172656",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-00",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-00",
+      "split": "dev",
+      "field": "date",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-00",
+      "split": "dev",
+      "field": "bank",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-01",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-01",
+      "split": "dev",
+      "field": "bank",
+      "status": "wrong"
+    },
+    {
+      "id": "cheque-04",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-04",
+      "split": "dev",
+      "field": "bank",
+      "status": "wrong"
+    },
+    {
+      "id": "cheque-05",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-05",
+      "split": "dev",
+      "field": "cheque_number",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-05",
+      "split": "dev",
+      "field": "date",
+      "status": "missing"
+    },
+    {
+      "id": "cheque-05",
+      "split": "dev",
+      "field": "bank",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-219",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-325",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-411",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-187",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-341",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-341",
+      "split": "dev",
+      "field": "date",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-355",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-052",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-052",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-124",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210316_215850",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210316_215850",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210316_215850",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172922",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172922",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210215_172922",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_000243",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210509_000243",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_000243",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_000243",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_000752",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "invoice-20210509_000752",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_000752",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-00",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-00",
+      "split": "dev",
+      "field": "payee",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-00",
+      "split": "dev",
+      "field": "date",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-01",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-01",
+      "split": "dev",
+      "field": "date",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-01",
+      "split": "dev",
+      "field": "bank",
+      "status": "wrong"
+    },
+    {
+      "id": "check-new-02",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-02",
+      "split": "dev",
+      "field": "cheque_number",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-02",
+      "split": "dev",
+      "field": "date",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-02",
+      "split": "dev",
+      "field": "bank",
+      "status": "missing"
+    },
+    {
+      "id": "check-new-03",
+      "split": "dev",
+      "field": "payee",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-534",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-279",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-279",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-384",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-384",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-166",
+      "split": "dev",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-166",
+      "split": "dev",
+      "field": "date",
+      "status": "ambiguous"
+    },
+    {
+      "id": "sroie-166",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210213_141116",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210213_141116",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210213_141116",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_002320",
+      "split": "dev",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_002320",
+      "split": "dev",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210509_002320",
+      "split": "dev",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "check-layout-00",
+      "split": "dev",
+      "field": "bank",
+      "status": "wrong"
+    },
+    {
+      "id": "check-layout-01",
+      "split": "dev",
+      "field": "bank",
+      "status": "wrong"
+    },
+    {
+      "id": "check-layout-01",
+      "split": "dev",
+      "field": "cheque_number",
+      "status": "wrong"
+    },
+    {
+      "id": "check-layout-01",
+      "split": "dev",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-002",
+      "split": "test",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-002",
+      "split": "test",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-378",
+      "split": "test",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-185",
+      "split": "test",
+      "field": "merchant",
+      "status": "wrong"
+    },
+    {
+      "id": "sroie-185",
+      "split": "test",
+      "field": "date",
+      "status": "missing"
+    },
+    {
+      "id": "sroie-185",
+      "split": "test",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210316_213440",
+      "split": "test",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210316_213440",
+      "split": "test",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210316_213440",
+      "split": "test",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210217_033728",
+      "split": "test",
+      "field": "total",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210217_033728",
+      "split": "test",
+      "field": "tax",
+      "status": "missing"
+    },
+    {
+      "id": "invoice-20210217_033728",
+      "split": "test",
+      "field": "reference_number",
+      "status": "missing"
+    },
+    {
+      "id": "check-doclayout-00",
+      "split": "test",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "check-doclayout-00",
+      "split": "test",
+      "field": "bank",
+      "status": "wrong"
+    },
+    {
+      "id": "check-doclayout-00",
+      "split": "test",
+      "field": "cheque_number",
+      "status": "missing"
+    },
+    {
+      "id": "check-doclayout-01",
+      "split": "test",
+      "field": "amount",
+      "status": "missing"
+    },
+    {
+      "id": "check-doclayout-01",
+      "split": "test",
+      "field": "bank",
+      "status": "wrong"
+    },
+    {
+      "id": "check-doclayout-01",
+      "split": "test",
+      "field": "date",
+      "status": "missing"
+    }
+  ],
+  "prediction_sha256": {
+    "dev.jsonl": "1f7626d62acf5ec932963d5f12ff881651a81fbe34dfdb51663ecf9cd8be1bfd",
+    "test.jsonl": "234db627335846c6d94b83018f18e7652a1dbe5a68ae9df7615f6db25597d445"
+  },
+  "limits": [
+    "Model class regions are not financial field labels. No handwriting model or table structure decoding added.",
+    "Community ONNX export with only two NMS constants normalized to official config; no independent Paddle native prediction verification.",
+    "Small purposive sample; archival cheque gold manually annotated by implementer, not blinded. Exact original labels retained, no fuzzy credit.",
+    "Existing page candidates are never changed; missing-candidate additions require explicit local labels and a review issue. Unchanged aggregate accuracy is a valid result.",
+    "Layout timings include decoding/preprocessing/inference. Not a controlled benchmark; development OCR is cached and fresh test OCR is real."
+  ]
+}

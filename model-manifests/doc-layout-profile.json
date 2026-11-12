@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "rs-ocr/src/documents/extraction.rs": "e518e2c73540cb2b80d2efad83a4d2505feb2847e03c5645395b1f65f43fe603",
+    "rs-ocr/src/documents/money.rs": "982272ef011f37fb413bbe91a5a043c3adb94ea137b545b79512bea8ca420c6e",
+    "rs-ocr/src/documents/mod.rs": "054df235de96dad19ea688702e669640827bc9b084b1f702aa13a618cfddb276",
+    "rs-ocr/src/bills.rs": "72f6e18142f8debc4f252b524986d5b3a27f353e79430d2ddfc9535e9fc5f508",
+    "rs-ocr/src/cheques.rs": "8b20d3263a58d1f0880ab14ae6eb8c534eb79dbb489a4ac4959d17ce3917dc56",
+    "rs-ocr/examples/financial_batch.rs": "e9e895442313d8a49555b512a25eabc208a1146412e82082967539c98a8bc2b8",
+    "rs-ocr/Cargo.toml": "fa7338c03c7ec3d6a13374a1badb7224a9dca9e1854ec13596e7025f41c7d9a3",
+    "rs-ocr/src/lib.rs": "06a195645797dd005a2ca08e667e93e511f664e3a9c401090f0e15ef97c4ceb7",
+    "rs-ocr/src/documents/regions.rs": "32b8a33cc73f6c08d319e1501669029fd41f5f9b4c33c0d6484c923ecfba68c5",
+    "rs-ocr/examples/doc_layout_batch.rs": "0253bd5f07f3eb7cc1d8c887550ec64f07286883d77e5f30519a1c4c40bbb159",
+    "rs-ocr/src/document_layout/companion.rs": "c72ac250c2abc530a454c54d841d9211eb51f11173146bc513dc8b2d51dc0be5",
+    "rs-ocr/src/document_layout/mod.rs": "bd65c176a533a5bf27a787883bcf6ce09829384e4f95550a2fca69dda545df3a",
+    "rs-ocr/src/document_layout/model.rs": "825fae24ae81efcab9d6da620b51d5fca58fde8744acf33a3896e3abe1bcefef",
+    "rs-ocr/src/document_layout/preprocess.rs": "8f57002fc81438e52387bd60e6923a8be648f3b2104ef1acac80db386236c621"
+  },
+  "manifest_sha256": "24b0a40e3979db688102ae791eb805ce8e93dabe5ea807896d380c990fe87205",
+  "spec_sha256": "3e81365c31d9d27c2372b2a060c069bb6ba74e5a63015c3ecb3a9f4ff77637e6",
+  "development_sha256": "1f7626d62acf5ec932963d5f12ff881651a81fbe34dfdb51663ecf9cd8be1bfd",
+  "history_sha256": "b5db5b56554fbbfec33ef8ed598ce2f90f14f435d354103c8803f278d4f51eb6",
+  "parity_sha256": "e00eb9fde969df93ecad931a27b01faea3e3070f5bdd5cec99f4eeb04d431e2d",
+  "tiny_models": {
+    "rs-ocr/models/ppocrv6-tiny/rec.rten": "6c94c6b42c43a39d11cf3dd1267199ba04a11afe9de43632daa6f3983b365a9b",
+    "rs-ocr/models/ppocrv6-tiny/det.rten": "ca1f0196d2a2da2b485e2cda6aaf5ba02258ac71127d577c8a77a75e89b67605",
+    "rs-ocr/models/ppocrv6-tiny/dict.txt": "c5cbe34ef40c29c4df07ed012bf96569cb69a2d2a01a07027e9f13cb832bd9cd"
+  }
+}

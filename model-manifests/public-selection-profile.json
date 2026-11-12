@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "dataset_revision": "efb3595c33780abf9d326c729973e72d165366c2",
+  "sample_manifest_sha256": "55544d49ea627db77b11b3d3af9aa2cd19f984ea961472d34272612c064bc266",
+  "model_sha256": "8ac34fc990f890b4bec8d197de81f956fb135a65067e77fadbf8f053656ed711",
+  "development_predictions_sha256": "ecdb328e7cf413eba21bcaa14d58fb4bb8ddfc64e377bff66962b88c428a2881",
+  "labels": [
+    "bicycles",
+    "buses",
+    "cars",
+    "crosswalks",
+    "fire hydrants",
+    "motorcycles",
+    "stairs",
+    "traffic lights",
+    "bridges",
+    "chimneys",
+    "palm trees",
+    "tractors",
+    "buildings",
+    "trees",
+    "an empty road",
+    "a sidewalk"
+  ],
+  "baseline": {
+    "min_score": 0.5,
+    "min_margin": 0.1
+  },
+  "thresholds": {
+    "min_score": 0.3,
+    "min_margin": 0.1
+  },
+  "selection_rule": "maximum development tile F1, then exact grids, precision and stricter thresholds; 10 score x 4 margin settings",
+  "development_baseline": {
+    "grids": 60,
+    "tiles": 680,
+    "positives": 228,
+    "tp": 163,
+    "fp": 6,
+    "fn": 65,
+    "tn": 446,
+    "precision": 0.9644970414201184,
+    "recall": 0.7149122807017544,
+    "f1": 0.8211586901763224,
+    "tile_accuracy": 0.8955882352941177,
+    "exact_grids": 34,
+    "exact_grid_rate": 0.5666666666666667,
+    "exact_grid_wilson_95": [
+      0.44103438776125564,
+      0.6842760319531324
+    ]
+  },
+  "development_calibrated": {
+    "grids": 60,
+    "tiles": 680,
+    "positives": 228,
+    "tp": 173,
+    "fp": 14,
+    "fn": 55,
+    "tn": 438,
+    "precision": 0.9251336898395722,
+    "recall": 0.7587719298245614,
+    "f1": 0.8337349397590361,
+    "tile_accuracy": 0.8985294117647059,
+    "exact_grids": 33,
+    "exact_grid_rate": 0.55,
+    "exact_grid_wilson_95": [
+      0.4249193588533434,
+      0.6690634559324476
+    ]
+  }
+}

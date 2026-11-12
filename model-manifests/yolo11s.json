@@ -1,0 +1,14 @@
+{
+  "name": "YOLO11s FP32 dynamic ONNX COCO detector",
+  "repository": "unileon-robotics/YOLO11-ONNX",
+  "revision": "0e2a3f195ae62a25bc038ee9665b8e4ac5b98793",
+  "license": "AGPL-3.0",
+  "model_card": "https://huggingface.co/unileon-robotics/YOLO11-ONNX",
+  "upstream": "https://github.com/ultralytics/ultralytics",
+  "base_url": "https://huggingface.co/unileon-robotics/YOLO11-ONNX/resolve/0e2a3f195ae62a25bc038ee9665b8e4ac5b98793/",
+  "input": "images: float32 [1,3,640,640], RGB /255, aspect-preserving letterbox with padding 114",
+  "output": "output0: float32 [1,84,8400], xywh plus 80 COCO class probabilities",
+  "files": [
+    {"remote": "dynamic/yolo11s.onnx", "name": "model.onnx", "size": 38168496, "sha256": "f750b6dbdfb7346ce2f109246c9d1950d030904daab3d49bf2942d4772ce69df"}
+  ]
+}

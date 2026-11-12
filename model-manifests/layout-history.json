@@ -1,0 +1,8 @@
+{
+  "model-manifests/financial-samples.json": "12d8d725ed832e817aff2ac45d230850a3ebbcb2ffd78a12987a422c83535b1d",
+  "model-manifests/financial-profile.json": "65092af6ebd3e98c622fe0c04e25c13e6b40aa305199f5421279f3713accff6d",
+  "docs/financial-results.json": "103d14ab3705d3b46fcb2039db477f12dc80f15d7c9d6ec96d805342b6b42e32",
+  "model-manifests/ocr-model-samples.json": "7daefcfcac3f27f423c2f1221a0a0aafcdbdeb443fec38b2456b8d63b6b51e3c",
+  "model-manifests/ocr-model-selection.json": "fe65a03547ac2732fc5a2c3b28f1463356a9c0d37f78d64d1aa232b3a12ab7ad",
+  "docs/ocr-model-results.json": "be2d9749644f5b0cf25764c76797025c40f5c25537fb572a20d404d4edfdae25"
+}

@@ -1,0 +1,2128 @@
+{
+  "version": 1,
+  "protocol": "Fixed samples and annotations before extraction changes; development-only failure inspection, then freeze parser hash before measuring held-out results. No model training. Both versions use identical cached RustO spans. Invoice jobs use preset comma decimals in both versions, including one development invoice printed with decimal dots; this mismatch remains an error, not automatic locale inference.",
+  "sources": {
+    "sroie": {
+      "repository": "https://github.com/zzzDavid/ICDAR-2019-SROIE",
+      "revision": "27be4271b251c256f695acbade9a801bffe85994",
+      "license_note": "Repository MIT applies to software; SROIE dataset terms remain separate. Research subset kept local, not redistributed.",
+      "selection": "40 IDs with smallest SHA256(rs-ocr-financial-v1:<three-digit id>) over 0..625; grouped by exact company, greedy balanced dev/test."
+    },
+    "zenodo": {
+      "url": "https://zenodo.org/records/7213544",
+      "doi": "10.5281/zenodo.7213544",
+      "license": "CC-BY-4.0",
+      "authors": "Francisco Cruz, Mauro Castelli",
+      "selection": "12 annotation names with smallest SHA256(rs-ocr-financial-v1:<stem>); first six dev, next six test.",
+      "archives": [
+        {
+          "path": "1_Images.zip",
+          "size": 114472170,
+          "sha256": "8082a080a6486c1d8bce2622d3e502128425f7422222773671b759f45eefd82a",
+          "url": "https://zenodo.org/api/records/7213544/files/1_Images.zip/content"
+        },
+        {
+          "path": "2_Annotations_Json.zip",
+          "size": 69448,
+          "sha256": "768d8df34b02c54a57f7ba355e137eaa79fe3084d36d7a87db6d0a2d9735051d",
+          "url": "https://zenodo.org/api/records/7213544/files/2_Annotations_Json.zip/content"
+        }
+      ]
+    },
+    "commons": {
+      "url": "https://commons.wikimedia.org/wiki/Category:Checks_of_the_United_States",
+      "selection": "Eight purposive readable public-domain historical/modern scans, one blank cheque as negative control. Small diagnostic set, not representative of modern banking."
+    }
+  },
+  "samples": [
+    {
+      "id": "sroie-087",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "IKANO HANDEL SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-087.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-087.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/087.json",
+          "size": 159,
+          "sha256": "4b2f5b6cf0f49f58c290d5058910e421f94b7901b38455007feb423841aee9c8"
+        },
+        {
+          "path": "sroie-087.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/087.jpg",
+          "size": 336816,
+          "sha256": "8459db26c02627043fcfea06a879e91b58445ee065984c687bfd256d68a12c18"
+        },
+        {
+          "path": "sroie-087.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/087.csv",
+          "size": 1791,
+          "sha256": "d51f404a03259b33180c81fd897c28072357bcb3ada616b31422ef76457f10da"
+        }
+      ],
+      "expected": {
+        "merchant": "IKANO HANDEL SDN BHD",
+        "date": "27/07/17",
+        "total": "538.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-342",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "GARDENIA BAKERIES (KL) SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-342.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-342.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/342.json",
+          "size": 171,
+          "sha256": "aaba4bd8804b338360b16bc2890f353485738d78a75fdb1ce6845301d988b384"
+        },
+        {
+          "path": "sroie-342.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/342.jpg",
+          "size": 324894,
+          "sha256": "4849c8a43d248c7eeec02dc1c304c1d59f4c8186b0db3ca3bac9a583f67faf17"
+        },
+        {
+          "path": "sroie-342.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/342.csv",
+          "size": 3209,
+          "sha256": "d7b9620cd541f97eaaefcfb9aea0cec628cf3c328b48d8f969bf687274c0a00f"
+        }
+      ],
+      "expected": {
+        "merchant": "GARDENIA BAKERIES (KL) SDN BHD",
+        "date": "05/08/2017",
+        "total": "19.31"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-192",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "MR. D.I.Y. (M) SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-192.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-192.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/192.json",
+          "size": 204,
+          "sha256": "d79745a485009453ea515e5a50cba91b0234477efd9a94c0205c123506449b9b"
+        },
+        {
+          "path": "sroie-192.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/192.jpg",
+          "size": 454512,
+          "sha256": "9f0fd7b540daeaae005971d4dae2ff56075ba1a3e7430ebe8b46120b1309d977"
+        },
+        {
+          "path": "sroie-192.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/192.csv",
+          "size": 2204,
+          "sha256": "b745d7f22e09d079d2f876f0161444ebb0502d9ab05ee4b11d9d560f902043ae"
+        }
+      ],
+      "expected": {
+        "merchant": "MR. D.I.Y. (M) SDN BHD",
+        "date": "28/03/18",
+        "total": "38.80"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-019",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "SHELL ISNI PETRO TRADING",
+      "decimal_separator": "dot",
+      "image": "sroie-019.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-019.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/019.json",
+          "size": 155,
+          "sha256": "7efef61c0d99621ca167a2fe18aa3233b58c042212f876603746cf677f0708ff"
+        },
+        {
+          "path": "sroie-019.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/019.jpg",
+          "size": 59235,
+          "sha256": "f7a0f48fad6c01d504c22a061418b50e4b7a177b7b7e0ddf97fdc757d9f86a31"
+        },
+        {
+          "path": "sroie-019.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/019.csv",
+          "size": 1922,
+          "sha256": "65d2605eec44219f3ff06e6e2520f3de1b376071b3cd4c565af7236460510f2e"
+        }
+      ],
+      "expected": {
+        "merchant": "SHELL ISNI PETRO TRADING",
+        "date": "18/03/18",
+        "total": "86.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-444",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "MR. D.I.Y. (M) SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-444.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-444.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/444.json",
+          "size": 207,
+          "sha256": "1a2d56810fd961921f2376eaea36225a19b3939fc9da8583a743db43afc6c5df"
+        },
+        {
+          "path": "sroie-444.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/444.jpg",
+          "size": 523378,
+          "sha256": "e8a1f9790fe5db8b9512a308999c918381ab80728d21a56ef674bfa4c1adbb09"
+        },
+        {
+          "path": "sroie-444.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/444.csv",
+          "size": 2577,
+          "sha256": "846e3204126136c0e7e81f4db8ac41458db67d012354ef0bcabae4de9e7a79b7"
+        }
+      ],
+      "expected": {
+        "merchant": "MR. D.I.Y. (M) SDN BHD",
+        "date": "19-04-18",
+        "total": "RM 34.80"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-388",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "CHEF LEE SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-388.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-388.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/388.json",
+          "size": 183,
+          "sha256": "a8d206546a92acb51d1e303704d6fdde07038b05a799e70991b32f1c34d180d3"
+        },
+        {
+          "path": "sroie-388.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/388.jpg",
+          "size": 252119,
+          "sha256": "e978332d016259b6ee88cda163e81dd3f89edeede30a0f3a1fc75e3f66eaade5"
+        },
+        {
+          "path": "sroie-388.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/388.csv",
+          "size": 2308,
+          "sha256": "20aa527305b190bc06573a4a9412fbc14b88f77f94fc323c95160308c5907bf6"
+        }
+      ],
+      "expected": {
+        "merchant": "CHEF LEE SDN BHD",
+        "date": "13-02-2016",
+        "total": "RM96.20"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-506",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-506.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-506.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/506.json",
+          "size": 217,
+          "sha256": "58fbe78fc2cef05296659392bfc1172bc39be290be8f7c6cf45fde85623a0395"
+        },
+        {
+          "path": "sroie-506.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/506.jpg",
+          "size": 676354,
+          "sha256": "47c61667700a55c21b525d6be66351d10372b0a599717f5e1a495aaa8c80329c"
+        },
+        {
+          "path": "sroie-506.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/506.csv",
+          "size": 2636,
+          "sha256": "47acbbfc97e3f6da721a5a1b6b962937384bfb1198231c605c5b420aef10efbd"
+        }
+      ],
+      "expected": {
+        "merchant": "AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD",
+        "date": "28/09/2017",
+        "total": "14.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-064",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "SUN WONG KUT SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-064.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-064.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/064.json",
+          "size": 145,
+          "sha256": "9f3bc770d61d927a0f81ae61c262ce19cd37b7134ab552b45e19d91dfa867c31"
+        },
+        {
+          "path": "sroie-064.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/064.jpg",
+          "size": 182686,
+          "sha256": "793bc894772b85f77ba8c00a6a4612e90070361227cc122794c6b63008a09740"
+        },
+        {
+          "path": "sroie-064.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/064.csv",
+          "size": 1983,
+          "sha256": "d1f920cb87e4ef74d7f4491e21b6382d6bd73420f55a1dcffc399df05b68260f"
+        }
+      ],
+      "expected": {
+        "merchant": "SUN WONG KUT SDN BHD",
+        "date": "21/02/18",
+        "total": "88.17"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-547",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "RESTORAN WAN SHENG",
+      "decimal_separator": "dot",
+      "image": "sroie-547.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-547.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/547.json",
+          "size": 190,
+          "sha256": "b7be3cf473a8515f76d7603c80036fdf707e787ea46203eca26e768eb47fde38"
+        },
+        {
+          "path": "sroie-547.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/547.jpg",
+          "size": 219691,
+          "sha256": "24eafa241c0e42d17d939cc2fda382aaa4782823d13fb985e8fe2860fe45d714"
+        },
+        {
+          "path": "sroie-547.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/547.csv",
+          "size": 1909,
+          "sha256": "9d9c8f835a82b51d57f82b68aa7f08cc584b79d1d241e67ec4b14bbd40a262f0"
+        }
+      ],
+      "expected": {
+        "merchant": "RESTORAN WAN SHENG",
+        "date": "26-05-2018",
+        "total": "4.80"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-241",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "BEMED (SP) SDN. BHD.",
+      "decimal_separator": "dot",
+      "image": "sroie-241.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-241.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/241.json",
+          "size": 183,
+          "sha256": "1b3aed95727472fae93bbf5acef8b0e3be855174f731d16db5971202355f0517"
+        },
+        {
+          "path": "sroie-241.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/241.jpg",
+          "size": 368220,
+          "sha256": "fd373057735cc2ddbf871ad05ce5b6e946624fab45e98a6b7b561d0371f8e8f1"
+        },
+        {
+          "path": "sroie-241.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/241.csv",
+          "size": 2574,
+          "sha256": "7635f413b79356f5b8c07b5c48928a08cb80ebd08cea07d9e9ca3d33fb7fc5bb"
+        }
+      ],
+      "expected": {
+        "merchant": "BEMED (SP) SDN. BHD.",
+        "date": "25/FEB/2017",
+        "total": "217.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-142",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "RESTORAN WAN SHENG",
+      "decimal_separator": "dot",
+      "image": "sroie-142.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-142.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/142.json",
+          "size": 190,
+          "sha256": "fb681fa37f941404fb8250574fc82ae18ccdcb79192ba39e00786ef3a46bf8d8"
+        },
+        {
+          "path": "sroie-142.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/142.jpg",
+          "size": 228914,
+          "sha256": "87bdc533cca5c9932198d70130f9a2f30a013cb198b23966c72aa39fc6fc1a93"
+        },
+        {
+          "path": "sroie-142.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/142.csv",
+          "size": 1976,
+          "sha256": "d45e363d9f176ce90714e296b62acead16d9e7dd3afb53bf91c3c1cfdda6cfdb"
+        }
+      ],
+      "expected": {
+        "merchant": "RESTORAN WAN SHENG",
+        "date": "14-03-2018",
+        "total": "2.30"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-209",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "ELITETRAX MARKETING SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-209.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-209.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/209.json",
+          "size": 208,
+          "sha256": "5ae145fd3d28e671ac1c8479773405179a912e33cd6f172d73afe4b4600b03f8"
+        },
+        {
+          "path": "sroie-209.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/209.jpg",
+          "size": 463505,
+          "sha256": "dde4d6e59030e35ac6234ab27fa3125165e8d97cf8096b738e9bd5b4b45c2384"
+        },
+        {
+          "path": "sroie-209.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/209.csv",
+          "size": 2650,
+          "sha256": "a4d373d59a30b5a19048b1b165ee3b8cb1c47cf7fa0e1be12b0583e25f302c28"
+        }
+      ],
+      "expected": {
+        "merchant": "ELITETRAX MARKETING SDN BHD",
+        "date": "11.02.18",
+        "total": "60.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-022",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "FUYI MINI MARKET",
+      "decimal_separator": "dot",
+      "image": "sroie-022.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-022.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/022.json",
+          "size": 172,
+          "sha256": "4f5dc0752e920fa5b9673fcde188d6096c0fe7d761a2b45e3cfcf308fe91f8f4"
+        },
+        {
+          "path": "sroie-022.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/022.jpg",
+          "size": 553086,
+          "sha256": "deec5eb31030870b22f5428520ce3b5a3165e733471b0bbe8919f87996e9c602"
+        },
+        {
+          "path": "sroie-022.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/022.csv",
+          "size": 1916,
+          "sha256": "8dd0b2f26e1b3ed6c433d421857a6e85831ca2b8f40da9909799de8e7fea257a"
+        }
+      ],
+      "expected": {
+        "merchant": "FUYI MINI MARKET",
+        "date": "25/01/2018",
+        "total": "9.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-303",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "DOMINO'S PIZZA",
+      "decimal_separator": "dot",
+      "image": "sroie-303.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-303.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/303.json",
+          "size": 188,
+          "sha256": "e502ccb60c637310c534efeda03b99d4d5f61cb0f7fd51799b2c23faed0d13ba"
+        },
+        {
+          "path": "sroie-303.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/303.jpg",
+          "size": 2657764,
+          "sha256": "d1619a265a605aaa937cb79cd33157cce9449b37127b453998a6c3bd5f27cd7f"
+        },
+        {
+          "path": "sroie-303.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/303.csv",
+          "size": 4043,
+          "sha256": "29f1a25e65bfc01970843e0dec91795595fb2095634f1fe555405424557e119d"
+        }
+      ],
+      "expected": {
+        "merchant": "DOMINO'S PIZZA",
+        "date": "28/04/18",
+        "total": "30.90"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-030",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "UNIHAKKA INTERNATIONAL SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-030.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-030.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/030.json",
+          "size": 192,
+          "sha256": "a7c67f25bcb810fbe2f522c00f5726c1792ffc4a723d04634088ce11d4c4a2bf"
+        },
+        {
+          "path": "sroie-030.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/030.jpg",
+          "size": 136662,
+          "sha256": "42b51a97846a2ab591d4739574a4c0721e24b52c070f42564ded1ddf4d86c8db"
+        },
+        {
+          "path": "sroie-030.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/030.csv",
+          "size": 1815,
+          "sha256": "1f2a51635d175bb605286a255530964b129453a5328693cb9dc539b3adefe554"
+        }
+      ],
+      "expected": {
+        "merchant": "UNIHAKKA INTERNATIONAL SDN BHD",
+        "date": "05 MAR 2018",
+        "total": "$8.20"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-017",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "LIGHTROOM GALLERY SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-017.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-017.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/017.json",
+          "size": 191,
+          "sha256": "d2f579b697101afb891eb1f501751a8f5337db9ff691751a01cfd67ad0a647a7"
+        },
+        {
+          "path": "sroie-017.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/017.jpg",
+          "size": 911393,
+          "sha256": "192d3f280e4995faec969496a79defb556de9d399023e0f096972f929136467e"
+        },
+        {
+          "path": "sroie-017.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/017.csv",
+          "size": 3494,
+          "sha256": "071dccafe98dbbdde58cecebac077194e20de60a36bac0f4730fc4ad3bfed7ce"
+        }
+      ],
+      "expected": {
+        "merchant": "LIGHTROOM GALLERY SDN BHD",
+        "date": "20/11/2017",
+        "total": "39.80"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-425",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "UNIHAKKA INTERNATIONAL SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-425.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-425.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/425.json",
+          "size": 192,
+          "sha256": "89b244a695a0c2c22cb113e6c8bed1832f3d22817be10149ee9f708f19d35038"
+        },
+        {
+          "path": "sroie-425.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/425.jpg",
+          "size": 1494730,
+          "sha256": "41eb037d9666f23f72c564b289987aea2b616836c4350f79baed9cf401bf2126"
+        },
+        {
+          "path": "sroie-425.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/425.csv",
+          "size": 2147,
+          "sha256": "d889359e6090554d6ce502ee90591badc145bac90795465b198f2e4b6b9c7868"
+        }
+      ],
+      "expected": {
+        "merchant": "UNIHAKKA INTERNATIONAL SDN BHD",
+        "date": "30 MAY 2018",
+        "total": "$8.70"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-494",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "SANYU STATIONERY SHOP",
+      "decimal_separator": "dot",
+      "image": "sroie-494.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-494.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/494.json",
+          "size": 165,
+          "sha256": "154582d62f97d20272705d60ea37a049a8c9d52f12f99eeb5212514978160d7c"
+        },
+        {
+          "path": "sroie-494.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/494.jpg",
+          "size": 581472,
+          "sha256": "24224820940de461ffa630246bcb4b141f500cd7b63c162857963ee171c4a524"
+        },
+        {
+          "path": "sroie-494.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/494.csv",
+          "size": 2292,
+          "sha256": "101e381a2546baea006f8c6b9820faacfd7343c91451de1327bc4e62c194acd0"
+        }
+      ],
+      "expected": {
+        "merchant": "SANYU STATIONERY SHOP",
+        "date": "18/07/2017",
+        "total": "35.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-300",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "AEON CO. (M) BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-300.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-300.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/300.json",
+          "size": 184,
+          "sha256": "1e146aa538d29c84d9d0b322a856bedf78bf10cea7d1f8e8d9b0e2da4ecfb18b"
+        },
+        {
+          "path": "sroie-300.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/300.jpg",
+          "size": 2207566,
+          "sha256": "45b0fb84aead11b68c337965f0fe99b4b2dd5dd4adf8810e93476a33d447d8a8"
+        },
+        {
+          "path": "sroie-300.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/300.csv",
+          "size": 2310,
+          "sha256": "ef3547b6c63852fd47f737cd5cc4613e2414b30b744bb81dd8bd32836bd0d8dc"
+        }
+      ],
+      "expected": {
+        "merchant": "AEON CO. (M) BHD",
+        "date": "18/04/2018",
+        "total": "1.75"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-436",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "UNIHAKKA INTERNATIONAL SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-436.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-436.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/436.json",
+          "size": 193,
+          "sha256": "09961807f42c5edd73193a20687b77277f112742c5ab25b442bd8f49e36a3289"
+        },
+        {
+          "path": "sroie-436.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/436.jpg",
+          "size": 1534499,
+          "sha256": "0d133f9af704e44bf8f916dc386dc9e83dbaea0722b8605c8966b8b600ede888"
+        },
+        {
+          "path": "sroie-436.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/436.csv",
+          "size": 2426,
+          "sha256": "76318453e10be21cfce40e305cd76954719b4499a9994986f51a24e9a2dc6df2"
+        }
+      ],
+      "expected": {
+        "merchant": "UNIHAKKA INTERNATIONAL SDN BHD",
+        "date": "22 MAY 2018",
+        "total": "$11.40"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-607",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "KEDAI PAPAN YEW CHUAN",
+      "decimal_separator": "dot",
+      "image": "sroie-607.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-607.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/607.json",
+          "size": 155,
+          "sha256": "a158bd72414424887a0a0621c26ebb3c83038a81a5ff534c3c489c8c04d26ddb"
+        },
+        {
+          "path": "sroie-607.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/607.jpg",
+          "size": 222186,
+          "sha256": "05c06bf21710110b560d515a5751a8f265efee667e20e9ce088b11a62d16ecc2"
+        },
+        {
+          "path": "sroie-607.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/607.csv",
+          "size": 3969,
+          "sha256": "69b8d8e3ddaa98c3b6f05eea4202b187b7b8bfbcbc368dc72bad1a350169a5ee"
+        }
+      ],
+      "expected": {
+        "merchant": "KEDAI PAPAN YEW CHUAN",
+        "date": "30/04/2018",
+        "total": "404.39"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-212",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "ADVANCO COMPANY",
+      "decimal_separator": "dot",
+      "image": "sroie-212.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-212.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/212.json",
+          "size": 179,
+          "sha256": "ea309139d37167d94b64e17d616241ee5a9ea1ca180a36c18b36641f6834e286"
+        },
+        {
+          "path": "sroie-212.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/212.jpg",
+          "size": 477881,
+          "sha256": "dab060ae8139a6fd841bba0aea092a5caade7dd5093abc285e5809bf4510117f"
+        },
+        {
+          "path": "sroie-212.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/212.csv",
+          "size": 2309,
+          "sha256": "e3335a48b2a621110639012cb53ef318b4284264c902eba4e56871f5de12034c"
+        }
+      ],
+      "expected": {
+        "merchant": "ADVANCO COMPANY",
+        "date": "17/01/2018",
+        "total": "29.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-437",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "GERBANG ALAF RESTAURANTS SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-437.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-437.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/437.json",
+          "size": 213,
+          "sha256": "65be49dc0210866d413179062a3b11642598502d2a54775739707c3ec0a47c27"
+        },
+        {
+          "path": "sroie-437.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/437.jpg",
+          "size": 1527289,
+          "sha256": "90430f3f44de1985df02908455514d17e802447ef9411caf1810e3fb4dce2d5c"
+        },
+        {
+          "path": "sroie-437.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/437.csv",
+          "size": 1830,
+          "sha256": "5a682f07e8a3a8e33c2f6d40381e99c789c44ea07ec130e830724b975b8f6a20"
+        }
+      ],
+      "expected": {
+        "merchant": "GERBANG ALAF RESTAURANTS SDN BHD",
+        "date": "25/05/2018",
+        "total": "11.10"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-254",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "BEMED (SP) SDN. BHD.",
+      "decimal_separator": "dot",
+      "image": "sroie-254.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-254.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/254.json",
+          "size": 183,
+          "sha256": "a731c463380c396e69dfc236eddc81041fdca7e044846f789d9652ebca637c92"
+        },
+        {
+          "path": "sroie-254.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/254.jpg",
+          "size": 421225,
+          "sha256": "f1aa10deb8cf1ce5d851c35aa3194291c03fdf4238ac04c580ae11dd94d988d7"
+        },
+        {
+          "path": "sroie-254.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/254.csv",
+          "size": 2529,
+          "sha256": "14efcbe61646f13c30a2a7a4a3bd141f003510b323dc93a7aaf07210918b0669"
+        }
+      ],
+      "expected": {
+        "merchant": "BEMED (SP) SDN. BHD.",
+        "date": "15/APR/2017",
+        "total": "635.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-155",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "GERBANG ALAF RESTAURANTS SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-155.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-155.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/155.json",
+          "size": 214,
+          "sha256": "8032a3434fdb3e48e355d6abbbcc2335af5d907eaa939e8b134b6df972cb9a38"
+        },
+        {
+          "path": "sroie-155.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/155.jpg",
+          "size": 324742,
+          "sha256": "0b17d8f8ac411e1ad55d6442e7f139110d648e4e6061ede9c6f1dd1ac58d777b"
+        },
+        {
+          "path": "sroie-155.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/155.csv",
+          "size": 1842,
+          "sha256": "e46d40fc77f34230ac370844a58fd7458737a3ff1043fce7c35c712a110ddb8c"
+        }
+      ],
+      "expected": {
+        "merchant": "GERBANG ALAF RESTAURANTS SDN BHD",
+        "date": "02/03/2018",
+        "total": "28.50"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-231",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "MR. D.I.Y. (KUCHAI) SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-231.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-231.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/231.json",
+          "size": 210,
+          "sha256": "658f4333c954ae5e6a5b78205f55569d7eff6da8606fcdc04220047c885cc35d"
+        },
+        {
+          "path": "sroie-231.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/231.jpg",
+          "size": 701607,
+          "sha256": "6a15b02611606ac78be7f32c2f62a022a84a41b4788215412c90df7a77982337"
+        },
+        {
+          "path": "sroie-231.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/231.csv",
+          "size": 3274,
+          "sha256": "14a51e387f445bcfcf64f1858b6833608b2dd0aa5d03316b359ae167c3ead618"
+        }
+      ],
+      "expected": {
+        "merchant": "MR. D.I.Y. (KUCHAI) SDN BHD",
+        "date": "15-03-18",
+        "total": "119.70"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-410",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "FTOF NOODLE HOUSE",
+      "decimal_separator": "dot",
+      "image": "sroie-410.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-410.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/410.json",
+          "size": 199,
+          "sha256": "3387f1e803c1b29f6b6c22bacc95a41735d8b010a815e2e77fd362afc2235d72"
+        },
+        {
+          "path": "sroie-410.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/410.jpg",
+          "size": 323072,
+          "sha256": "899e6996e9ebc57d7db8ca97e78d8f94129826725969e87fff4ef7b2c471b7c6"
+        },
+        {
+          "path": "sroie-410.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/410.csv",
+          "size": 3310,
+          "sha256": "d2b9a56ed4deae9f974507883efa8890ae7d10378912c83c03de32ebd1336479"
+        }
+      ],
+      "expected": {
+        "merchant": "FTOF NOODLE HOUSE",
+        "date": "21/05/2018",
+        "total": "RM31.60"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-454",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "ENW HARDWARE CENTRE (M) SDN. BHD.",
+      "decimal_separator": "dot",
+      "image": "sroie-454.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-454.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/454.json",
+          "size": 207,
+          "sha256": "14cd4d83d22c8fa8bfec4d5a69a45dfc430351f003a2cde3c20c3b45ea04eb23"
+        },
+        {
+          "path": "sroie-454.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/454.jpg",
+          "size": 195713,
+          "sha256": "4206dd2f37be9bbef8b7ebcffe7be059eea3b3ca2ec83ed2b16d9b26c7fe5df6"
+        },
+        {
+          "path": "sroie-454.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/454.csv",
+          "size": 2128,
+          "sha256": "a5a4b96303c469c91047c891f3b5635094254719085090e80732a27b0174fa0b"
+        }
+      ],
+      "expected": {
+        "merchant": "ENW HARDWARE CENTRE (M) SDN. BHD.",
+        "date": "13/04/2018",
+        "total": "27.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-088",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "IKANO HANDEL SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-088.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-088.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/088.json",
+          "size": 158,
+          "sha256": "f48cdd60a3dd8b89660dd453fb5582b19470a2ddd21eefbcd54a22037fd16af8"
+        },
+        {
+          "path": "sroie-088.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/088.jpg",
+          "size": 342035,
+          "sha256": "e7523630041e39c1a182e14f495ee5b52f2461e095f46c4d97f7ca289b77065d"
+        },
+        {
+          "path": "sroie-088.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/088.csv",
+          "size": 1891,
+          "sha256": "0ce82623837d7a53c5de2083aac7259745900a7e5000a856dcd9b7c68d0d1a28"
+        }
+      ],
+      "expected": {
+        "merchant": "IKANO HANDEL SDN BHD",
+        "date": "09/08/17",
+        "total": "99.80"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-540",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "UNIHAKKA INTERNATIONAL SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-540.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-540.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/540.json",
+          "size": 193,
+          "sha256": "028747ddf15944b1220d3bad278ab77891fb6555ff0f9e21f5176cd06763b248"
+        },
+        {
+          "path": "sroie-540.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/540.jpg",
+          "size": 1587856,
+          "sha256": "d5969f92b337242568156854e3c2883e2f4df226d74bd7ac7aae166d1bf892b4"
+        },
+        {
+          "path": "sroie-540.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/540.csv",
+          "size": 2345,
+          "sha256": "f18ec4ae4bae1b5e9e3e2233cada20f24388e60ff6587fe6264634dce642cdeb"
+        }
+      ],
+      "expected": {
+        "merchant": "UNIHAKKA INTERNATIONAL SDN BHD",
+        "date": "22 JUN 2018",
+        "total": "RM8.50"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-236",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "B & BEST RESTAURANT",
+      "decimal_separator": "dot",
+      "image": "sroie-236.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-236.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/236.json",
+          "size": 166,
+          "sha256": "fb2e8e10efccc3e162b245a85e4f1a3d7eac4a77d9ffa7049eb695d5e5dcedeb"
+        },
+        {
+          "path": "sroie-236.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/236.jpg",
+          "size": 181937,
+          "sha256": "e8b9c99dda46bae00aaa12b6aedee28fcf046883404a138db656e5255f38b83d"
+        },
+        {
+          "path": "sroie-236.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/236.csv",
+          "size": 1470,
+          "sha256": "3abcd4a07cddf0d66646bd665a1256772f79d22206c458e30f65201a9052f437"
+        }
+      ],
+      "expected": {
+        "merchant": "B & BEST RESTAURANT",
+        "date": "20/03/2017",
+        "total": "14.85"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-595",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-595.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-595.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/595.json",
+          "size": 193,
+          "sha256": "a18e8614b9945c61481b69cb87732c59abee2e79b4abe70537157b4f0f75c869"
+        },
+        {
+          "path": "sroie-595.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/595.jpg",
+          "size": 193411,
+          "sha256": "ee33f6b6b8f5c35ec2ce6788a0487804a4115c6ad5a2b99265328395a81028d4"
+        },
+        {
+          "path": "sroie-595.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/595.csv",
+          "size": 2600,
+          "sha256": "e6628b7e785092eb4dfbfaa114a20cfbb393e4e03e4af0346fa533644d7a2651"
+        }
+      ],
+      "expected": {
+        "merchant": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD",
+        "date": "28-04-2018",
+        "total": "65.70"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-383",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "GREEN LANE PHARMACY SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-383.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-383.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/383.json",
+          "size": 160,
+          "sha256": "aa13f5fd17596a385fc864ae78139fb22afc9a3a7ae5174c72332e98b7561fbc"
+        },
+        {
+          "path": "sroie-383.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/383.jpg",
+          "size": 402424,
+          "sha256": "11a21b3c14fd32dfe34bd489c9499621cdda23769c26f5d854aa8cac2eb81781"
+        },
+        {
+          "path": "sroie-383.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/383.csv",
+          "size": 2988,
+          "sha256": "0424e289e9ee8204d18e31c3155c85c7c1d64ecc7cf829fb6071138a3cae4ec0"
+        }
+      ],
+      "expected": {
+        "merchant": "GREEN LANE PHARMACY SDN BHD",
+        "date": "12/13/2016",
+        "total": "180.10"
+      },
+      "source": "sroie",
+      "date_order": "mdy"
+    },
+    {
+      "id": "sroie-277",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "S&Y STATIONERY",
+      "decimal_separator": "dot",
+      "image": "sroie-277.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-277.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/277.json",
+          "size": 196,
+          "sha256": "2d6bcc19077dcc6fcf964a4bd74adbfb981121e977c98237a0d0dc6fd378dd2b"
+        },
+        {
+          "path": "sroie-277.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/277.jpg",
+          "size": 450703,
+          "sha256": "b00688ece8bf1786f35d28f6d3ad17e09f4931fb7b2e5ba609fe370283eee636"
+        },
+        {
+          "path": "sroie-277.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/277.csv",
+          "size": 2307,
+          "sha256": "ca65bec2ff0da21929f156e2b9fb0a24aa1387d76d0714b0f32640ab47d89844"
+        }
+      ],
+      "expected": {
+        "merchant": "S&Y STATIONERY",
+        "date": "05-JAN-2017",
+        "total": "72.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-033",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "UNIHAKKA INTERNATIONAL SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-033.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-033.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/033.json",
+          "size": 187,
+          "sha256": "99a8e98286cba9436e52d5db64906ad7ac448904c2e163c062c06fc200db1ded"
+        },
+        {
+          "path": "sroie-033.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/033.jpg",
+          "size": 149627,
+          "sha256": "ec76b30742546f62b1596b42f9959c99d343c43e41415de94081e56f13ab9374"
+        },
+        {
+          "path": "sroie-033.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/033.csv",
+          "size": 1829,
+          "sha256": "98b7f8638fdbd9bdc04d13c67252d6520fc50c61d15b0c63da810b861424d018"
+        }
+      ],
+      "expected": {
+        "merchant": "UNIHAKKA INTERNATIONAL SDN BHD",
+        "date": "10 MAR 2018"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-034",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "PERNIAGAAN ZHENG HUI",
+      "decimal_separator": "dot",
+      "image": "sroie-034.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-034.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/034.json",
+          "size": 173,
+          "sha256": "4475ef09a071ac258bd377245c03aa2a57b2b041da0f644c32ee52a9331a4472"
+        },
+        {
+          "path": "sroie-034.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/034.jpg",
+          "size": 340730,
+          "sha256": "81a3090b7910f2ea43ed884f733675f83a82e8b2e6cb9b83b13f1edcaf960ad0"
+        },
+        {
+          "path": "sroie-034.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/034.csv",
+          "size": 4757,
+          "sha256": "c38dd014603db10fad931300fd02c1673631907b9f3af67aaa916a30fba49ece"
+        }
+      ],
+      "expected": {
+        "merchant": "PERNIAGAAN ZHENG HUI",
+        "date": "09/03/2018",
+        "total": "332.30"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-281",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "DI HUAN YA RESTAURANT",
+      "decimal_separator": "dot",
+      "image": "sroie-281.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-281.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/281.json",
+          "size": 178,
+          "sha256": "b2cc93714c19d9a947e2916542c4822ab8521438e290a92c158aa0289e2689f8"
+        },
+        {
+          "path": "sroie-281.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/281.jpg",
+          "size": 1219502,
+          "sha256": "54662caa54c39676a7e159b8392b66acd65be734b7c9e5aada67c105349df8f7"
+        },
+        {
+          "path": "sroie-281.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/281.csv",
+          "size": 2602,
+          "sha256": "ca937fe6c3659182eafbdb2ecc7428956dc7bef16bb7ddb4850998236e540a7e"
+        }
+      ],
+      "expected": {
+        "merchant": "DI HUAN YA RESTAURANT",
+        "date": "07/04/2018",
+        "total": "35.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-622",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-622.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-622.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/622.json",
+          "size": 194,
+          "sha256": "9c6de60658e600e3454e36b3da61480ee6898a6aa30731505013c8f5c96546c3"
+        },
+        {
+          "path": "sroie-622.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/622.jpg",
+          "size": 163543,
+          "sha256": "0be8ae768b92529773e05ea6f9e8591d919f58b6e052d94f5437e6dd470f6e37"
+        },
+        {
+          "path": "sroie-622.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/622.csv",
+          "size": 2248,
+          "sha256": "1b94e2b45a45125f34f902968ee5162f0b943f74c9efab52c4070f4139f13ac0"
+        }
+      ],
+      "expected": {
+        "merchant": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD",
+        "date": "20-06-2018",
+        "total": "38.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-233",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "dev",
+      "group": "Y SOON FATT S/B",
+      "decimal_separator": "dot",
+      "image": "sroie-233.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-233.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/233.json",
+          "size": 172,
+          "sha256": "80ea6cfe614a42fab2df826287fa632ddf04452608b106394fdf12f1a2f51172"
+        },
+        {
+          "path": "sroie-233.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/233.jpg",
+          "size": 409408,
+          "sha256": "584a39304a80bb07563a3430078367b24a872a0ece95eed48015b38080e7d904"
+        },
+        {
+          "path": "sroie-233.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/233.csv",
+          "size": 2869,
+          "sha256": "6a1b6611fd44e93837376a96123aaf7583d14374626c3f1ec23be204112f8cea"
+        }
+      ],
+      "expected": {
+        "merchant": "Y SOON FATT S/B",
+        "date": "9/2/2017",
+        "total": "362.50"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "sroie-191",
+      "domain": "receipt",
+      "kind": "bill",
+      "split": "test",
+      "group": "ENW HARDWARE CENTRE (M) SDN BHD",
+      "decimal_separator": "dot",
+      "image": "sroie-191.jpg",
+      "artifacts": [
+        {
+          "path": "sroie-191.json",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/key/191.json",
+          "size": 205,
+          "sha256": "a65dd53f994a8730d5cdf0ceae9b79c87bf84476b4ec470466deb0485300f1d8"
+        },
+        {
+          "path": "sroie-191.jpg",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/img/191.jpg",
+          "size": 387978,
+          "sha256": "9f9b775276850ae83fa55435b9af261aa15a6224ec5f91ee8f69a183c4f618fa"
+        },
+        {
+          "path": "sroie-191.csv",
+          "url": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data/box/191.csv",
+          "size": 2445,
+          "sha256": "3d5c450b6961c2d3b7010079b2fb16df073c94c7f5c277a844361228727b7d85"
+        }
+      ],
+      "expected": {
+        "merchant": "ENW HARDWARE CENTRE (M) SDN BHD",
+        "date": "10/03/2018",
+        "total": "34.00"
+      },
+      "source": "sroie",
+      "date_order": "dmy"
+    },
+    {
+      "id": "invoice-20210509_001704",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "dev",
+      "group": "510414850",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210509_001704.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210509_001704.jpg",
+          "size": 912032,
+          "sha256": "20a6ecbe47a798b8418b77a169c0e484547c68c410276391dab9f081ac6f4212",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210509_001704.jpg"
+        },
+        {
+          "path": "invoice-20210509_001704.txt",
+          "size": 248,
+          "sha256": "682edd6bebb53a0ed000af383a3e8e9a7f069a4af9aaf46b43bd9d5f8d53aa25",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210509_001704.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "flying tiger",
+        "date": "2021-05-06",
+        "total": "3,00",
+        "reference_number": "VBO 21137/5959",
+        "tax": "0,56"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210508_235729",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "dev",
+      "group": "515610054",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210508_235729.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210508_235729.jpg",
+          "size": 785950,
+          "sha256": "7179de12968a4a493a71dcce6a632d85d7d11ad58cf653f38221dcb6795e96cc",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210508_235729.jpg"
+        },
+        {
+          "path": "invoice-20210508_235729.txt",
+          "size": 236,
+          "sha256": "2c2b7be1f15683885367e1cdf1613d031612a7032725e1871faf55934df1859c",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210508_235729.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "100% açores",
+        "date": "2021/03/19",
+        "total": "41.40",
+        "reference_number": "A / 718",
+        "tax": "6.06"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210215_172440",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "dev",
+      "group": "506848558",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210215_172440.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210215_172440.jpg",
+          "size": 624555,
+          "sha256": "e31212176cda90833096c7094c423da855e29bae9639069ea9db0037f8e5f2de",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210215_172440.jpg"
+        },
+        {
+          "path": "invoice-20210215_172440.txt",
+          "size": 243,
+          "sha256": "0ebd2eacd8076adde23580e347d00efb9e00fa16666a8b5e03b6045648e5d435",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210215_172440.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "leroy merlin - coimbra",
+        "date": "14/10/2020",
+        "total": "24.37",
+        "reference_number": "FS 202000905/047865",
+        "tax": "4.55"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210213_140836",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "dev",
+      "group": "505483440",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210213_140836.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210213_140836.jpg",
+          "size": 677742,
+          "sha256": "b00ce368dbd7b6f58b7549708548840440a79394716ba631d1ed21e8f18f40b2",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210213_140836.jpg"
+        },
+        {
+          "path": "invoice-20210213_140836.txt",
+          "size": 246,
+          "sha256": "f911a757b91e7d717bc55551d67d15e7bed128ecade5bb865e8479fd5927253b",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210213_140836.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "jose a gomes filh ld",
+        "date": "18/11/2020",
+        "total": "8,91",
+        "reference_number": "FS 10/14767",
+        "tax": "0,50"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210509_000517",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "dev",
+      "group": "503513709",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210509_000517.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210509_000517.jpg",
+          "size": 474365,
+          "sha256": "9b7f8e8fcf1d72489f7cffa28cf745bdf62edd0961aae7236d173c72f2a666f4",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210509_000517.jpg"
+        },
+        {
+          "path": "invoice-20210509_000517.txt",
+          "size": 248,
+          "sha256": "c8ad6274ea01dda2553e8687c2bfe07a40ae9d36feaf370b12656cf76bc0f5af",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210509_000517.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "maria da glória cab",
+        "total": "26.10",
+        "tax": "4,88"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210215_172656",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "dev",
+      "group": "500829993",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210215_172656.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210215_172656.jpg",
+          "size": 584713,
+          "sha256": "aac5c596a013422ab18519308c30607784708dcdab18eb0a99cab97146c9133d",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210215_172656.jpg"
+        },
+        {
+          "path": "invoice-20210215_172656.txt",
+          "size": 248,
+          "sha256": "dae855e47dc9e3bfeafb62dba10ef75482ed48b4a877b96001a8c9af1696a9a4",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210215_172656.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "pingo doce",
+        "date": "2020-12-23",
+        "total": "10,49",
+        "reference_number": "FS 03120062001010623/046559",
+        "tax": "1,57"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210509_000502",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "test",
+      "group": "500168296",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210509_000502.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210509_000502.jpg",
+          "size": 608812,
+          "sha256": "623181b82a2088e5d4e51a33be65c45fe7aeb9cef0372bf311272f4e19ad8628",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210509_000502.jpg"
+        },
+        {
+          "path": "invoice-20210509_000502.txt",
+          "size": 232,
+          "sha256": "b05c412a2b35415d8dce47da333ed6e78f3d6fbd8b3a25468aeb8fa910e51cfa",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210509_000502.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "tecidos coimbra",
+        "date": "2021-04-06",
+        "total": "11.90",
+        "reference_number": "02 0/639480",
+        "tax": "2.23"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210215_165944",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "test",
+      "group": "508491312",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210215_165944.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210215_165944.jpg",
+          "size": 642939,
+          "sha256": "de7f7be393f0a0489d5d16bae9280741302302039e8414fd8115b4c6fef0fcd2",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210215_165944.jpg"
+        },
+        {
+          "path": "invoice-20210215_165944.txt",
+          "size": 231,
+          "sha256": "b9e02953164e50f65ea8ed46b9e58edc4faad99c73d82cd388b971aa8aa90ee2",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210215_165944.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "fotosport",
+        "date": "2020-11-20",
+        "total": "38,04",
+        "reference_number": "8/44903",
+        "tax": "7,11"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210316_220316",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "test",
+      "group": "508225531",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210316_220316.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210316_220316.jpg",
+          "size": 927150,
+          "sha256": "1ed098de6f115a140a8b4e174196f363ae43e0b32e7735ebb334dd66fd8af7c1",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210316_220316.jpg"
+        },
+        {
+          "path": "invoice-20210316_220316.txt",
+          "size": 257,
+          "sha256": "50296ae91ee99c0b8d19b6dea66fdd68df3a3e69e5783bab0a9f0aa1b3edf033",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210316_220316.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "bybebé sublinhar, lda",
+        "date": "2020-12-30",
+        "total": "140.66",
+        "reference_number": "FS ORIGINAL 2020/80803",
+        "tax": "26.32"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210215_163255",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "test",
+      "group": "501526870",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210215_163255.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210215_163255.jpg",
+          "size": 603213,
+          "sha256": "5ab71b02917592831dad71d73ff391cfd3506504fe6101a55d906e5e8ce9fbf6",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210215_163255.jpg"
+        },
+        {
+          "path": "invoice-20210215_163255.txt",
+          "size": 251,
+          "sha256": "bef746602815ad92f6f7e3586a26fa16f201e748690e8bca83abcec09ab43522",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210215_163255.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "livraria bertrand",
+        "date": "17/11/2020",
+        "total": "11,90",
+        "reference_number": "48 / 03 / 2020 / 12333",
+        "tax": "0,67"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210215_163914",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "test",
+      "group": "501810285",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210215_163914.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210215_163914.jpg",
+          "size": 487741,
+          "sha256": "5879a716b9c0f86149295a5c695a02e5ef9745e6d9acd7aa5e18f8e169439500",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210215_163914.jpg"
+        },
+        {
+          "path": "invoice-20210215_163914.txt",
+          "size": 204,
+          "sha256": "a10fcd8d22d8b4ddaeb4e08b3a8f64502caf307d11b4542dc465d3bda4d375f7",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210215_163914.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "el corte ingles",
+        "date": "2020-11-17",
+        "total": "20,31",
+        "reference_number": "FC 015520001A / 016428",
+        "tax": "2,91"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "invoice-20210215_172818",
+      "domain": "invoice",
+      "kind": "bill",
+      "split": "test",
+      "group": "506648117",
+      "decimal_separator": "comma",
+      "date_order": "dmy",
+      "image": "invoice-20210215_172818.jpg",
+      "artifacts": [
+        {
+          "path": "invoice-20210215_172818.jpg",
+          "size": 476930,
+          "sha256": "476e93ab0fd2e5972c485dcd7f9738fbcde28d394ba231d962d005eefce838a8",
+          "archive": "1_Images.zip",
+          "member": "1_Images/20210215_172818.jpg"
+        },
+        {
+          "path": "invoice-20210215_172818.txt",
+          "size": 249,
+          "sha256": "eea20d055f8abb219e1dcf8d88a914df3871ab15bf98640601665fc85b1633d8",
+          "archive": "2_Annotations_Json.zip",
+          "member": "2_Annotations_Json/20210215_172818.txt"
+        }
+      ],
+      "expected": {
+        "merchant": "zara home",
+        "date": "04-01-2021",
+        "total": "9,99",
+        "reference_number": "FS 001715012020/020733",
+        "tax": "187"
+      },
+      "source": "zenodo"
+    },
+    {
+      "id": "cheque-00",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "dev",
+      "group": "cheque-00",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-00.png",
+      "artifacts": [
+        {
+          "path": "cheque-00.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Knuth-check2.png",
+          "size": 278829,
+          "sha256": "0c966e3320c9487dab287f2066191be66e42b604c1a11c962f448bdffd316a19"
+        }
+      ],
+      "expected": {
+        "amount": "2.56",
+        "date": "8 May 99",
+        "cheque_number": "505",
+        "bank": "AMERICA CALIFORNIA BANK",
+        "payee": null
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Knuth-check2.png",
+      "image_timestamp": "2009-04-05T14:38:42Z",
+      "license": "Public domain",
+      "attribution": "Signature by <a href=\"https://en.wikipedia.org/wiki/Donald_Knuth\" class=\"extiw\" title=\"en:Donald Knuth\">Donald Knuth</a>",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    },
+    {
+      "id": "cheque-01",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "dev",
+      "group": "cheque-01",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-01.jpg",
+      "artifacts": [
+        {
+          "path": "cheque-01.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/1914Lindbergh%2425.jpg",
+          "size": 65439,
+          "sha256": "b16e537420717cb31197a1da89f4eb3a6644a9c6fa35099aaeb3410651a9c61d"
+        }
+      ],
+      "expected": {
+        "amount": "25.00",
+        "bank": "THE FIRST NATIONAL BANK"
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:1914Lindbergh%2425.jpg",
+      "image_timestamp": "2017-01-08T12:59:01Z",
+      "license": "Public domain",
+      "attribution": "Charles August Lindbergh (January 20, 1859 – May 24, 1924)",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    },
+    {
+      "id": "cheque-02",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "test",
+      "group": "cheque-02",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-02.jpg",
+      "artifacts": [
+        {
+          "path": "cheque-02.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Check_from_Walt_Disney_for_the_Re-Election_of_Peter_Pitchess.jpg",
+          "size": 647592,
+          "sha256": "d60ea2b64e564841d919186aa278f750b4bc57151ffe772e472dab2b27e43f92"
+        }
+      ],
+      "expected": {
+        "amount": "500.00",
+        "date": "March 23, 1966",
+        "cheque_number": "1278",
+        "payee": "Committee to Re-elect Sheriff Peter Pitchess",
+        "bank": "UNITED CALIFORNIA BANK"
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Check_from_Walt_Disney_for_the_Re-Election_of_Peter_Pitchess.jpg",
+      "image_timestamp": "2026-08-18T03:59:03Z",
+      "license": "Public domain",
+      "attribution": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Walt_Disney\" class=\"extiw\" title=\"w:en:Walt Disney\"><span title=\"American animator, producer, director, screenwriter, voice actor and entrepreneur, founder of The Walt Disney Company (1901–1966)\">Walt Disney</span></a></bdi>",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    },
+    {
+      "id": "cheque-03",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "test",
+      "group": "cheque-03",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-03.jpg",
+      "artifacts": [
+        {
+          "path": "cheque-03.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Check_Awarded_to_No_Kum-Sok.jpg",
+          "size": 323524,
+          "sha256": "1809326e292d35f6d4fb38e0d8c4d0a95cada39cd709e032eb192e07fc5bc8bc"
+        }
+      ],
+      "expected": {
+        "amount": "100000.00",
+        "bank": "THE AMERICAN EXPRESS COMPANY, INC."
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Check_Awarded_to_No_Kum-Sok.jpg",
+      "image_timestamp": "2007-10-27T22:31:03Z",
+      "license": "Public domain",
+      "attribution": "Myself.",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    },
+    {
+      "id": "cheque-04",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "dev",
+      "group": "cheque-04",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-04.jpg",
+      "artifacts": [
+        {
+          "path": "cheque-04.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Whitney_Bank_New_Orleans_Check_1905.jpg",
+          "size": 45140,
+          "sha256": "30e84be0321766c71bd863f2ce8d5102c49666c96b1f46530f45b813a3621568"
+        }
+      ],
+      "expected": {
+        "amount": "13.00",
+        "bank": "WHITNEY NATIONAL BANK"
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Whitney_Bank_New_Orleans_Check_1905.jpg",
+      "image_timestamp": "2011-09-18T17:12:23Z",
+      "license": "Public domain",
+      "attribution": "Whitney Bank",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    },
+    {
+      "id": "cheque-05",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "dev",
+      "group": "cheque-05",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-05.jpg",
+      "artifacts": [
+        {
+          "path": "cheque-05.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Banking_House_of_R.S._Battles_Draft_on_Chase_National_Bank_1911.jpg",
+          "size": 119288,
+          "sha256": "7d1ed216c0b8fed41c62196d2fa9ae1dec9a5980ba54359966e9cbd07e0a0df3"
+        }
+      ],
+      "expected": {
+        "amount": "182.44",
+        "cheque_number": "102778",
+        "date": "June 12, 1911",
+        "bank": "Chase National Bank"
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Banking_House_of_R.S._Battles_Draft_on_Chase_National_Bank_1911.jpg",
+      "image_timestamp": "2021-07-30T17:04:02Z",
+      "license": "Public domain",
+      "attribution": "Western Bank Note &amp; Eng.[raving] Co.[mpany], Chicago 1911 or earlier, for Banking House of R. S. Battles",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    },
+    {
+      "id": "cheque-06",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "test",
+      "group": "cheque-06",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-06.png",
+      "artifacts": [
+        {
+          "path": "cheque-06.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/North_Eastern_Banking_Company_Limited_-_cheque.png",
+          "size": 4007201,
+          "sha256": "f28d51b15b7bff5245485cede91a35ef0a8ce02aab6f15d376d8e45939441848"
+        }
+      ],
+      "expected": {
+        "amount": null,
+        "date": null,
+        "payee": null,
+        "cheque_number": "650956",
+        "bank": "The North Eastern Banking Company Limited"
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:North_Eastern_Banking_Company_Limited_-_cheque.png",
+      "image_timestamp": "2023-09-21T14:05:11Z",
+      "license": "Public domain",
+      "attribution": "North Eastern Banking Company Ltd",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    },
+    {
+      "id": "cheque-07",
+      "domain": "cheque",
+      "kind": "cheque",
+      "split": "test",
+      "group": "cheque-07",
+      "decimal_separator": "dot",
+      "date_order": "mdy",
+      "image": "cheque-07.jpg",
+      "artifacts": [
+        {
+          "path": "cheque-07.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/CorbettOlympicClubCheck.JPG",
+          "size": 484579,
+          "sha256": "c7da18c108aff239f7378022fd3172715c1e0505e4c37c7458ba3a5538e48527"
+        }
+      ],
+      "expected": {
+        "amount": "25000.00",
+        "cheque_number": "1306"
+      },
+      "source": "commons",
+      "source_page": "https://commons.wikimedia.org/wiki/File:CorbettOlympicClubCheck.JPG",
+      "image_timestamp": "2009-08-24T00:18:51Z",
+      "license": "Public domain",
+      "attribution": "Olymipic Club of New Orleans/ Bank of Commerce, New Orleans/ New Orleans Daily Picayune.",
+      "annotation": "Manually transcribed legible fields from scan and publisher description before extraction changes; uncertain fields omitted; null means visibly blank/redacted. Author of changes also annotated held-out images, so this is not a blinded study."
+    }
+  ],
+  "baseline": {
+    "parser_sources": {
+      "rs-ocr/src/bills.rs": "406ecfc0fe3c79ce17940a5c0c104c70153c611972fdc263180a1b59a05d515d",
+      "rs-ocr/src/cheques.rs": "bfdcf364ba3d1a5da055a09560badac6ce860c8bc8c23b847e566d134268d993",
+      "rs-ocr/src/documents/extraction.rs": "be27210b823b6eb06b6cc7ee841be3be1d04b9a3b6c0e34984b861fd81f2651c",
+      "rs-ocr/src/documents/money.rs": "dbeec91f07f214a0aae990afa79b2982f95590c53e16014dd3d44db12366022b"
+    },
+    "evidence_sha256": "4543abfbc3cba424280eb0631ced73ad360d7ec3d635375afd21026d6882a4de"
+  }
+}

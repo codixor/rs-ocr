@@ -1,0 +1,17 @@
+{
+  "criterion": "maximize development positive target availability; tie-break by correct extracted fields, then smaller model pack",
+  "selected": {
+    "receipt": "latin",
+    "invoice": "small",
+    "cheque": "small"
+  },
+  "samples_sha256": "7daefcfcac3f27f423c2f1221a0a0aafcdbdeb443fec38b2456b8d63b6b51e3c",
+  "candidates_sha256": "2897d88e9b3e969813f40ff7705d62e42e2af1396c2c4655b88d9aab4b89869c",
+  "batch_source_sha256": "93165cc604290a38ffce3b06fc0107b7d39d5a7d99419bfbecd80e8e352ddd64",
+  "development_prediction_sha256": {
+    "tiny": "80d98bd2a14fdcd2cbf6f69c99cb3190519f8f5eb01cbb15fb41c2837c0e2495",
+    "small": "a5e3c4bdb0282ba25d7ba61e48afbe39b20c37cff522d99619c67ba13586f8ba",
+    "medium": "064d32228b87d950e96936a6e2f3b78b65d231eedbf37ed2c6f12821ff1ffecd",
+    "latin": "43728829fcdd2a2d8efb3060077d27b77e81571bedb1d6cb31a84800e9704569"
+  }
+}

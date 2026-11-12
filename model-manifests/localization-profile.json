@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "dataset_revision": "efb3595c33780abf9d326c729973e72d165366c2",
+  "manifest_sha256": "36faa819edbed5ac84ca30d46fdd9064ecc009e2516f7a911f0d63ac5bbcc41a",
+  "previous_clip_profile_sha256": "de9d3b589d398431ce399acd0bd26da50ba274c56e8ca236fcf8e88d6ededdf8",
+  "detector_sha256": "f750b6dbdfb7346ce2f109246c9d1950d030904daab3d49bf2942d4772ce69df",
+  "detector_manifest_sha256": "c0406fc8422b91bafb26a2ad5816355cb5948b8cb657103eac6c7173e8976cd0",
+  "development_predictions_sha256": "3f2a97ffd2adb6b71ece3bc13cc77c2e0b7a3ef83f72eb20efd175ed5dcfac7e",
+  "objective": "development exact grids, then tile F1, precision, stricter thresholds; 5 confidence x 6 coverage settings",
+  "thresholds": {
+    "min_confidence": 0.1,
+    "min_coverage": 0.1
+  },
+  "nms_iou": 0.45,
+  "inference_score_floor": 0.05,
+  "max_detections": 100,
+  "unsupported_policy": "previous CLIP profile for known labels; API defaults for unseen labels",
+  "development_baseline": {
+    "grids": 50,
+    "tiles": 800,
+    "positives": 356,
+    "tp": 162,
+    "fp": 13,
+    "fn": 194,
+    "tn": 431,
+    "precision": 0.9257142857142857,
+    "recall": 0.4550561797752809,
+    "f1": 0.6101694915254238,
+    "tile_accuracy": 0.74125,
+    "exact_grids": 3,
+    "exact_grid_rate": 0.06,
+    "exact_grid_wilson_95": [
+      0.02061497034897397,
+      0.16217091688838173
+    ]
+  },
+  "development_hybrid": {
+    "grids": 50,
+    "tiles": 800,
+    "positives": 356,
+    "tp": 291,
+    "fp": 34,
+    "fn": 65,
+    "tn": 410,
+    "precision": 0.8953846153846153,
+    "recall": 0.8174157303370787,
+    "f1": 0.8546255506607929,
+    "tile_accuracy": 0.87625,
+    "exact_grids": 15,
+    "exact_grid_rate": 0.3,
+    "exact_grid_wilson_95": [
+      0.19103553500880954,
+      0.437503504644534
+    ]
+  }
+}

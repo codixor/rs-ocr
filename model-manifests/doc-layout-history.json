@@ -1,0 +1,13 @@
+{
+  "model-manifests/financial-samples.json": "12d8d725ed832e817aff2ac45d230850a3ebbcb2ffd78a12987a422c83535b1d",
+  "model-manifests/financial-profile.json": "65092af6ebd3e98c622fe0c04e25c13e6b40aa305199f5421279f3713accff6d",
+  "model-manifests/ocr-model-samples.json": "7daefcfcac3f27f423c2f1221a0a0aafcdbdeb443fec38b2456b8d63b6b51e3c",
+  "model-manifests/ocr-model-selection.json": "fe65a03547ac2732fc5a2c3b28f1463356a9c0d37f78d64d1aa232b3a12ab7ad",
+  "model-manifests/ocr-model-candidates.json": "2897d88e9b3e969813f40ff7705d62e42e2af1396c2c4655b88d9aab4b89869c",
+  "model-manifests/layout-samples.json": "fd37f05befb2d196da621c4293754b903ba2c60ee6ed6da4230fbcde7004a1d1",
+  "model-manifests/layout-profile.json": "6907980c535e957ffd834f261d4a0f4cdce4e8b5698a8e6b3fb8d899c53c8835",
+  "model-manifests/layout-history.json": "690a37ccfe1ebd784e193fdfb70ec35c6fd1a5e1198c36cffa160d14c44f6e73",
+  "docs/financial-results.json": "103d14ab3705d3b46fcb2039db477f12dc80f15d7c9d6ec96d805342b6b42e32",
+  "docs/ocr-model-results.json": "be2d9749644f5b0cf25764c76797025c40f5c25537fb572a20d404d4edfdae25",
+  "docs/layout-results.json": "6459872d4580a6d5c6545b7709f710cb9e4eefce06858d01ebaaff3b87790cdf"
+}

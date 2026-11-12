@@ -1,0 +1,1813 @@
+{
+  "schema_version": 1,
+  "source": "https://github.com/ssivakorn/reCAPTCHA-study",
+  "dataset_revision": "efb3595c33780abf9d326c729973e72d165366c2",
+  "dataset_license": "CC-BY-NC-4.0",
+  "attribution": "Suphannee Sivakorn, reCAPTCHA Study (2026)",
+  "manifest_sha256": "36faa819edbed5ac84ca30d46fdd9064ecc009e2516f7a911f0d63ac5bbcc41a",
+  "profile_sha256": "49ee1a22ba797ee61fe144ca4f9d71147a6b2ddb47bc5d02d71c0a2c30012812",
+  "test_predictions_sha256": "d8b83b9668e4e86e8f40cfafcced36b57b73650423903043c9bccefc32cfccbf",
+  "protocol": "100 fresh 4x4 grids, 50 development/50 test; no old/new shared source image blobs; selection chosen on development only; baseline is prior frozen CLIP profile for known labels, API defaults for unseen labels; every test detection selection executed in Rust",
+  "thresholds": {
+    "min_confidence": 0.1,
+    "min_coverage": 0.1
+  },
+  "held_out": {
+    "all": {
+      "clip_baseline": {
+        "grids": 50,
+        "tiles": 800,
+        "positives": 300,
+        "tp": 144,
+        "fp": 11,
+        "fn": 156,
+        "tn": 489,
+        "precision": 0.9290322580645162,
+        "recall": 0.48,
+        "f1": 0.6329670329670329,
+        "tile_accuracy": 0.79125,
+        "exact_grids": 7,
+        "exact_grid_rate": 0.14,
+        "exact_grid_wilson_95": [
+          0.06950833427016294,
+          0.2618619371058554
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 50,
+        "tiles": 800,
+        "positives": 300,
+        "tp": 233,
+        "fp": 29,
+        "fn": 67,
+        "tn": 471,
+        "precision": 0.8893129770992366,
+        "recall": 0.7766666666666666,
+        "f1": 0.8291814946619217,
+        "tile_accuracy": 0.88,
+        "exact_grids": 15,
+        "exact_grid_rate": 0.3,
+        "exact_grid_wilson_95": [
+          0.19103553500880954,
+          0.437503504644534
+        ]
+      }
+    },
+    "detector_supported": {
+      "clip_baseline": {
+        "grids": 45,
+        "tiles": 720,
+        "positives": 265,
+        "tp": 120,
+        "fp": 9,
+        "fn": 145,
+        "tn": 446,
+        "precision": 0.9302325581395349,
+        "recall": 0.4528301886792453,
+        "f1": 0.6091370558375635,
+        "tile_accuracy": 0.7861111111111111,
+        "exact_grids": 7,
+        "exact_grid_rate": 0.15555555555555556,
+        "exact_grid_wilson_95": [
+          0.07745423484758268,
+          0.2878390887239627
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 45,
+        "tiles": 720,
+        "positives": 265,
+        "tp": 209,
+        "fp": 27,
+        "fn": 56,
+        "tn": 428,
+        "precision": 0.885593220338983,
+        "recall": 0.7886792452830189,
+        "f1": 0.8343313373253493,
+        "tile_accuracy": 0.8847222222222222,
+        "exact_grids": 15,
+        "exact_grid_rate": 0.3333333333333333,
+        "exact_grid_wilson_95": [
+          0.21358874934330035,
+          0.47929511690099585
+        ]
+      }
+    },
+    "clip_fallback": {
+      "clip_baseline": {
+        "grids": 5,
+        "tiles": 80,
+        "positives": 35,
+        "tp": 24,
+        "fp": 2,
+        "fn": 11,
+        "tn": 43,
+        "precision": 0.9230769230769231,
+        "recall": 0.6857142857142857,
+        "f1": 0.7868852459016393,
+        "tile_accuracy": 0.8375,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.43448246478317476
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 5,
+        "tiles": 80,
+        "positives": 35,
+        "tp": 24,
+        "fp": 2,
+        "fn": 11,
+        "tn": 43,
+        "precision": 0.9230769230769231,
+        "recall": 0.6857142857142857,
+        "f1": 0.7868852459016393,
+        "tile_accuracy": 0.8375,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.43448246478317476
+        ]
+      }
+    },
+    "unseen_label_defaults": {
+      "clip_baseline": {
+        "grids": 2,
+        "tiles": 32,
+        "positives": 22,
+        "tp": 12,
+        "fp": 0,
+        "fn": 10,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 0.5454545454545454,
+        "f1": 0.7058823529411765,
+        "tile_accuracy": 0.6875,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.6576197724933469
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 2,
+        "tiles": 32,
+        "positives": 22,
+        "tp": 12,
+        "fp": 0,
+        "fn": 10,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 0.5454545454545454,
+        "f1": 0.7058823529411765,
+        "tile_accuracy": 0.6875,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.6576197724933469
+        ]
+      }
+    },
+    "bicycles": {
+      "clip_baseline": {
+        "grids": 7,
+        "tiles": 112,
+        "positives": 43,
+        "tp": 28,
+        "fp": 0,
+        "fn": 15,
+        "tn": 69,
+        "precision": 1.0,
+        "recall": 0.6511627906976745,
+        "f1": 0.7887323943661971,
+        "tile_accuracy": 0.8660714285714286,
+        "exact_grids": 2,
+        "exact_grid_rate": 0.2857142857142857,
+        "exact_grid_wilson_95": [
+          0.08221892400405678,
+          0.6410655481673808
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 7,
+        "tiles": 112,
+        "positives": 43,
+        "tp": 37,
+        "fp": 7,
+        "fn": 6,
+        "tn": 62,
+        "precision": 0.8409090909090909,
+        "recall": 0.8604651162790697,
+        "f1": 0.8505747126436781,
+        "tile_accuracy": 0.8839285714285714,
+        "exact_grids": 1,
+        "exact_grid_rate": 0.14285714285714285,
+        "exact_grid_wilson_95": [
+          0.02567962434474355,
+          0.5131278292743189
+        ]
+      }
+    },
+    "buses": {
+      "clip_baseline": {
+        "grids": 4,
+        "tiles": 64,
+        "positives": 23,
+        "tp": 13,
+        "fp": 0,
+        "fn": 10,
+        "tn": 41,
+        "precision": 1.0,
+        "recall": 0.5652173913043478,
+        "f1": 0.7222222222222222,
+        "tile_accuracy": 0.84375,
+        "exact_grids": 1,
+        "exact_grid_rate": 0.25,
+        "exact_grid_wilson_95": [
+          0.04558726080970055,
+          0.6993581574175981
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 4,
+        "tiles": 64,
+        "positives": 23,
+        "tp": 21,
+        "fp": 0,
+        "fn": 2,
+        "tn": 41,
+        "precision": 1.0,
+        "recall": 0.9130434782608695,
+        "f1": 0.9545454545454546,
+        "tile_accuracy": 0.96875,
+        "exact_grids": 3,
+        "exact_grid_rate": 0.75,
+        "exact_grid_wilson_95": [
+          0.30064184258240184,
+          0.9544127391902995
+        ]
+      }
+    },
+    "crosswalks": {
+      "clip_baseline": {
+        "grids": 2,
+        "tiles": 32,
+        "positives": 11,
+        "tp": 10,
+        "fp": 1,
+        "fn": 1,
+        "tn": 20,
+        "precision": 0.9090909090909091,
+        "recall": 0.9090909090909091,
+        "f1": 0.9090909090909091,
+        "tile_accuracy": 0.9375,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.6576197724933469
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 2,
+        "tiles": 32,
+        "positives": 11,
+        "tp": 10,
+        "fp": 1,
+        "fn": 1,
+        "tn": 20,
+        "precision": 0.9090909090909091,
+        "recall": 0.9090909090909091,
+        "f1": 0.9090909090909091,
+        "tile_accuracy": 0.9375,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.6576197724933469
+        ]
+      }
+    },
+    "fire hydrants": {
+      "clip_baseline": {
+        "grids": 3,
+        "tiles": 48,
+        "positives": 12,
+        "tp": 10,
+        "fp": 0,
+        "fn": 2,
+        "tn": 36,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "tile_accuracy": 0.9583333333333334,
+        "exact_grids": 1,
+        "exact_grid_rate": 0.3333333333333333,
+        "exact_grid_wilson_95": [
+          0.06149194472039621,
+          0.7923403991979522
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 3,
+        "tiles": 48,
+        "positives": 12,
+        "tp": 12,
+        "fp": 0,
+        "fn": 0,
+        "tn": 36,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tile_accuracy": 1.0,
+        "exact_grids": 3,
+        "exact_grid_rate": 1.0,
+        "exact_grid_wilson_95": [
+          0.4385029682449546,
+          1
+        ]
+      }
+    },
+    "motorcycles": {
+      "clip_baseline": {
+        "grids": 22,
+        "tiles": 352,
+        "positives": 160,
+        "tp": 50,
+        "fp": 2,
+        "fn": 110,
+        "tn": 190,
+        "precision": 0.9615384615384616,
+        "recall": 0.3125,
+        "f1": 0.4716981132075472,
+        "tile_accuracy": 0.6818181818181818,
+        "exact_grids": 1,
+        "exact_grid_rate": 0.045454545454545456,
+        "exact_grid_wilson_95": [
+          0.00806942762126385,
+          0.21798045838657332
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 22,
+        "tiles": 352,
+        "positives": 160,
+        "tp": 118,
+        "fp": 13,
+        "fn": 42,
+        "tn": 179,
+        "precision": 0.9007633587786259,
+        "recall": 0.7375,
+        "f1": 0.8109965635738832,
+        "tile_accuracy": 0.84375,
+        "exact_grids": 5,
+        "exact_grid_rate": 0.22727272727272727,
+        "exact_grid_wilson_95": [
+          0.10123039985248516,
+          0.4343995317522171
+        ]
+      }
+    },
+    "stairs": {
+      "clip_baseline": {
+        "grids": 1,
+        "tiles": 16,
+        "positives": 2,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 13,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "tile_accuracy": 0.9375,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.7934506856227626
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 1,
+        "tiles": 16,
+        "positives": 2,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "tn": 13,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "tile_accuracy": 0.9375,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.7934506856227626
+        ]
+      }
+    },
+    "taxis": {
+      "clip_baseline": {
+        "grids": 2,
+        "tiles": 32,
+        "positives": 22,
+        "tp": 12,
+        "fp": 0,
+        "fn": 10,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 0.5454545454545454,
+        "f1": 0.7058823529411765,
+        "tile_accuracy": 0.6875,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.6576197724933469
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 2,
+        "tiles": 32,
+        "positives": 22,
+        "tp": 12,
+        "fp": 0,
+        "fn": 10,
+        "tn": 10,
+        "precision": 1.0,
+        "recall": 0.5454545454545454,
+        "f1": 0.7058823529411765,
+        "tile_accuracy": 0.6875,
+        "exact_grids": 0,
+        "exact_grid_rate": 0.0,
+        "exact_grid_wilson_95": [
+          0,
+          0.6576197724933469
+        ]
+      }
+    },
+    "traffic lights": {
+      "clip_baseline": {
+        "grids": 9,
+        "tiles": 144,
+        "positives": 27,
+        "tp": 19,
+        "fp": 7,
+        "fn": 8,
+        "tn": 110,
+        "precision": 0.7307692307692307,
+        "recall": 0.7037037037037037,
+        "f1": 0.7169811320754716,
+        "tile_accuracy": 0.8958333333333334,
+        "exact_grids": 2,
+        "exact_grid_rate": 0.2222222222222222,
+        "exact_grid_wilson_95": [
+          0.06322510711784671,
+          0.5474110308930111
+        ]
+      },
+      "spatial_hybrid": {
+        "grids": 9,
+        "tiles": 144,
+        "positives": 27,
+        "tp": 21,
+        "fp": 7,
+        "fn": 6,
+        "tn": 110,
+        "precision": 0.75,
+        "recall": 0.7777777777777778,
+        "f1": 0.7636363636363637,
+        "tile_accuracy": 0.9097222222222222,
+        "exact_grids": 3,
+        "exact_grid_rate": 0.3333333333333333,
+        "exact_grid_wilson_95": [
+          0.1205838183869109,
+          0.6457978644196036
+        ]
+      }
+    }
+  },
+  "test_grids": [
+    {
+      "id": "2026-04-25-18-09-00",
+      "target": "bicycles",
+      "expected": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        14
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-25-18-44-00",
+      "target": "traffic lights",
+      "expected": [
+        4,
+        8
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        8
+      ],
+      "hybrid": [
+        4,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "id": "2026-04-25-19-37-00",
+      "target": "motorcycles",
+      "expected": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        8
+      ],
+      "hybrid": [
+        4,
+        5,
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "2026-04-25-19-42-00",
+      "target": "traffic lights",
+      "expected": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "hybrid": []
+    },
+    {
+      "id": "2026-04-25-20-34-00",
+      "target": "buses",
+      "expected": [
+        8,
+        9,
+        12,
+        13
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        8,
+        9,
+        12,
+        13
+      ],
+      "hybrid": [
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "2026-04-26-02-55-00",
+      "target": "motorcycles",
+      "expected": [
+        6,
+        7,
+        10,
+        11,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        11
+      ],
+      "hybrid": [
+        10,
+        11
+      ]
+    },
+    {
+      "id": "2026-04-26-03-19-00",
+      "target": "bicycles",
+      "expected": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        4,
+        5,
+        9,
+        10,
+        12,
+        14
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-26-03-34-00",
+      "target": "bicycles",
+      "expected": [
+        6,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        6,
+        9,
+        11,
+        13,
+        14,
+        15
+      ],
+      "hybrid": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-26-03-53-00",
+      "target": "motorcycles",
+      "expected": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        0,
+        4,
+        6,
+        8,
+        10,
+        14
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-26-04-36-00",
+      "target": "fire hydrants",
+      "expected": [
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        6,
+        7,
+        10,
+        11,
+        14
+      ],
+      "hybrid": [
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-26-04-51-00",
+      "target": "motorcycles",
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "hybrid": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "2026-04-26-05-41-00",
+      "target": "motorcycles",
+      "expected": [
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        3,
+        6
+      ],
+      "hybrid": [
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-26-06-17-00",
+      "target": "bicycles",
+      "expected": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        5,
+        9
+      ],
+      "hybrid": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "2026-04-26-07-06-00",
+      "target": "stairs",
+      "expected": [
+        8,
+        9
+      ],
+      "method": "clip_fallback",
+      "clip_settings": "previous_profile",
+      "clip": [
+        4,
+        8,
+        9
+      ],
+      "hybrid": [
+        4,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "2026-04-26-07-54-00",
+      "target": "motorcycles",
+      "expected": [
+        9,
+        10
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        9,
+        10
+      ],
+      "hybrid": [
+        9
+      ]
+    },
+    {
+      "id": "2026-04-26-08-52-00",
+      "target": "traffic lights",
+      "expected": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        4,
+        6,
+        10
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-26-09-11-00",
+      "target": "traffic lights",
+      "expected": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        1,
+        4,
+        5
+      ],
+      "hybrid": [
+        0,
+        1,
+        4,
+        5,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "2026-04-26-09-19-00",
+      "target": "motorcycles",
+      "expected": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        9,
+        10,
+        11
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-26-09-39-00",
+      "target": "taxis",
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "method": "clip_fallback",
+      "clip_settings": "api_defaults_unseen_label",
+      "clip": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "hybrid": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "id": "2026-04-26-10-07-00",
+      "target": "motorcycles",
+      "expected": [
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        7
+      ],
+      "hybrid": [
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-26-10-46-00",
+      "target": "motorcycles",
+      "expected": [
+        0,
+        1,
+        4,
+        5,
+        9,
+        13
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        4,
+        5,
+        9
+      ],
+      "hybrid": [
+        4,
+        9,
+        13
+      ]
+    },
+    {
+      "id": "2026-04-26-12-07-00",
+      "target": "taxis",
+      "expected": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "method": "clip_fallback",
+      "clip_settings": "api_defaults_unseen_label",
+      "clip": [
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "2026-04-30-21-28-51",
+      "target": "bicycles",
+      "expected": [
+        2,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        6,
+        9,
+        10,
+        14
+      ],
+      "hybrid": [
+        6,
+        9,
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-30-21-28-55",
+      "target": "traffic lights",
+      "expected": [
+        8,
+        9
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        2,
+        8,
+        9,
+        10
+      ],
+      "hybrid": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "2026-04-30-21-29-11",
+      "target": "motorcycles",
+      "expected": [
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        10,
+        11
+      ],
+      "hybrid": [
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-30-21-29-26",
+      "target": "traffic lights",
+      "expected": [
+        2,
+        3
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        2,
+        5,
+        6,
+        7,
+        10
+      ],
+      "hybrid": [
+        2
+      ]
+    },
+    {
+      "id": "2026-04-30-21-29-44",
+      "target": "crosswalks",
+      "expected": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "method": "clip_fallback",
+      "clip_settings": "previous_profile",
+      "clip": [
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "hybrid": [
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-30-22-18-36",
+      "target": "motorcycles",
+      "expected": [
+        1,
+        6,
+        10
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        1,
+        10
+      ],
+      "hybrid": [
+        1,
+        10
+      ]
+    },
+    {
+      "id": "2026-04-30-22-18-48",
+      "target": "traffic lights",
+      "expected": [
+        1,
+        3
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        1,
+        3
+      ],
+      "hybrid": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "2026-04-30-22-19-03",
+      "target": "motorcycles",
+      "expected": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        5,
+        8,
+        9
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-30-22-20-27",
+      "target": "motorcycles",
+      "expected": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        8,
+        10
+      ],
+      "hybrid": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-30-22-37-44",
+      "target": "motorcycles",
+      "expected": [
+        2,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        6,
+        9,
+        11
+      ],
+      "hybrid": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-04-30-22-37-52",
+      "target": "traffic lights",
+      "expected": [
+        6,
+        10,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        6
+      ],
+      "hybrid": [
+        6,
+        10,
+        14
+      ]
+    },
+    {
+      "id": "2026-04-30-22-38-00",
+      "target": "motorcycles",
+      "expected": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        0,
+        4,
+        5,
+        8
+      ],
+      "hybrid": [
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "2026-04-30-22-38-12",
+      "target": "motorcycles",
+      "expected": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        5,
+        9,
+        10,
+        11,
+        15
+      ],
+      "hybrid": [
+        5,
+        6,
+        9,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-05-02-17-05-09",
+      "target": "traffic lights",
+      "expected": [
+        9,
+        10
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        9,
+        10
+      ],
+      "hybrid": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "2026-05-02-17-05-14",
+      "target": "motorcycles",
+      "expected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [],
+      "hybrid": []
+    },
+    {
+      "id": "2026-05-02-17-07-53",
+      "target": "buses",
+      "expected": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        6,
+        7,
+        10,
+        11
+      ],
+      "hybrid": [
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "2026-05-02-17-10-17",
+      "target": "bicycles",
+      "expected": [
+        10,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        10,
+        14
+      ],
+      "hybrid": [
+        10,
+        14
+      ]
+    },
+    {
+      "id": "2026-05-02-17-12-42",
+      "target": "motorcycles",
+      "expected": [
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [],
+      "hybrid": []
+    },
+    {
+      "id": "2026-05-02-17-21-00",
+      "target": "buses",
+      "expected": [
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        8,
+        9,
+        13
+      ],
+      "hybrid": [
+        8,
+        9,
+        10,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "2026-05-02-17-21-15",
+      "target": "motorcycles",
+      "expected": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        1,
+        6
+      ],
+      "hybrid": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-05-02-17-27-36",
+      "target": "buses",
+      "expected": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        9,
+        10
+      ],
+      "hybrid": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "2026-05-02-18-42-15",
+      "target": "motorcycles",
+      "expected": [
+        2,
+        6,
+        10
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [],
+      "hybrid": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "2026-05-02-18-42-44",
+      "target": "bicycles",
+      "expected": [
+        1,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        13
+      ],
+      "hybrid": [
+        8,
+        9,
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-05-02-18-44-24",
+      "target": "crosswalks",
+      "expected": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "method": "clip_fallback",
+      "clip_settings": "previous_profile",
+      "clip": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ],
+      "hybrid": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "2026-05-02-21-07-44",
+      "target": "motorcycles",
+      "expected": [
+        0,
+        4,
+        8,
+        9,
+        12
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        0,
+        4
+      ],
+      "hybrid": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "id": "2026-05-02-21-16-43",
+      "target": "motorcycles",
+      "expected": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        5,
+        10
+      ],
+      "hybrid": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "2026-05-02-21-16-50",
+      "target": "fire hydrants",
+      "expected": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [
+        1,
+        2,
+        6,
+        9,
+        10
+      ],
+      "hybrid": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "2026-05-02-21-17-44",
+      "target": "fire hydrants",
+      "expected": [],
+      "method": "detector",
+      "clip_settings": "previous_profile",
+      "clip": [],
+      "hybrid": []
+    }
+  ],
+  "limitations": [
+    "One public dataset/annotator; near-duplicate scenes may remain",
+    "Boxes include background and miss small objects; this is detection, not segmentation",
+    "Unsupported classes use explicitly reported CLIP fallback",
+    "No live acceptance or dynamic-refresh evaluation"
+  ]
+}

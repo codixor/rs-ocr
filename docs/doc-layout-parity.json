@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "spec_sha256": "3e81365c31d9d27c2372b2a060c069bb6ba74e5a63015c3ecb3a9f4ff77637e6",
+  "reference_script_sha256": "46bf5ce5fb1917cbd6363c0b8c24d7b01327a888e49dba827499c247f4a2dd58",
+  "reference_runtime": {
+    "onnxruntime": "1.23.2",
+    "opencv": "4.11.0",
+    "numpy": "1.26.4",
+    "provider": "CPUExecutionProvider",
+    "threads": 1
+  },
+  "comparisons": [
+    {
+      "id": "sroie-087",
+      "width": 932,
+      "height": 2168,
+      "regions": 0,
+      "max_score_error": 0.0,
+      "max_coordinate_error_pixels": 0.0
+    },
+    {
+      "id": "invoice-20210509_001704",
+      "width": 3000,
+      "height": 4000,
+      "regions": 1,
+      "max_score_error": 0.00019931793212890625,
+      "max_coordinate_error_pixels": 0.015625
+    },
+    {
+      "id": "invoice-20210508_235729",
+      "width": 3000,
+      "height": 4000,
+      "regions": 2,
+      "max_score_error": 0.0006976127624511719,
+      "max_coordinate_error_pixels": 0.103759765625
+    },
+    {
+      "id": "cheque-00",
+      "width": 900,
+      "height": 408,
+      "regions": 1,
+      "max_score_error": 3.993511199951172e-06,
+      "max_coordinate_error_pixels": 0.001617431640625
+    }
+  ],
+  "tolerances": {
+    "max_score_error": 0.002,
+    "max_coordinate_error_pixels": 0.5
+  },
+  "limits": "Four specified public images only; independent OpenCV cubic preprocessing plus ONNX Runtime CPU. Native Rust cubic RGB rounding may differ by one unit. Does not establish Paddle native parity or every input branch."
+}

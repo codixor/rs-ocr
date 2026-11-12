@@ -1,0 +1,126 @@
+{
+  "release": "https://github.com/byrizki/rusto-rs/releases/tag/models-rten-v0.3.2",
+  "published_at": "2026-10-10T05:37:42Z",
+  "candidates": [
+    {
+      "id": "tiny",
+      "preset": "ppv6",
+      "directory": "rs-ocr/models/ppocrv6-tiny",
+      "description": "Existing pinned baseline model, unchanged",
+      "files": [
+        {
+          "name": "det.rten",
+          "size": 1874240,
+          "sha256": "ca1f0196d2a2da2b485e2cda6aaf5ba02258ac71127d577c8a77a75e89b67605"
+        },
+        {
+          "name": "rec.rten",
+          "size": 4485096,
+          "sha256": "6c94c6b42c43a39d11cf3dd1267199ba04a11afe9de43632daa6f3983b365a9b"
+        },
+        {
+          "name": "dict.txt",
+          "size": 27156,
+          "sha256": "c5cbe34ef40c29c4df07ed012bf96569cb69a2d2a01a07027e9f13cb832bd9cd"
+        }
+      ],
+      "archive": {
+        "name": "RustO-Models-PPOCRv6-Tiny.zip",
+        "size": 5736579,
+        "sha256": "edf363e11c293ffa3e6dec60840b9b1e53158320b5d461df16df8b06969e276e",
+        "url": "https://github.com/byrizki/rusto-rs/releases/download/models-rten-v0.3.2/RustO-Models-PPOCRv6-Tiny.zip"
+      }
+    },
+    {
+      "id": "small",
+      "preset": "ppv6",
+      "archive": {
+        "name": "RustO-Models-PPOCRv6-Small.zip",
+        "size": 26614597,
+        "sha256": "b5424336df790711fe038c2db550a506dd3f6d82bae0c8cf44091c3c49330256",
+        "url": "https://github.com/byrizki/rusto-rs/releases/download/models-rten-v0.3.2/RustO-Models-PPOCRv6-Small.zip"
+      },
+      "files": [
+        {
+          "name": "det.rten",
+          "size": 9974528,
+          "sha256": "27f02a3966072dabf3ae657b9ff48f675717d6095d83cfd7b8aa4879716fd4d1",
+          "member": "det.rten"
+        },
+        {
+          "name": "rec.rten",
+          "size": 21207832,
+          "sha256": "b6eef947901c5ff0bf6ee62d8b46f58b1423666f0ae0c87b2f42127502925f8f",
+          "member": "rec.rten"
+        },
+        {
+          "name": "dict.txt",
+          "size": 74947,
+          "sha256": "b5f2bfe2bdd9448429e3e82b51c789775d9b42f2403d082b00662eb77e401c5d",
+          "member": "dict.txt"
+        }
+      ]
+    },
+    {
+      "id": "medium",
+      "preset": "ppv6",
+      "archive": {
+        "name": "RustO-Models-PPOCRv6-Medium.zip",
+        "size": 105522106,
+        "sha256": "85f8c0241e8949903cebab9a0565460fee3901c0d6ac63db4c1a231fc50466cc",
+        "url": "https://github.com/byrizki/rusto-rs/releases/download/models-rten-v0.3.2/RustO-Models-PPOCRv6-Medium.zip"
+      },
+      "files": [
+        {
+          "name": "det.rten",
+          "size": 62178176,
+          "sha256": "e3a9cd4eb391f6d40d0634e4eed4f6a95132ba77b4b7d07dac53a7485e7ae2ba",
+          "member": "det.rten"
+        },
+        {
+          "name": "rec.rten",
+          "size": 76604632,
+          "sha256": "9572d4166695c965148eedb420b7777c287732e66f0d7a30fccadd9355f116a4",
+          "member": "rec.rten"
+        },
+        {
+          "name": "dict.txt",
+          "size": 74947,
+          "sha256": "b5f2bfe2bdd9448429e3e82b51c789775d9b42f2403d082b00662eb77e401c5d",
+          "member": "dict.txt"
+        }
+      ]
+    },
+    {
+      "id": "latin",
+      "preset": "ppv6",
+      "archive": {
+        "name": "RustO-Models-PPOCRv5-Latin.zip",
+        "size": 7279148,
+        "sha256": "a3ae12f2011c23e055bb57ee0235f4c810182cd509d8d6ba2f07578f8655a1c3",
+        "url": "https://github.com/byrizki/rusto-rs/releases/download/models-rten-v0.3.2/RustO-Models-PPOCRv5-Latin.zip"
+      },
+      "files": [
+        {
+          "name": "det.rten",
+          "size": 9974528,
+          "sha256": "27f02a3966072dabf3ae657b9ff48f675717d6095d83cfd7b8aa4879716fd4d1",
+          "copied_from": "small/det.rten"
+        },
+        {
+          "name": "rec.rten",
+          "size": 7957088,
+          "sha256": "e865ace889669aea8dd522569044403e5db47f84ba2b46ba58d1a44a5ca976ed",
+          "member": "rec.rten"
+        },
+        {
+          "name": "dict.txt",
+          "size": 1634,
+          "sha256": "3c0a8a79b612653c25f765271714f71281e4e955962c153e272b7b8c1d2b13ff",
+          "member": "dict.txt"
+        }
+      ],
+      "description": "PP-OCRv6 Small detector + PP-OCRv5 Latin recognizer; shared [3,48,320] recognition input"
+    }
+  ]
+}

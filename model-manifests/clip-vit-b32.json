@@ -1,0 +1,18 @@
+{
+  "name": "CLIP ViT-B/32 FP32 combined ONNX",
+  "repository": "Xenova/clip-vit-base-patch32",
+  "revision": "6b7c523703ae26e39be4b03774966f8571c7f523",
+  "license": "MIT",
+  "model_card": "https://huggingface.co/Xenova/clip-vit-base-patch32",
+  "base_url": "https://huggingface.co/Xenova/clip-vit-base-patch32/resolve/6b7c523703ae26e39be4b03774966f8571c7f523/",
+  "files": [
+    {"remote": "onnx/model.onnx", "name": "model.onnx", "size": 605799029, "sha256": "8ac34fc990f890b4bec8d197de81f956fb135a65067e77fadbf8f053656ed711"},
+    {"remote": "tokenizer.json", "name": "tokenizer.json", "size": 2224119, "sha256": "f7f3b7af117d467b58374797691a6438d3e6b9e9cef800dfd5dced7f697a90cd"},
+    {"remote": "preprocessor_config.json", "name": "preprocessor_config.json", "size": 520, "sha256": "6f638fb9401a6d6296feff533ee7efe657b787c49f954f82f5906b36ef2a1b1f"},
+    {"remote": "config.json", "name": "config.json", "size": 4524, "sha256": "493ef57ff783e42d1530c91b53469b7fdf8db8a9c1408e86998fcb7899a4f495"}
+  ],
+  "test_images": [
+    {"name": "horses.jpeg", "url": "https://raw.githubusercontent.com/robertknight/rten/v0.27.0/tools/test-images/horses.jpeg", "size": 500459, "sha256": "b65e160a2292ece55d4b0bc9a8c560663b6c01e7c931191c714cadf6a52fcf2c"},
+    {"name": "sofa-cats.jpg", "url": "https://raw.githubusercontent.com/robertknight/rten/v0.27.0/tools/test-images/sofa-cats.jpg", "size": 173131, "sha256": "dea9e7ef97386345f7cff32f9055da4982da5471c48d575146c796ab4563b04e"}
+  ]
+}

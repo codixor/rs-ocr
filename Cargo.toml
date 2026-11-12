@@ -1,0 +1,101 @@
+[package]
+name = "rs-ocr"
+description = "Local OCR in pure Rust: CAPTCHAs, invoices, cheques and Arabic/French/English documents, on RustO and RTen with an optional Burn backend"
+readme = "README.md"
+edition = "2024"
+rust-version = "1.99.1"
+license = "MIT OR Apache-2.0"
+version = "0.1.0"
+repository = "https://github.com/codixor/rs-ocr"
+homepage = "https://github.com/codixor/rs-ocr"
+documentation = "https://docs.rs/rs-ocr"
+authors = ["Codixor"]
+exclude = ["/models", "/target", "*.bat", "/scripts", "/docs/*.json"]
+keywords = ["ocr", "captcha", "arabic", "invoice", "rten"]
+categories = ["computer-vision", "text-processing"]
+
+[dependencies]
+rusto = { package = "rusto-rs", version = "=0.3.2", default-features = false }
+thiserror = "2.0.21"
+regex = "1.13.1"
+# rten/ndarray stay on the majors rusto-rs 0.3.2 is built on (rten ^0.27, ndarray ^0.16).
+rten = { version = "=0.27.0", default-features = false, features = ["onnx_format"], optional = true }
+rten-tensor = { version = "=0.27.0", optional = true }
+rten-text = { version = "=0.27.0", optional = true }
+serde_json = { version = "1.0.154", default-features = false, features = ["std"], optional = true }
+# Keep the document/classifier codecs aligned with RustO; inheriting the workspace's
+# default image features would pull in additional codecs for this small API.
+image = { version = "0.25.10", default-features = false, features = ["png", "jpeg"] }
+# Optional Burn backend for the PP-OCRv6 Tiny detector/recognizer (`burn` feature).
+# `autotune` is required on GPUs with 32 KiB of workgroup shared memory (e.g. RX 580):
+# the fixed default matmul kernel needs 35 KiB and fails to launch there.
+burn = { version = "=0.22.1", features = ["flex", "autotune"], optional = true }
+burn-store = { version = "=0.22.1", optional = true }
+# Same ndarray major as RustO's `InferenceSession` tensors.
+ndarray = { version = "0.16", optional = true }
+
+[build-dependencies]
+burn-onnx = { version = "=0.22.0", optional = true }
+
+[features]
+default = []
+image-selection = ["dep:rten", "dep:rten-tensor", "dep:rten-text", "dep:serde_json"]
+object-detection = ["image-selection"]
+document-layout = ["dep:rten", "dep:rten-tensor"]
+# Burn (pure-Rust CPU "Flex") backend, generated at build time from the PP-OCRv6 Tiny
+# ONNX models in `models/onnx/ppocrv6-tiny/` (or `RS_OCR_ONNX_DIR`). RTen stays the default.
+burn = ["dep:burn", "dep:burn-store", "dep:ndarray", "dep:burn-onnx"]
+# Adds a Vulkan GPU device to the Burn backend. Building it on macOS needs the Vulkan SDK.
+burn-vulkan = ["burn", "burn/vulkan"]
+
+[dev-dependencies]
+tempfile = "3.27.0"
+serde_json = { version = "1.0.154", default-features = false, features = ["std"] }
+
+[[example]]
+name = "image_selection"
+required-features = ["image-selection"]
+
+[[example]]
+name = "selection_batch"
+required-features = ["image-selection"]
+
+[[example]]
+name = "spatial_batch"
+required-features = ["object-detection"]
+
+[[test]]
+name = "image_selection_smoke"
+required-features = ["image-selection"]
+
+[[test]]
+name = "detection_smoke"
+required-features = ["object-detection"]
+
+[[example]]
+name = "burn_compare"
+required-features = ["burn"]
+
+[[test]]
+name = "burn_parity"
+required-features = ["burn"]
+
+[[example]]
+name = "doc_layout_batch"
+required-features = ["document-layout"]
+
+[[test]]
+name = "doc_layout_smoke"
+required-features = ["document-layout"]
+
+# Standalone crate (not part of a parent workspace).
+[workspace]
+
+[lints.rust]
+unsafe_code = "warn"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+# `assert!(x.is_empty())` is clearer in tests than assert_eq! against a typed empty array.
+assert_is_empty = "allow"
